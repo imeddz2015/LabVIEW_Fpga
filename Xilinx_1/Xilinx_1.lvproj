@@ -664,6 +664,7 @@ set_property IOSTANDARD LVCMOS25 [get_ports {Si570Clkn}]
 				<Property Name="NI.SortType" Type="Int">3</Property>
 			</Item>
 			<Item Name="Fpga_Top-Level.vi" Type="VI" URL="../Fpga_Top-Level.vi">
+				<Property Name="BuildSpec" Type="Str">{296BA59D-681F-4A4C-B275-3BEAAAD990DC}</Property>
 				<Property Name="configString.guid" Type="Str">{614C491D-53A9-4479-8E0C-4E4A36982DC4}ResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;PXIe-6592R/Clk40/falsefalse6705707382fd2b7ff9aed4185160bbc3FPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
 				<Property Name="configString.name" Type="Str">40 MHz Onboard ClockResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;PXIe-6592R/Clk40/falsefalse6705707382fd2b7ff9aed4185160bbc3FPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
 			</Item>
@@ -681,7 +682,44 @@ set_property IOSTANDARD LVCMOS25 [get_ports {Si570Clkn}]
 				<Property Name="NI.SortType" Type="Int">3</Property>
 			</Item>
 			<Item Name="Dependencies" Type="Dependencies"/>
-			<Item Name="Build Specifications" Type="Build"/>
+			<Item Name="Build Specifications" Type="Build">
+				<Item Name="Fpga_Top-Level" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
+					<Property Name="AllowEnableRemoval" Type="Bool">false</Property>
+					<Property Name="BuildSpecDecription" Type="Str"></Property>
+					<Property Name="BuildSpecName" Type="Str">Fpga_Top-Level</Property>
+					<Property Name="Comp.BitfileName" Type="Str">Xilinx1_FPGATarget_FpgaTop-Level_9DjROatCDAg.lvbitx</Property>
+					<Property Name="Comp.CustomXilinxParameters" Type="Str"></Property>
+					<Property Name="Comp.MaxFanout" Type="Int">-1</Property>
+					<Property Name="Comp.RandomSeed" Type="Bool">false</Property>
+					<Property Name="Comp.Version.Build" Type="Int">0</Property>
+					<Property Name="Comp.Version.Fix" Type="Int">0</Property>
+					<Property Name="Comp.Version.Major" Type="Int">1</Property>
+					<Property Name="Comp.Version.Minor" Type="Int">0</Property>
+					<Property Name="Comp.VersionAutoIncrement" Type="Bool">false</Property>
+					<Property Name="Comp.Vivado.EnableMultiThreading" Type="Bool">true</Property>
+					<Property Name="Comp.Vivado.OptDirective" Type="Str"></Property>
+					<Property Name="Comp.Vivado.PhysOptDirective" Type="Str"></Property>
+					<Property Name="Comp.Vivado.PlaceDirective" Type="Str"></Property>
+					<Property Name="Comp.Vivado.RouteDirective" Type="Str"></Property>
+					<Property Name="Comp.Vivado.RunPowerOpt" Type="Bool">false</Property>
+					<Property Name="Comp.Vivado.Strategy" Type="Str">Default</Property>
+					<Property Name="Comp.Xilinx.DesignStrategy" Type="Str">balanced</Property>
+					<Property Name="Comp.Xilinx.MapEffort" Type="Str">default(noTiming)</Property>
+					<Property Name="Comp.Xilinx.ParEffort" Type="Str">standard</Property>
+					<Property Name="Comp.Xilinx.SynthEffort" Type="Str">normal</Property>
+					<Property Name="Comp.Xilinx.SynthGoal" Type="Str">speed</Property>
+					<Property Name="Comp.Xilinx.UseRecommended" Type="Bool">true</Property>
+					<Property Name="DefaultBuildSpec" Type="Bool">true</Property>
+					<Property Name="DestinationDirectory" Type="Path">FPGA Bitfiles</Property>
+					<Property Name="ProjectPath" Type="Path">/C/work/git/LabVIEW_Fpga/Xilinx_1/Xilinx_1.lvproj</Property>
+					<Property Name="RelativePath" Type="Bool">true</Property>
+					<Property Name="RunWhenLoaded" Type="Bool">false</Property>
+					<Property Name="SupportDownload" Type="Bool">true</Property>
+					<Property Name="SupportResourceEstimation" Type="Bool">false</Property>
+					<Property Name="TargetName" Type="Str">FPGA Target</Property>
+					<Property Name="TopLevelVI" Type="Ref">/My Computer/FPGA Target/Fpga_Top-Level.vi</Property>
+				</Item>
+			</Item>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
