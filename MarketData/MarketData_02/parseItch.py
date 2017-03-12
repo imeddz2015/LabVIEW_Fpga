@@ -16,7 +16,7 @@ class ItchMessage:
                                                 hex(self.messageType)))
         if self.getMessageType() == 'T':
             self.timestamp = struct.unpack("!I", self.rawMessage[1:5])[0]
-            print("Timestamp(Seconds): {0}".format(time))
+            print("Timestamp(Seconds): {0}".format(self.timestamp))
         elif self.getMessageType() == 'C':
             (self.timestamp, self.orderRefNum, self.shares, self.match,
             self.printable, self.price) = struct.unpack("!IQIQcI", self.rawMessage[1:])
@@ -132,7 +132,7 @@ def extractMessages(fileName, numberOfMessagesToSave, saveMessageTypes, outFileN
 # Download from here: ftp://emi.nasdaq.com/ITCH/11092013.NASDAQ_ITCH41.gz
 fileName = "11092013.NASDAQ_ITCH41"
 outputFile = "Itch.dat"
-saveMessageTypes = [ 'T' ]
+saveMessageTypes = [ 'A' ]
 numberOfMessagesToSave = 2
 
 extractMessages(fileName, numberOfMessagesToSave, saveMessageTypes, outputFile)
