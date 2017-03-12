@@ -965,6 +965,7 @@ set_property IOSTANDARD LVCMOS25 [get_ports {Si570Clkn}]
 		<Item Name="Untitled.lvtest" Type="TestItem" URL="../Untitled.lvtest">
 			<Property Name="utf.vector.test.bind" Type="Str">33DFA399-5AD3-2D9D-92CC-153A3BE1E594</Property>
 		</Item>
+		<Item Name="Create-Order.vi" Type="VI" URL="../Create-Order.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
