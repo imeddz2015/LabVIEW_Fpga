@@ -3,76 +3,85 @@ from enum import Enum
 import struct
 
 class MessageType(Enum):
-    TimeStamp           =  'T'
-    AddOrder            =  'A'
-    AddOrderMPID        =  'F'
-    OrderExecuted       =  'E'
-    OrderExecutedPrice  =  'C'
-    OrderCancel         =  'X'
-    OrderDelete         =  'D'
-    OrderReplace        =  'U'
+    TimeStamp                      =  'T'
+    SystemEvent                    =  'S'
+    StockDirectory                 =  'R'
+    StockTradingAction             =  'H'
+    RegSHORestriction              =  'Y'
+    MarketParticipantPosition      =  'L'
+
+    AddOrder                =  'A'
+    AddOrderWithMPID        =  'F'
+    OrderExecuted           =  'E'
+    OrderExecutedWithPrice  =  'C'
+    OrderCancel             =  'X'
+    OrderDelete             =  'D'
+    OrderReplace            =  'U'
+
+    TradeNonCross           =  'P'
+    CrossTrade              =  'Q'
+    BrokenTrade             =  'B'
+    NetOrderImbalance       =  'I'
+    RetailInterestMessage   =  'N'
 
 class Field(object):
-    MessageType     =  "MessageType"
-    Seconds         =  "Seconds"
-    NanoSeconds     =  "NanoSeconds"
-    OrderRefNum     =  "OrderRefNum"
-    NewOrderRefNum  =  "NewOrderRefNum"
-    Side            =  "Side"
-    Shares          =  "Shares"
-    Stock           =  "Stock"
-    Price           =  "Price"
-    Printable       =  "Printable"
-    Mpid            =  "Mpid"
-    MatchNum        =  "MatchNum"
+    CrossPrice               =  "CrossPrice"
+    CrossType                =  "CrossType"
+    CurrentReferencePrice    =  "CurrentReferencePrice"
+    EventCode                =  "EventCode"
+    FarPrice                 =  "FarPrice"
+    FinancialStatus          =  "FinancialStatus"
+    ImbalanceDirection       =  "ImbalanceDirection"
+    ImbalanceShares          =  "ImbalanceShares"
+    InterestFlag             =  "InterestFlag"
+    MessageType              =  "MessageType"
+    MarketCategory           =  "MarketCategory"
+    MarketMakerMode          =  "MarketMakerMode"
+    MarketParticipantState   =  "MarketParticipantState"
+    MatchNum                 =  "MatchNum"
+    Mpid                     =  "Mpid"
+    NanoSeconds              =  "NanoSeconds"
+    NearPrice                =  "NearPrice"
+    NewOrderRefNum           =  "NewOrderRefNum"
+    OrderRefNum              =  "OrderRefNum"
+    Price                    =  "Price"
+    Printable                =  "Printable"
+    PriceVariationIndicator  =  "PriceVariationIndicator"
+    PairedShares             =  "PairedShares"
+    PrimaryMarketMaker       =  "PrimaryMarketMaker"
+    Reason                   =  "Reason"
+    Reserved                 =  "Reserved"
+    RegSHOAction             =  "RegSHOAction"
+    RoundLotSize             =  "RoundLotSize"
+    RoundLotsOnly            =  "RoundLotsOnly"
+    Seconds                  =  "Seconds"
+    Shares                   =  "Shares"
+    Side                     =  "Side"
+    Stock                    =  "Stock"
+    TradingState             =  "TradingState"
+
 
 class ItchMessageFactory:
     @staticmethod
     def createFromArgs( messageArgs ):
         messageType = messageArgs[0]
-        message = None
-        if messageType == MessageType.TimeStamp:
-            message = TimeStamp()
-        elif messageType == MessageType.AddOrder:
-            message = AddOrder()
-        elif messageType == MessageType.AddOrderMPID:
-            message = AddOrderWithMPID()
-        elif messageType == MessageType.OrderExecuted:
-            message = OrderExecuted()
-        elif messageType == MessageType.OrderExecutedPrice:
-            message = OrderExecutedWithPrice()
-        elif messageType == MessageType.OrderCancel:
-            message = OrderCancel()
-        elif messageType == MessageType.OrderDelete:
-            message = OrderDelete()
-        elif messageType == MessageType.OrderReplace:
-            message = OrderReplace()
+        message = ItchMessageFactory.fromMessageType( messageType )
         message.fromArgs(messageArgs)
         return message
 
     @staticmethod
     def fromMessageType( messageType ):
-        message = None
-        if messageType == MessageType.TimeStamp:
-            message = TimeStamp()
-        elif messageType == MessageType.AddOrder:
-            message = AddOrder()
-        elif messageType == MessageType.AddOrderMPID:
-            message = AddOrderWithMPID()
-        elif messageType == MessageType.OrderExecuted:
-            message = OrderExecuted()
-        elif messageType == MessageType.OrderExecutedPrice:
-            message = OrderExecutedWithPrice()
-        elif messageType == MessageType.OrderCancel:
-            message = OrderCancel()
-        elif messageType == MessageType.OrderDelete:
-            message = OrderDelete()
-        elif messageType == MessageType.OrderReplace:
-            message = OrderReplace()
-        return message
+        for subClass in ItchMessage.__subclasses__():
+            if subClass.__name__ == messageType.name:
+                return subClass()
+            for subClass2 in subClass.__subclasses__():
+                if subClass2.__name__ == messageType.name:
+                    return subClass2()
+        return None
 
     @staticmethod
     def createFromBytes(rawMessage):
+        print("len(rawMessage): {}".format( len(rawMessage) ))
         raw = chr( rawMessage[2] )
         msg = MessageType( raw )
         message = ItchMessageFactory.fromMessageType( msg )
@@ -83,6 +92,13 @@ class ItchMessage:
     def __init__(self):
         self.specs = [ ]
         self.specs.append( [ 0, 1, str, Field.MessageType ] )
+
+    def isPriceField(self, field):
+        if field == Field.Price    or field == Field.CrossPrice or \
+           field == Field.FarPrice or field == Field.NearPrice  or \
+           field == Field.CurrentReferencePrice:
+            return True
+        return False
 
     def fromArgs(self, args):
         self.messageLength = self.specs[len(self.specs)-1][0] + self.specs[len(self.specs)-1][1]
@@ -183,7 +199,7 @@ class ItchMessage:
                         val = struct.unpack("!i", self.rawMessage[start:start+len])[0]
                     elif len == 8:
                         val = struct.unpack("!q", self.rawMessage[start:start+len])[0]
-                    if spec[3] == Field.Price:
+                    if self.isPriceField(spec[3]):
                         val /= 10000
                 elif spec[2] is str:
                     if len == 1:
@@ -199,6 +215,106 @@ class TimeStamp(ItchMessage):
         self.messageType = MessageType.TimeStamp.value
         self.specs.append( [ 1, 4, int, Field.Seconds ] )
 
+class SystemEvent(ItchMessage):
+    def __init__(self):
+        super().__init__()
+        self.messageType = MessageType.SystemEvent.value
+        self.specs.append( [ 1, 4, int, Field.NanoSeconds ] )
+        self.specs.append( [ 5, 1, str, Field.EventCode ] )
+    # System Event Codes - Daily
+    # 'O' - Start of Messages
+    # 'S' - Start of System hours
+    # 'Q' - Start of Market hours
+    # 'M' - End of Market hours
+    # 'E' - End of System hours
+    # 'C' - End of Messages
+
+    # System Event Codes - As Needed
+    # 'A' - Emergency Market Condition - Halt
+    # 'R' - Emergency Market Condition - Quote Only Period
+    # 'B' - Emergency Market Condition - Resumption
+
+class StockDirectory(ItchMessage):
+    def __init__(self):
+        super().__init__()
+        self.messageType = MessageType.StockDirectory.value
+        self.specs.append( [  1, 4, int, Field.NanoSeconds ] )
+        self.specs.append( [  5, 8, str, Field.Stock] )
+        # Market Category
+        # 'N' - New York Stock Exchange
+        # 'A' - NYSE Amex
+        # 'P' - NYSE Arca
+        # 'Q' - NASDAQ Global Select Market
+        # 'G' - NASDAQ Global Global Market
+        # 'S' - NASDAQ Global Capital Market
+        # 'Z' - BATS BZX Exchange
+        self.specs.append( [ 13, 1, str, Field.MarketCategory] )
+        # Financial Status Indicator
+        # 'D' - Deficient
+        # 'E' - Delinquent
+        # 'Q' - Bankrupt
+        # 'S' - Suspended
+        # 'G' - Deficient and Bankrupt
+        # 'H' - Deficient and Delinquent
+        # 'J' - Delinquent and Bankrupt
+        # 'K' - Deficient, Delinquent and Bankrupt
+        self.specs.append( [ 14, 1, str, Field.FinancialStatus ] )
+        self.specs.append( [ 15, 4, int, Field.RoundLotSize ] )
+        # 'Y' or 'N'
+        self.specs.append( [ 19, 1, str, Field.RoundLotsOnly ] )
+
+class StockTradingAction(ItchMessage):
+    def __init__(self):
+        super().__init__()
+        self.messageType = MessageType.StockTradingAction.value
+        self.specs.append( [  1, 4, int, Field.NanoSeconds ] )
+        self.specs.append( [  5, 8, str, Field.Stock] )
+        # Trading State
+        # 'H' - Halted across all US equity markets/SROs
+        # 'P' - Paused across all US equity markets/SROs (NASDA-listed securities only)
+        # 'Q' - Quotation only period for cross-SRO halt or pause
+        # 'T' - Trading on NASDAQ
+        self.specs.append( [ 13, 1, str, Field.TradingState ] )
+        self.specs.append( [ 14, 1, str, Field.Reserved] )
+        self.specs.append( [ 15, 4, str, Field.Reason ] )
+
+class RegSHORestriction(ItchMessage):
+    def __init__(self):
+        super().__init__()
+        self.messageType = MessageType.RegSHORestriction.value
+        self.specs.append( [  1, 4, int, Field.NanoSeconds ] )
+        self.specs.append( [  5, 8, str, Field.Stock] )
+        # Reg SHO Short Sale Price TEst
+        # '0' - No price test in place
+        # '1' - Reg SHO Short Sale Price Test Restriction in effect
+        # '2' - Reg SHO Short Sale Price Test Restriction remains in effect
+        self.specs.append( [ 13, 1, str, Field.RegSHOAction ] )
+ 
+class MarketParticipantPosition(ItchMessage):
+    def __init__(self):
+        super().__init__()
+        self.messageType = MessageType.MarketParticipantPosition.value
+        self.specs.append( [  1, 4, int, Field.NanoSeconds ] )
+        self.specs.append( [  5, 4, str, Field.Mpid ] )
+        self.specs.append( [  9, 8, str, Field.Stock ] )
+        # Primary Market Maker
+        # 'Y' - primary market maker
+        # 'N' - non-primary market maker
+        self.specs.append( [ 17, 1, str, Field.PrimaryMarketMaker] )      
+        # Market Maker Mode
+        # 'N' - normal
+        # 'P' - passive
+        # 'S' - syndicate
+        # 'R' - pre-syndicate
+        # 'L' - penalty
+        self.specs.append( [ 18, 1, str, Field.MarketMakerMode] )
+        # Market Participant State
+        # 'A' - Active
+        # 'E' - Excused/Withdrawn
+        # 'S' - Suspended
+        # 'D' - Deleted
+        self.specs.append( [ 19, 1, str, Field.MarketParticipantState] )
+
 class AddOrder(ItchMessage):
     def __init__(self):
         super().__init__()
@@ -213,7 +329,7 @@ class AddOrder(ItchMessage):
 class AddOrderWithMPID(AddOrder):
     def __init__(self):
         super().__init__()
-        self.messageType = MessageType.AddOrderMPID.value
+        self.messageType = MessageType.AddOrderWithMPID.value
         self.specs.append( [  30, 4, str, Field.Mpid ] )
 
 class OrderExecuted(ItchMessage):
@@ -228,7 +344,7 @@ class OrderExecuted(ItchMessage):
 class OrderExecutedWithPrice(ItchMessage):
     def __init__(self):
         super().__init__()
-        self.messageType = MessageType.OrderExecutedPrice.value
+        self.messageType = MessageType.OrderExecutedWithPrice.value
         self.specs.append( [   1, 4, int, Field.NanoSeconds ] )
         self.specs.append( [   5, 8, int, Field.OrderRefNum ] )
         self.specs.append( [  13, 4, int, Field.Shares ] )
@@ -260,4 +376,62 @@ class OrderReplace(ItchMessage):
         self.specs.append( [  13, 8, int, Field.NewOrderRefNum ] )
         self.specs.append( [  21, 4, int, Field.Shares ] )
         self.specs.append( [  25, 4, int, Field.Price ] )
+
+class TradeNonCross(ItchMessage):
+    def __init__(self):
+        super().__init__()
+        self.messageType = MessageType.TradeNonCross.value
+        self.specs.append( [   1, 4, int, Field.NanoSeconds ] )
+        self.specs.append( [   5, 8, int, Field.OrderRefNum ] )
+        self.specs.append( [  13, 1, str, Field.Side ] )
+        self.specs.append( [  14, 4, int, Field.Shares ] )
+        self.specs.append( [  18, 8, str, Field.Stock ] )
+        self.specs.append( [  26, 4, int, Field.Price ] )
+        self.specs.append( [  30, 8, int, Field.MatchNum ] )
+
+class CrossTrade(ItchMessage):
+    def __init__(self):
+        super().__init__()
+        self.messageType = MessageType.CrossTrade.value
+        self.specs.append( [   1, 4, int, Field.NanoSeconds ] )
+        self.specs.append( [   5, 8, int, Field.Shares ] )
+        self.specs.append( [  13, 8, str, Field.Stock ] )
+        self.specs.append( [  21, 4, int, Field.CrossPrice ] )
+        self.specs.append( [  25, 8, int, Field.MatchNum ] )
+        # Cross Type
+        # 'O' - NASDAQ Opening Cross
+        # 'C' - NASDAQ Closing Cross
+        # 'H' - Cross for IPO and halted/paused securities
+        # 'I' - NASDAQ Cross Network: Intraday Cross and Post-Close Cross
+        self.specs.append( [  33, 1, str, Field.CrossType ] )
+
+class BrokenTrade(ItchMessage):
+    def __init__(self):
+        super().__init__()
+        self.messageType = MessageType.BrokenTrade.value
+        self.specs.append( [   1, 4, int, Field.NanoSeconds ] )
+        self.specs.append( [   5, 8, int, Field.MatchNum ] )
+
+class NetOrderImbalance(ItchMessage):
+    def __init__(self):
+        super().__init__()
+        self.messageType = MessageType.NetOrderImbalance.value
+        self.specs.append( [   1, 4, int, Field.NanoSeconds ] )
+        self.specs.append( [   5, 8, int, Field.PairedShares ] )
+        self.specs.append( [  13, 8, int, Field.ImbalanceShares ] )
+        self.specs.append( [  21, 1, str, Field.ImbalanceDirection ] )
+        self.specs.append( [  22, 8, str, Field.Stock ] )
+        self.specs.append( [  30, 4, int, Field.FarPrice ] )
+        self.specs.append( [  34, 4, int, Field.NearPrice ] )
+        self.specs.append( [  38, 4, int, Field.CurrentReferencePrice] )
+        self.specs.append( [  42, 1, str, Field.CrossType ] )
+        self.specs.append( [  43, 1, str, Field.PriceVariationIndicator ] )
+
+class RetailInterestMessage(ItchMessage):
+    def __init__(self):
+        super().__init__()
+        self.messageType = MessageType.RetailInterestMessage.value
+        self.specs.append( [   1, 4, int, Field.NanoSeconds ] )
+        self.specs.append( [   5, 8, str, Field.Stock ] )
+        self.specs.append( [  13, 1, str, Field.InterestFlag ] )
 
