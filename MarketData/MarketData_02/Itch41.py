@@ -50,6 +50,35 @@ class ItchMessageFactory:
         message.fromArgs(messageArgs)
         return message
 
+    @staticmethod
+    def fromMessageType( messageType ):
+        message = None
+        if messageType == MessageType.TimeStamp:
+            message = TimeStamp()
+        elif messageType == MessageType.AddOrder:
+            message = AddOrder()
+        elif messageType == MessageType.AddOrderMPID:
+            message = AddOrderWithMPID()
+        elif messageType == MessageType.OrderExecuted:
+            message = OrderExecuted()
+        elif messageType == MessageType.OrderExecutedPrice:
+            message = OrderExecutedWithPrice()
+        elif messageType == MessageType.OrderCancel:
+            message = OrderCancel()
+        elif messageType == MessageType.OrderDelete:
+            message = OrderDelete()
+        elif messageType == MessageType.OrderReplace:
+            message = OrderReplace()
+        return message
+
+    @staticmethod
+    def createFromBytes(rawMessage):
+        raw = chr( rawMessage[2] )
+        msg = MessageType( raw )
+        message = ItchMessageFactory.fromMessageType( msg )
+        message.fromBytes(rawMessage)
+        return message
+
 class ItchMessage:
     def __init__(self):
         self.specs = [ ]
@@ -88,6 +117,9 @@ class ItchMessage:
                 self.rawMessage.extend( byteVer )
             counter += 1
 
+    def fromBytes(self, rawBytesWithLen):
+        self.rawMessage = rawBytesWithLen
+
     def dumpRawBytes(self):
         print("--- Dumping raw message bytes ---")
         print("--  Length of payload: {0}".format(len(self.rawMessage)))
@@ -95,9 +127,6 @@ class ItchMessage:
         conv = [ "{0:#0{1}x}".format(x, 4) for x in self.rawMessage ]
         line = "\n\t- ".join( [ " ".join( conv[i:i+lineLen] ) for i in range(0, len(conv), lineLen) ] )
         print("\t- {0}".format(line))
-
-    def fromBytes(self, rawBytesWithLen):
-        self.rawMessage = rawBytesWithLen
 
     def dumpPretty(self):
         print("--- Pretty Dump")
