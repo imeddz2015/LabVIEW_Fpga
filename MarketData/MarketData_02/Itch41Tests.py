@@ -60,7 +60,7 @@ class Create_Itch41_Messages_Test(unittest.TestCase):
                                 Field.Stock            :   "AAPL",
                                 Field.TradingState     :      'T',
                                 Field.Reserved         :      ' ',
-                                Field.Reason           :      ' ',
+                                Field.Reason           :   "1234",
                              } ]
 
         # WHEN
@@ -71,7 +71,7 @@ class Create_Itch41_Messages_Test(unittest.TestCase):
         self.assertEqual(   "AAPL", message.getValue( Field.Stock ))
         self.assertEqual(      'T', message.getValue( Field.TradingState ))
         self.assertEqual(      ' ', message.getValue( Field.Reserved ))
-        self.assertEqual(      ' ', message.getValue( Field.Reason ))
+        self.assertEqual(   "1234", message.getValue( Field.Reason ))
 
     def test_create_RegSHORestriction(self):
         # GIVEN
@@ -351,6 +351,22 @@ class Create_Itch41_Messages_Test(unittest.TestCase):
         self.assertEqual(        175, message.getValue( Field.NanoSeconds ))
         self.assertEqual(     "AAPL", message.getValue( Field.Stock ))
         self.assertEqual(        'B', message.getValue( Field.InterestFlag ))
+
+class Create_Itch41_Messages_From_RawBytes(unittest.TestCase):
+    """ Tests for creating, parsing and dumping Itch 41 messages from raw bytes 
+        as encountered in a feed
+    """
+
+    def test_create_TimeStamp_from_RawBytes(self):
+        # GIVEN
+        rawMessage = bytearray()
+        rawMessage.extend( [ 0x00, 0x05, 0x54, 0x00, 0x00, 0x58, 0xb7 ] )
+
+        # WHEN
+        message = ItchMessageFactory.createFromBytes( rawMessage )
+
+        # THEN
+        self.assertEqual( 0x58b7, message.getValue( Field.Seconds ) )
 
 if __name__ == "__main__":
     unittest.main()

@@ -81,7 +81,6 @@ class ItchMessageFactory:
 
     @staticmethod
     def createFromBytes(rawMessage):
-        print("len(rawMessage): {}".format( len(rawMessage) ))
         raw = chr( rawMessage[2] )
         msg = MessageType( raw )
         message = ItchMessageFactory.fromMessageType( msg )
@@ -162,7 +161,6 @@ class ItchMessage:
                     dispVal = struct.unpack("!q", rawBytes)[0]
             elif spec[2] is str:
                 dispVal = rawBytes.decode()
-                #print("dispVal: {}".format( dispVal ) )
                 if spec[3] == Field.MessageType:
                     dispVal = MessageType(dispVal)
             convRawBytes = [ "{0:#0{1}x}".format(x, 4) for x in rawBytes ]
