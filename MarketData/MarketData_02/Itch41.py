@@ -84,6 +84,7 @@ class ItchMessageFactory:
         raw = chr( rawMessage[2] )
         msg = MessageType( raw )
         message = ItchMessageFactory.fromMessageType( msg )
+#        message.MessageType = chr( rawMessage[2] )
         message.fromBytes(rawMessage)
         return message
 
@@ -101,16 +102,16 @@ class ItchMessage:
 
     def fromArgs(self, args):
         self.messageLength = self.specs[len(self.specs)-1][0] + self.specs[len(self.specs)-1][1]
-
         endianStyle = 'big'
 
         self.rawMessage = bytearray()
         self.rawMessage.extend( self.messageLength.to_bytes(2, byteorder=endianStyle))
-        self.rawMessage.extend( self.messageType.encode() )
+        self.rawMessage.extend( self.MessageType.encode() )
         counter = 0
         for spec in self.specs[1:]:
             val = args[1][ spec[3] ]
             if spec[2] is int:
+                self.__setattr__(spec[3], val)
                 if spec[1] == 4:
                     if type( val ) is float:
                         val *= 10000
@@ -122,18 +123,45 @@ class ItchMessage:
             elif spec[2] is str:
                 if type( val ) is MessageType:
                     byteVer = str( val.value ).encode()
+                    self.__setattr__(spec[3], val.value)
                 else:
                     strValue = val
                     if spec[3] == Field.Stock:
                         strValue = val + (8 - len( val ) ) * ' '
                     elif spec[3] == Field.Mpid:
                         strValue = val + (4 - len( val ) ) * ' '
+                    self.__setattr__(spec[3], val)
                     byteVer = str( strValue ).encode()
                 self.rawMessage.extend( byteVer )
             counter += 1
 
     def fromBytes(self, rawBytesWithLen):
         self.rawMessage = rawBytesWithLen
+        messageLength = struct.unpack("!h", self.rawMessage[0:2])[0]
+        #self.MessageType = MessageType.SystemEvent.value
+        for spec in self.specs:
+            rawBytes = self.rawMessage[ 2 + spec[0] : 2 + spec[0] + spec[1] ]
+
+            if spec[2] is int:
+                if spec[1] == 2:
+                    dispVal = struct.unpack("!h", rawBytes)[0]
+                elif spec[1] == 4:
+                    dispVal = struct.unpack("!i", rawBytes)[0]
+                    if spec[3] == Field.Price:
+                        dispVal /= 10000
+                elif spec[1] == 8:
+                    dispVal = struct.unpack("!q", rawBytes)[0]
+                self.__setattr__(spec[3], dispVal)
+            elif spec[2] is str:
+                dispVal = rawBytes.decode()
+                if spec[3] == Field.MessageType:
+                    dispVal = MessageType(dispVal)
+                if spec[3] == Field.MessageType:
+                    self.__setattr__(spec[3], self.MessageType)
+                elif spec[3] == Field.Stock:
+                    self.__setattr__(spec[3], dispVal.strip())
+                else:
+                    self.__setattr__(spec[3], dispVal)
 
     def dumpRawBytes(self):
         print("--- Dumping raw message bytes ---")
@@ -210,13 +238,13 @@ class ItchMessage:
 class TimeStamp(ItchMessage):
     def __init__(self):
         super().__init__()
-        self.messageType = MessageType.TimeStamp.value
+        self.MessageType = MessageType.TimeStamp.value
         self.specs.append( [ 1, 4, int, Field.Seconds ] )
 
 class SystemEvent(ItchMessage):
     def __init__(self):
         super().__init__()
-        self.messageType = MessageType.SystemEvent.value
+        self.MessageType = MessageType.SystemEvent.value
         self.specs.append( [ 1, 4, int, Field.NanoSeconds ] )
         self.specs.append( [ 5, 1, str, Field.EventCode ] )
     # System Event Codes - Daily
@@ -235,7 +263,7 @@ class SystemEvent(ItchMessage):
 class StockDirectory(ItchMessage):
     def __init__(self):
         super().__init__()
-        self.messageType = MessageType.StockDirectory.value
+        self.MessageType = MessageType.StockDirectory.value
         self.specs.append( [  1, 4, int, Field.NanoSeconds ] )
         self.specs.append( [  5, 8, str, Field.Stock] )
         # Market Category
@@ -264,7 +292,7 @@ class StockDirectory(ItchMessage):
 class StockTradingAction(ItchMessage):
     def __init__(self):
         super().__init__()
-        self.messageType = MessageType.StockTradingAction.value
+        self.MessageType = MessageType.StockTradingAction.value
         self.specs.append( [  1, 4, int, Field.NanoSeconds ] )
         self.specs.append( [  5, 8, str, Field.Stock] )
         # Trading State
@@ -279,7 +307,7 @@ class StockTradingAction(ItchMessage):
 class RegSHORestriction(ItchMessage):
     def __init__(self):
         super().__init__()
-        self.messageType = MessageType.RegSHORestriction.value
+        self.MessageType = MessageType.RegSHORestriction.value
         self.specs.append( [  1, 4, int, Field.NanoSeconds ] )
         self.specs.append( [  5, 8, str, Field.Stock] )
         # Reg SHO Short Sale Price TEst
@@ -291,7 +319,7 @@ class RegSHORestriction(ItchMessage):
 class MarketParticipantPosition(ItchMessage):
     def __init__(self):
         super().__init__()
-        self.messageType = MessageType.MarketParticipantPosition.value
+        self.MessageType = MessageType.MarketParticipantPosition.value
         self.specs.append( [  1, 4, int, Field.NanoSeconds ] )
         self.specs.append( [  5, 4, str, Field.Mpid ] )
         self.specs.append( [  9, 8, str, Field.Stock ] )
@@ -316,7 +344,7 @@ class MarketParticipantPosition(ItchMessage):
 class AddOrder(ItchMessage):
     def __init__(self):
         super().__init__()
-        self.messageType = MessageType.AddOrder.value
+        self.MessageType = MessageType.AddOrder.value
         self.specs.append( [   1, 4, int, Field.NanoSeconds ] )
         self.specs.append( [   5, 8, int, Field.OrderRefNum ] )
         self.specs.append( [  13, 1, str, Field.Side ] )
@@ -327,13 +355,13 @@ class AddOrder(ItchMessage):
 class AddOrderWithMPID(AddOrder):
     def __init__(self):
         super().__init__()
-        self.messageType = MessageType.AddOrderWithMPID.value
+        self.MessageType = MessageType.AddOrderWithMPID.value
         self.specs.append( [  30, 4, str, Field.Mpid ] )
 
 class OrderExecuted(ItchMessage):
     def __init__(self):
         super().__init__()
-        self.messageType = MessageType.OrderExecuted.value
+        self.MessageType = MessageType.OrderExecuted.value
         self.specs.append( [   1, 4, int, Field.NanoSeconds ] )
         self.specs.append( [   5, 8, int, Field.OrderRefNum ] )
         self.specs.append( [  13, 4, int, Field.Shares ] )
@@ -342,7 +370,7 @@ class OrderExecuted(ItchMessage):
 class OrderExecutedWithPrice(ItchMessage):
     def __init__(self):
         super().__init__()
-        self.messageType = MessageType.OrderExecutedWithPrice.value
+        self.MessageType = MessageType.OrderExecutedWithPrice.value
         self.specs.append( [   1, 4, int, Field.NanoSeconds ] )
         self.specs.append( [   5, 8, int, Field.OrderRefNum ] )
         self.specs.append( [  13, 4, int, Field.Shares ] )
@@ -353,7 +381,7 @@ class OrderExecutedWithPrice(ItchMessage):
 class OrderCancel(ItchMessage):
     def __init__(self):
         super().__init__()
-        self.messageType = MessageType.OrderCancel.value
+        self.MessageType = MessageType.OrderCancel.value
         self.specs.append( [   1, 4, int, Field.NanoSeconds ] )
         self.specs.append( [   5, 8, int, Field.OrderRefNum ] )
         self.specs.append( [  13, 4, int, Field.Shares ] )
@@ -361,14 +389,14 @@ class OrderCancel(ItchMessage):
 class OrderDelete(ItchMessage):
     def __init__(self):
         super().__init__()
-        self.messageType = MessageType.OrderDelete.value
+        self.MessageType = MessageType.OrderDelete.value
         self.specs.append( [   1, 4, int, Field.NanoSeconds ] )
         self.specs.append( [   5, 8, int, Field.OrderRefNum ] )
 
 class OrderReplace(ItchMessage):
     def __init__(self):
         super().__init__()
-        self.messageType = MessageType.OrderReplace.value
+        self.MessageType = MessageType.OrderReplace.value
         self.specs.append( [   1, 4, int, Field.NanoSeconds ] )
         self.specs.append( [   5, 8, int, Field.OrderRefNum ] )
         self.specs.append( [  13, 8, int, Field.NewOrderRefNum ] )
@@ -378,7 +406,7 @@ class OrderReplace(ItchMessage):
 class TradeNonCross(ItchMessage):
     def __init__(self):
         super().__init__()
-        self.messageType = MessageType.TradeNonCross.value
+        self.MessageType = MessageType.TradeNonCross.value
         self.specs.append( [   1, 4, int, Field.NanoSeconds ] )
         self.specs.append( [   5, 8, int, Field.OrderRefNum ] )
         self.specs.append( [  13, 1, str, Field.Side ] )
@@ -390,7 +418,7 @@ class TradeNonCross(ItchMessage):
 class CrossTrade(ItchMessage):
     def __init__(self):
         super().__init__()
-        self.messageType = MessageType.CrossTrade.value
+        self.MessageType = MessageType.CrossTrade.value
         self.specs.append( [   1, 4, int, Field.NanoSeconds ] )
         self.specs.append( [   5, 8, int, Field.Shares ] )
         self.specs.append( [  13, 8, str, Field.Stock ] )
@@ -406,14 +434,14 @@ class CrossTrade(ItchMessage):
 class BrokenTrade(ItchMessage):
     def __init__(self):
         super().__init__()
-        self.messageType = MessageType.BrokenTrade.value
+        self.MessageType = MessageType.BrokenTrade.value
         self.specs.append( [   1, 4, int, Field.NanoSeconds ] )
         self.specs.append( [   5, 8, int, Field.MatchNum ] )
 
 class NetOrderImbalance(ItchMessage):
     def __init__(self):
         super().__init__()
-        self.messageType = MessageType.NetOrderImbalance.value
+        self.MessageType = MessageType.NetOrderImbalance.value
         self.specs.append( [   1, 4, int, Field.NanoSeconds ] )
         self.specs.append( [   5, 8, int, Field.PairedShares ] )
         self.specs.append( [  13, 8, int, Field.ImbalanceShares ] )
@@ -428,7 +456,7 @@ class NetOrderImbalance(ItchMessage):
 class RetailInterestMessage(ItchMessage):
     def __init__(self):
         super().__init__()
-        self.messageType = MessageType.RetailInterestMessage.value
+        self.MessageType = MessageType.RetailInterestMessage.value
         self.specs.append( [   1, 4, int, Field.NanoSeconds ] )
         self.specs.append( [   5, 8, str, Field.Stock ] )
         self.specs.append( [  13, 1, str, Field.InterestFlag ] )

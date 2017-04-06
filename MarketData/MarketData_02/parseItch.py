@@ -24,6 +24,7 @@ global counter
 counter = 0
 global orderBook
 orderBook = { }
+
 def OrderBook(itchMessage):
     global counter
     global orderBook
@@ -49,7 +50,22 @@ def OrderBook(itchMessage):
         return True
     return False
 
-fptr = OrderBook
+global uniqueCounter
+uniqueCounter = { }
+def dumpOneOfEach(itchMessage):
+    global uniqueCounter
+
+    messageType = MessageType( itchMessage.getValue( Field.MessageType ))
+    if not messageType in uniqueCounter:
+        itchMessage.dumpPretty()
+        itchMessage.dumpRawBytes()
+        uniqueCounter[messageType] = itchMessage
+    if len(uniqueCounter.keys()) == 18:
+        return True
+    return False
+
+#fptr = OrderBook
+fptr = dumpOneOfEach
 cacheSize = 1024
 fin = open(fileName, "rb")
 
