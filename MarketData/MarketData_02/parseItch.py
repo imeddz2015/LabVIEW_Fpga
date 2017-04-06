@@ -1,11 +1,13 @@
-#!/usr/local/bin/python3
+#!/usr/bin/python3
+#/usr/bin/env python3
 
 import struct
 from Itch41 import *
 
 #### Parameters for Execution
 # Download from here: ftp://emi.nasdaq.com/ITCH/11092013.NASDAQ_ITCH41.gz
-fileName = "/Users/john/Downloads/11092013.NASDAQ_ITCH41"
+#fileName = "/Users/john/Downloads/11092013.NASDAQ_ITCH41"
+fileName = "11092013.NASDAQ_ITCH41"
 outputFile = "Itch.dat"
 saveMessageTypes = [ 'A' ]
 numberOfMessagesToSave = 2
