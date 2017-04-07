@@ -411,13 +411,231 @@ class Create_Itch41_Messages_From_RawBytes(unittest.TestCase):
         message = ItchMessageFactory.createFromBytes( rawMessage )
 
         # THEN
-        self.assertEqual(        'R', message.MessageType )
-        self.assertEqual(  491306439, message.NanoSeconds )
-        self.assertEqual(        "A", message.Stock)
-        self.assertEqual(        "N", message.MarketCategory )
-        self.assertEqual(       " ", message.FinancialStatus )
-        self.assertEqual(       100, message.RoundLotSize )
-        self.assertEqual(       'N', message.RoundLotsOnly )
+        self.assertEqual(        'R', message.MessageType            )
+        self.assertEqual(  491306439, message.NanoSeconds            )
+        self.assertEqual(        "A", message.Stock                  )
+        self.assertEqual(        'N', message.MarketCategory         )
+        self.assertEqual(        ' ', message.FinancialStatus        )
+        self.assertEqual(        100, message.RoundLotSize           )
+        self.assertEqual(        'N', message.RoundLotsOnly          )
+
+    def test_create_StockTradingAction(self):
+        # GIVEN
+        rawMessage = bytearray()
+        rawMessage.extend( [ 0x00, 0x13, 0x48, 0x1d, 0x4b, 0xf3, 0x19, 0x41 ] )
+        rawMessage.extend( [ 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x54 ] )
+        rawMessage.extend( [ 0x20, 0x20, 0x20, 0x20, 0x20 ] )
+
+        # WHEN
+        message = ItchMessageFactory.createFromBytes( rawMessage )
+
+        # THEN
+        self.assertEqual(        'H', message.MessageType            )
+        self.assertEqual(  491516697, message.NanoSeconds            )
+        self.assertEqual(        "A", message.Stock                  )
+        self.assertEqual(        'T', message.TradingState           )
+        self.assertEqual(        ' ', message.Reserved               )
+        self.assertEqual(     "    ", message.Reason                 )
+
+    def test_create_RegSHORestriction(self):
+        # GIVEN
+        rawMessage = bytearray()
+        rawMessage.extend( [ 0x00, 0x0e, 0x59, 0x1d, 0x4d, 0xa0, 0x8e, 0x41 ] )
+        rawMessage.extend( [ 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20, 0x30 ] )
+
+        # WHEN
+        message = ItchMessageFactory.createFromBytes( rawMessage )
+
+        # THEN
+        self.assertEqual(        'Y', message.MessageType            )
+        self.assertEqual(  491626638, message.NanoSeconds            )
+        self.assertEqual(        "A", message.Stock                  )
+        self.assertEqual(        '0', message.RegSHOAction           )
+
+    def test_create_MarketParticipantPosition(self):
+        # GIVEN
+        rawMessage = bytearray()
+        rawMessage.extend( [ 0x00, 0x14, 0x4c, 0x24, 0x30, 0x64, 0xc5, 0x41 ] )
+        rawMessage.extend( [ 0x54, 0x44, 0x46, 0x41, 0x41, 0x50, 0x4c, 0x20 ] )
+        rawMessage.extend( [ 0x20, 0x20, 0x20, 0x59, 0x4e, 0x41 ] )
+
+        # WHEN
+        message = ItchMessageFactory.createFromBytes( rawMessage )
+
+        # THEN
+        self.assertEqual(        'L', message.MessageType            )
+        self.assertEqual(  607151301, message.NanoSeconds            )
+        self.assertEqual(     "ATDF", message.Mpid                   )
+        self.assertEqual(     "AAPL", message.Stock                  )
+        self.assertEqual(        'Y', message.PrimaryMarketMaker     )
+        self.assertEqual(        'N', message.MarketMakerMode        )
+        self.assertEqual(        'A', message.MarketParticipantState )
+
+    def test_create_AddOrderWithMPID(self):
+        # GIVEN
+        rawMessage = bytearray()
+        rawMessage.extend( [ 0x00, 0x22, 0x46, 0x02, 0x43, 0xd1, 0x46, 0x00 ] )
+        rawMessage.extend( [ 0x00, 0x00, 0x00, 0x00, 0x00, 0x16, 0xb2, 0x42 ] )
+        rawMessage.extend( [ 0x00, 0x00, 0x00, 0x64, 0x5a, 0x56, 0x5a, 0x5a ] )
+        rawMessage.extend( [ 0x54, 0x20, 0x20, 0x20, 0x00, 0x02, 0x97, 0xac ] )
+        rawMessage.extend( [ 0x4c, 0x45, 0x48, 0x4d ] )
+
+        # WHEN
+        message = ItchMessageFactory.createFromBytes( rawMessage )
+
+        # THEN
+        self.assertEqual(        'F', message.MessageType            )
+        self.assertEqual(   37998918, message.NanoSeconds            )
+        self.assertEqual(       5810, message.OrderRefNum            )
+        self.assertEqual(        'B', message.Side                   )
+        self.assertEqual(        100, message.Shares                 )
+        self.assertEqual(    "ZVZZT", message.Stock                  )
+        self.assertEqual(      16.99, message.Price                  )
+        self.assertEqual(     "LEHM", message.Mpid                   )
+
+    def test_create_AddOrder(self):
+        # GIVEN
+        rawMessage = bytearray()
+        rawMessage.extend( [ 0x00, 0x1e, 0x41, 0x0d, 0xbb, 0xd4, 0x0f, 0x00 ] )
+        rawMessage.extend( [ 0x00, 0x00, 0x00, 0x00, 0x00, 0x16, 0xe7, 0x42 ] )
+        rawMessage.extend( [ 0x00, 0x0f, 0x42, 0x3f, 0x4c, 0x47, 0x4c, 0x2b ] )
+        rawMessage.extend( [ 0x20, 0x20, 0x20, 0x20, 0x00, 0x00, 0x00, 0x01 ] )
+
+        # WHEN
+        message = ItchMessageFactory.createFromBytes( rawMessage )
+
+        # THEN
+        self.assertEqual(        'A', message.MessageType            )
+        self.assertEqual(  230413327, message.NanoSeconds            )
+        self.assertEqual(       5863, message.OrderRefNum            )
+        self.assertEqual(        'B', message.Side                   )
+        self.assertEqual(     999999, message.Shares                 )
+        self.assertEqual(     "LGL+", message.Stock                  )
+        self.assertEqual(     0.0001, message.Price                  )
+
+    def test_create_OrderDelete(self):
+        # GIVEN
+        rawMessage = bytearray()
+        rawMessage.extend( [ 0x00, 0x0d, 0x44, 0x21, 0x95, 0x1b, 0xcf, 0x00 ] )
+        rawMessage.extend( [ 0x00, 0x00, 0x00, 0x00, 0x00, 0x31, 0x6b ] )
+
+        # WHEN
+        message = ItchMessageFactory.createFromBytes( rawMessage )
+
+        # THEN
+        self.assertEqual(        'D', message.MessageType            )
+        self.assertEqual(  563420111, message.NanoSeconds            )
+        self.assertEqual(      12651, message.OrderRefNum            )
+
+    def test_create_OrderExecuted(self):
+        # GIVEN
+        rawMessage = bytearray()
+        rawMessage.extend( [ 0x00, 0x19, 0x45, 0x18, 0x45, 0xcd, 0x07, 0x00 ] )
+        rawMessage.extend( [ 0x00, 0x00, 0x00, 0x00, 0x00, 0xe9, 0xca, 0x00 ] )
+        rawMessage.extend( [ 0x00, 0x03, 0xe8, 0x00, 0x00, 0x00, 0x00, 0x00 ] )
+        rawMessage.extend( [ 0x00, 0x00, 0x01 ] )
+
+        # WHEN
+        message = ItchMessageFactory.createFromBytes( rawMessage )
+
+        # THEN
+        self.assertEqual(        'E', message.MessageType            )
+        self.assertEqual(  407227655, message.NanoSeconds            )
+        self.assertEqual(      59850, message.OrderRefNum            )
+        self.assertEqual(       1000, message.Shares                 )
+        self.assertEqual(          1, message.MatchNum               )
+
+    def test_create_NetOrderImbalance(self):
+        # GIVEN
+        rawMessage = bytearray()
+        rawMessage.extend( [ 0x00, 0x2c, 0x49, 0x00, 0x2f, 0x44, 0x84, 0x00 ] )
+        rawMessage.extend( [ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 ] )
+        rawMessage.extend( [ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x4f ] )
+        rawMessage.extend( [ 0x49, 0x50, 0x20, 0x20, 0x20, 0x20, 0x20, 0x20 ] )
+        rawMessage.extend( [ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 ] )
+        rawMessage.extend( [ 0x00, 0x00, 0x00, 0x00, 0x4f, 0x20 ] )
+
+        # WHEN
+        message = ItchMessageFactory.createFromBytes( rawMessage )
+
+        # THEN
+        self.assertEqual(        'I', message.MessageType            )
+        self.assertEqual(    3097732, message.NanoSeconds            )
+        self.assertEqual(          0, message.PairedShares           )
+        self.assertEqual(          0, message.ImbalanceShares        )
+        self.assertEqual(        'O', message.ImbalanceDirection     )
+        self.assertEqual(       "IP", message.Stock                  )
+        self.assertEqual(          0, message.FarPrice               )
+        self.assertEqual(          0, message.NearPrice              )
+        self.assertEqual(          0, message.CurrentReferencePrice  )
+        self.assertEqual(        'O', message.CrossType              )
+        self.assertEqual(        ' ', message.PriceVariationIndicator )
+
+    def test_create_CrossTrade(self):
+        # GIVEN
+        rawMessage = bytearray()
+        rawMessage.extend( [ 0x00, 0x22, 0x51, 0x00, 0x02, 0x76, 0xa2, 0x00 ] )
+        rawMessage.extend( [ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x41 ] )
+        rawMessage.extend( [ 0x42, 0x43, 0x44, 0x20, 0x20, 0x20, 0x20, 0x00 ] )
+        rawMessage.extend( [ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 ] )
+        rawMessage.extend( [ 0x00, 0x00, 0x05, 0x4f ] )
+
+        # WHEN
+        message = ItchMessageFactory.createFromBytes( rawMessage )
+
+        # THEN
+        self.assertEqual(        'Q', message.MessageType            )
+        self.assertEqual(     161442, message.NanoSeconds            )
+        self.assertEqual(          0, message.Shares                 )
+        self.assertEqual(     "ABCD", message.Stock                  )
+        self.assertEqual(          0, message.CrossPrice             )
+        self.assertEqual(          5, message.MatchNum               )
+        self.assertEqual(        'O', message.CrossType              )
+
+    def test_create_OrderExecutedWithPrice(self):
+        # GIVEN
+        rawMessage = bytearray()
+        rawMessage.extend( [ 0x00, 0x1e, 0x43, 0x01, 0x74, 0xa8, 0xca, 0x00 ] )
+        rawMessage.extend( [ 0x00, 0x00, 0x00, 0x00, 0x00, 0x31, 0x9b, 0x00 ] )
+        rawMessage.extend( [ 0x00, 0x00, 0x64, 0x00, 0x00, 0x00, 0x00, 0x00 ] )
+        rawMessage.extend( [ 0x00, 0x03, 0xb0, 0x4e, 0x00, 0x02, 0x9c, 0x5c ] )
+
+        # WHEN
+        message = ItchMessageFactory.createFromBytes( rawMessage )
+
+        # THEN
+        self.assertEqual(        'C', message.MessageType            )
+        self.assertEqual(   24422602, message.NanoSeconds            )
+        self.assertEqual(      12699, message.OrderRefNum            )
+        self.assertEqual(        100, message.Shares                 )
+        self.assertEqual(        944, message.MatchNum               )
+        self.assertEqual(        'N', message.Printable              )
+        self.assertEqual(      17.11, message.Price                  )
+
+    def test_create_TradeNonCross(self):
+        # GIVEN
+        rawMessage = bytearray()
+        rawMessage.extend( [ 0x00, 0x26, 0x50, 0x03, 0x10, 0x74, 0xb6, 0x00 ] )
+        rawMessage.extend( [ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x42 ] )
+        rawMessage.extend( [ 0x00, 0x00, 0x00, 0x64, 0x4f, 0x43, 0x5a, 0x20 ] )
+        rawMessage.extend( [ 0x20, 0x20, 0x20, 0x20, 0x00, 0x03, 0xbb, 0x78 ] )
+        rawMessage.extend( [ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x07, 0x92 ] )
+
+        # WHEN
+        message = ItchMessageFactory.createFromBytes( rawMessage )
+
+        # THEN
+        self.assertEqual(        'P', message.MessageType            )
+        self.assertEqual(   51410102, message.NanoSeconds            )
+        self.assertEqual(          0, message.OrderRefNum            )
+        self.assertEqual(        'B', message.Side                   )
+        self.assertEqual(        100, message.Shares                 )
+        self.assertEqual(      "OCZ", message.Stock                  )
+        self.assertEqual(      24.46, message.Price                  )
+        self.assertEqual(       1938, message.MatchNum               )
+
+
+
 
 
 if __name__ == "__main__":

@@ -6,21 +6,38 @@ from Itch41 import *
 
 #### Parameters for Execution
 # Download from here: ftp://emi.nasdaq.com/ITCH/11092013.NASDAQ_ITCH41.gz
-#fileName = "/Users/john/Downloads/11092013.NASDAQ_ITCH41"
-fileName = "11092013.NASDAQ_ITCH41"
+fileName = "/Users/john/Downloads/11092013.NASDAQ_ITCH41"
+#fileName = "11092013.NASDAQ_ITCH41"
 outputFile = "Itch.dat"
 saveMessageTypes = [ 'A' ]
 numberOfMessagesToSave = 2
 
 #fileName = "Itch.dat"
 
-def dumpRawBytes(message, rawBytes):
-    print("--- {} ---".format(message) )
-    print("--  Length of payload: {0}".format(len(rawBytes)))
+def createUnitTestCode(message, rawBytes):
     lineLen = 8
     conv = [ "{0:#0{1}x}".format(x, 4) for x in rawBytes]
-    line = "\n\t- ".join( [ " ".join( conv[i:i+lineLen] ) for i in range(0, len(conv), lineLen) ] )
-    print("\t- {0}".format(line))
+    #line = "\n\t- ".join( [ " ".join( conv[i:i+lineLen] ) for i in range(0, len(conv), lineLen) ] )
+    lines = [ ", ".join( conv[i:i+lineLen] ) for i in range(0, len(conv), lineLen) ]
+    print("\n\tdef test_create_{}(self):".format( MessageType(message.MessageType) ))
+    print("\t\t# GIVEN")
+    print("\t\trawMessage = bytearray()")
+    for line in lines:
+        print("\t\trawMessage.extend( [ {0} ] )".format(line))
+    print("\n\t\t# WHEN")
+    print("\t\tmessage = ItchMessageFactory.createFromBytes( rawMessage )")
+    print("\n\t\t# THEN")
+    for spec in message.specs:
+        leftVal = getattr(message, spec[3])
+        rightVal = "message." + spec[3]
+        if spec[2] is str:
+            if spec[1] == 1:
+                leftVal = "'" + leftVal + "'"
+            else:
+                leftVal = "\"" + leftVal + "\""
+
+        print("\t\tself.assertEqual( {:>10}, {:<30} )".format( leftVal, rightVal ))
+    print("\n")
 
 global counter
 counter = 0
@@ -59,8 +76,9 @@ def dumpOneOfEach(itchMessage):
 
     messageType = MessageType( itchMessage.getValue( Field.MessageType ))
     if not messageType in uniqueCounter:
-        itchMessage.dumpPretty()
-        itchMessage.dumpRawBytes()
+        #itchMessage.dumpPretty()
+        #itchMessage.dumpRawBytes()
+        createUnitTestCode( itchMessage, itchMessage.rawMessage )
         uniqueCounter[messageType] = itchMessage
     if len(uniqueCounter.keys()) == 18:
         return True
