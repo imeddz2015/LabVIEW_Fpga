@@ -1,0 +1,33 @@
+/*
+ * main.c
+ *
+ *  Created on: Jun 17, 2017
+ *      Author: John
+ */
+
+#include "xparameters.h"
+#include "xil_cache.h"
+#include "xiomodule.h"
+
+int main()
+{
+   Xil_ICacheEnable();
+   Xil_DCacheEnable();
+
+   {
+	   XIOModule ioModule;
+	   status = XIOModule_Initialize(&ioModule, XPAR_IOMODULE_0_DEVICE_ID);
+	   status = XIOModule_Start(&ioModule);
+
+	   while(1)
+	   {
+		   u32 in_val;
+		   in_val = XIOModule_DiscreteRead(&ioModule, 1);
+		   XIOModule_DiscreteWrite(&ioModule, 1, (in_val*2) + 1);
+	   }
+   }
+
+   Xil_DCacheDisable();
+   Xil_ICacheDisable();
+   return 0;
+}
