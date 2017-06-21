@@ -1,0 +1,492 @@
+14:56:28 **** Build of project gpio_rw_bsp ****
+make -k all 
+"Running Make include in d_mcs_microblaze_mcs_0_0/libsrc/bram_v4_0/src"
+make -C d_mcs_microblaze_mcs_0_0/libsrc/bram_v4_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in d_mcs_microblaze_mcs_0_0/libsrc/cpu_v2_3/src"
+make -C d_mcs_microblaze_mcs_0_0/libsrc/cpu_v2_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in d_mcs_microblaze_mcs_0_0/libsrc/iomodule_v2_2/src"
+make -C d_mcs_microblaze_mcs_0_0/libsrc/iomodule_v2_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in d_mcs_microblaze_mcs_0_0/libsrc/standalone_v5_3/src"
+make -C d_mcs_microblaze_mcs_0_0/libsrc/standalone_v5_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in d_mcs_microblaze_mcs_0_0/libsrc/bram_v4_0/src"
+make -C d_mcs_microblaze_mcs_0_0/libsrc/bram_v4_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in d_mcs_microblaze_mcs_0_0/libsrc/cpu_v2_3/src"
+make -C d_mcs_microblaze_mcs_0_0/libsrc/cpu_v2_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in d_mcs_microblaze_mcs_0_0/libsrc/iomodule_v2_2/src"
+make -C d_mcs_microblaze_mcs_0_0/libsrc/iomodule_v2_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling iomodule"
+"Running Make libs in d_mcs_microblaze_mcs_0_0/libsrc/standalone_v5_3/src"
+make -C d_mcs_microblaze_mcs_0_0/libsrc/standalone_v5_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+'Finished building libraries'
+
+**** Build of configuration Debug for project gpio_rw ****
+
+Nothing to build for project gpio_rw
+
+****  of configuration Debug for project gpio_rw ****
+
+Nothing to build for project gpio_rw
+
+****  of configuration Debug for project gpio_rw ****
+
+Nothing to build for project gpio_rw
+
+**** Build of configuration Debug for project gpio_rw ****
+
+Nothing to build for project gpio_rw
+15:03:08 **** Build of project gpio_rw_bsp ****
+make -k all 
+"Running Make include in d_mcs_microblaze_mcs_0_0/libsrc/bram_v4_0/src"
+make -C d_mcs_microblaze_mcs_0_0/libsrc/bram_v4_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in d_mcs_microblaze_mcs_0_0/libsrc/cpu_v2_3/src"
+make -C d_mcs_microblaze_mcs_0_0/libsrc/cpu_v2_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in d_mcs_microblaze_mcs_0_0/libsrc/iomodule_v2_2/src"
+make -C d_mcs_microblaze_mcs_0_0/libsrc/iomodule_v2_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in d_mcs_microblaze_mcs_0_0/libsrc/standalone_v5_3/src"
+make -C d_mcs_microblaze_mcs_0_0/libsrc/standalone_v5_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in d_mcs_microblaze_mcs_0_0/libsrc/bram_v4_0/src"
+make -C d_mcs_microblaze_mcs_0_0/libsrc/bram_v4_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+mb-ar: creating ../../../lib/libxil.a
+"Running Make libs in d_mcs_microblaze_mcs_0_0/libsrc/cpu_v2_3/src"
+make -C d_mcs_microblaze_mcs_0_0/libsrc/cpu_v2_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in d_mcs_microblaze_mcs_0_0/libsrc/iomodule_v2_2/src"
+make -C d_mcs_microblaze_mcs_0_0/libsrc/iomodule_v2_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling iomodule"
+"Running Make libs in d_mcs_microblaze_mcs_0_0/libsrc/standalone_v5_3/src"
+make -C d_mcs_microblaze_mcs_0_0/libsrc/standalone_v5_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+'Finished building libraries'
+
+**** Build of configuration Debug for project gpio_rw ****
+
+Nothing to build for project gpio_rw
+15:04:41 **** Auto Build of configuration Debug for project gpio_rw ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/include -mno-xl-reorder -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: gpio_rw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "gpio_rw.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+c:/xilinx/sdk/2015.4/gnu/microblaze/nt/bin/../lib/gcc/microblaze-xilinx-elf/4.9.2/../../../../microblaze-xilinx-elf/lib/le/crtinit.o: In function `_crtinit':
+(.text+0x78): undefined reference to `main'
+collect2.exe: error: ld returned 1 exit status
+make: *** [gpio_rw.elf] Error 1
+15:05:16 **** Auto Build of configuration Debug for project gpio_rw ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/include -mno-xl-reorder -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:12:4: warning: implicit declaration of function 'Xil_ICacheEnable' [-Wimplicit-function-declaration]
+    Xil_ICacheEnable();
+    ^
+../src/main.c:13:4: warning: implicit declaration of function 'Xil_DCacheEnable' [-Wimplicit-function-declaration]
+    Xil_DCacheEnable();
+    ^
+../src/main.c:14:4: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
+    print("---Entering main---\n\r");
+    ^
+../src/main.c:17:5: error: unknown type name 'XStatus'
+     XStatus  status;
+     ^
+../src/main.c:18:5: error: unknown type name 'XIOModule'
+     XIOModule ioModule;
+     ^
+../src/main.c:20:5: warning: implicit declaration of function 'XIOModule_Initialize' [-Wimplicit-function-declaration]
+     status = XIOModule_Initialize(&ioModule, XPAR_IOMODULE_0_DEVICE_ID);
+     ^
+../src/main.c:20:46: error: 'XPAR_IOMODULE_0_DEVICE_ID' undeclared (first use in this function)
+     status = XIOModule_Initialize(&ioModule, XPAR_IOMODULE_0_DEVICE_ID);
+                                              ^
+../src/main.c:20:46: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:22:5: warning: implicit declaration of function 'XIOModule_Start' [-Wimplicit-function-declaration]
+     status = XIOModule_Start(&ioModule);
+     ^
+../src/main.c:28:7: warning: implicit declaration of function 'XIOModule_DiscreteWrite' [-Wimplicit-function-declaration]
+       XIOModule_DiscreteWrite(&ioModule, 1, i);
+       ^
+../src/main.c:17:14: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     XStatus  status;
+              ^
+../src/main.c:34:4: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+    Xil_DCacheDisable();
+    ^
+../src/main.c:35:4: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+    Xil_ICacheDisable();
+    ^
+make: *** [src/main.o] Error 1
+15:05:18 **** Incremental Build of configuration Debug for project gpio_rw ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/include -mno-xl-reorder -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:12:4: warning: implicit declaration of function 'Xil_ICacheEnable' [-Wimplicit-function-declaration]
+    Xil_ICacheEnable();
+    ^
+../src/main.c:13:4: warning: implicit declaration of function 'Xil_DCacheEnable' [-Wimplicit-function-declaration]
+    Xil_DCacheEnable();
+    ^
+../src/main.c:14:4: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
+    print("---Entering main---\n\r");
+    ^
+../src/main.c:17:5: error: unknown type name 'XStatus'
+     XStatus  status;
+     ^
+../src/main.c:18:5: error: unknown type name 'XIOModule'
+     XIOModule ioModule;
+     ^
+../src/main.c:20:5: warning: implicit declaration of function 'XIOModule_Initialize' [-Wimplicit-function-declaration]
+     status = XIOModule_Initialize(&ioModule, XPAR_IOMODULE_0_DEVICE_ID);
+     ^
+../src/main.c:20:46: error: 'XPAR_IOMODULE_0_DEVICE_ID' undeclared (first use in this function)
+     status = XIOModule_Initialize(&ioModule, XPAR_IOMODULE_0_DEVICE_ID);
+                                              ^
+../src/main.c:20:46: note: each undeclared identifier is reported only once for each function it appears in
+../src/main.c:22:5: warning: implicit declaration of function 'XIOModule_Start' [-Wimplicit-function-declaration]
+     status = XIOModule_Start(&ioModule);
+     ^
+../src/main.c:28:7: warning: implicit declaration of function 'XIOModule_DiscreteWrite' [-Wimplicit-function-declaration]
+       XIOModule_DiscreteWrite(&ioModule, 1, i);
+       ^
+../src/main.c:17:14: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     XStatus  status;
+              ^
+../src/main.c:34:4: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+    Xil_DCacheDisable();
+    ^
+../src/main.c:35:4: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+    Xil_ICacheDisable();
+    ^
+make: *** [src/main.o] Error 1
+15:05:41 **** Auto Build of configuration Debug for project gpio_rw ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/include -mno-xl-reorder -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:12:4: warning: implicit declaration of function 'Xil_ICacheEnable' [-Wimplicit-function-declaration]
+    Xil_ICacheEnable();
+    ^
+../src/main.c:13:4: warning: implicit declaration of function 'Xil_DCacheEnable' [-Wimplicit-function-declaration]
+    Xil_DCacheEnable();
+    ^
+../src/main.c:14:4: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
+    print("---Entering main---\n\r");
+    ^
+../src/main.c:17:5: error: unknown type name 'XStatus'
+     XStatus  status;
+     ^
+../src/main.c:18:5: error: unknown type name 'XIOModule'
+     XIOModule ioModule;
+     ^
+../src/main.c:20:5: warning: implicit declaration of function 'XIOModule_Initialize' [-Wimplicit-function-declaration]
+     status = XIOModule_Initialize(&ioModule, XPAR_IOMODULE_0_DEVICE_ID);
+     ^
+../src/main.c:22:5: warning: implicit declaration of function 'XIOModule_Start' [-Wimplicit-function-declaration]
+     status = XIOModule_Start(&ioModule);
+     ^
+../src/main.c:28:7: warning: implicit declaration of function 'XIOModule_DiscreteWrite' [-Wimplicit-function-declaration]
+       XIOModule_DiscreteWrite(&ioModule, 1, i);
+       ^
+../src/main.c:17:14: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     XStatus  status;
+              ^
+../src/main.c:34:4: warning: implicit declaration of function 'Xil_DCacheDisable' [-Wimplicit-function-declaration]
+    Xil_DCacheDisable();
+    ^
+../src/main.c:35:4: warning: implicit declaration of function 'Xil_ICacheDisable' [-Wimplicit-function-declaration]
+    Xil_ICacheDisable();
+    ^
+make: *** [src/main.o] Error 1
+15:06:05 **** Auto Build of configuration Debug for project gpio_rw ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/include -mno-xl-reorder -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:19:14: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     XStatus  status;
+              ^
+'Finished building: ../src/main.c'
+' '
+'Building target: gpio_rw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "gpio_rw.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: gpio_rw.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size gpio_rw.elf  |tee "gpio_rw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10644	    372	   3128	  14144	   3740	gpio_rw.elf
+'Finished building: gpio_rw.elf.size'
+' '
+15:06:19 **** Auto Build of configuration Debug for project gpio_rw ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/include -mno-xl-reorder -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:18:14: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     XStatus  status;
+              ^
+'Finished building: ../src/main.c'
+' '
+'Building target: gpio_rw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "gpio_rw.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: gpio_rw.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size gpio_rw.elf  |tee "gpio_rw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10120	    372	   3124	  13616	   3530	gpio_rw.elf
+'Finished building: gpio_rw.elf.size'
+' '
+15:06:21 **** Auto Build of configuration Debug for project gpio_rw ****
+make all 
+make: Nothing to be done for `all'.
+15:09:09 **** Auto Build of configuration Debug for project gpio_rw ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/include -mno-xl-reorder -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:18:14: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     XStatus  status;
+              ^
+'Finished building: ../src/main.c'
+' '
+'Building target: gpio_rw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "gpio_rw.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: gpio_rw.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size gpio_rw.elf  |tee "gpio_rw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10116	    372	   3128	  13616	   3530	gpio_rw.elf
+'Finished building: gpio_rw.elf.size'
+' '
+15:09:17 **** Auto Build of configuration Debug for project gpio_rw ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/include -mno-xl-reorder -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:19:5: error: 'status' undeclared (first use in this function)
+     status = XIOModule_Initialize(&ioModule, XPAR_IOMODULE_0_DEVICE_ID);
+     ^
+../src/main.c:19:5: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] Error 1
+15:09:20 **** Incremental Build of configuration Debug for project gpio_rw ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/include -mno-xl-reorder -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:19:5: error: 'status' undeclared (first use in this function)
+     status = XIOModule_Initialize(&ioModule, XPAR_IOMODULE_0_DEVICE_ID);
+     ^
+../src/main.c:19:5: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/main.o] Error 1
+15:09:28 **** Auto Build of configuration Debug for project gpio_rw ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/include -mno-xl-reorder -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: gpio_rw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "gpio_rw.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: gpio_rw.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size gpio_rw.elf  |tee "gpio_rw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10108	    372	   3128	  13608	   3528	gpio_rw.elf
+'Finished building: gpio_rw.elf.size'
+' '
+15:10:00 **** Incremental Build of configuration Debug for project gpio_rw ****
+make all 
+make: Nothing to be done for `all'.
+20:48:03 **** Auto Build of configuration Debug for project gpio_rw ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/include -mno-xl-reorder -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:17:4: warning: implicit declaration of function 'init_platform' [-Wimplicit-function-declaration]
+    init_platform();
+    ^
+'Finished building: ../src/main.c'
+' '
+'Building target: gpio_rw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "gpio_rw.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `main':
+G:\work\git\LabVIEW_Fpga\05_MicroBlaze_Mcs\01_MicroBlaze_GPIO\MicroBlaze_Mcs_GPIO\MicroBlaze_Mcs_GPIO.sdk\gpio_rw\Debug/../src/main.c:17: undefined reference to `init_platform'
+collect2.exe: error: ld returned 1 exit status
+make: *** [gpio_rw.elf] Error 1
+20:48:08 **** Incremental Build of configuration Debug for project gpio_rw ****
+make all 
+'Building target: gpio_rw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "gpio_rw.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+./src/main.o: In function `main':
+G:\work\git\LabVIEW_Fpga\05_MicroBlaze_Mcs\01_MicroBlaze_GPIO\MicroBlaze_Mcs_GPIO\MicroBlaze_Mcs_GPIO.sdk\gpio_rw\Debug/../src/main.c:17: undefined reference to `init_platform'
+collect2.exe: error: ld returned 1 exit status
+make: *** [gpio_rw.elf] Error 1
+20:48:16 **** Auto Build of configuration Debug for project gpio_rw ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/include -mno-xl-reorder -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: gpio_rw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "gpio_rw.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: gpio_rw.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size gpio_rw.elf  |tee "gpio_rw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10684	    372	   3128	  14184	   3768	gpio_rw.elf
+'Finished building: gpio_rw.elf.size'
+' '
+20:48:18 **** Incremental Build of configuration Debug for project gpio_rw ****
+make all 
+make: Nothing to be done for `all'.
+11:04:04 **** Build of project gpio_rw_bsp ****
+make -k all 
+"Running Make include in d_mcs_microblaze_mcs_0_0/libsrc/bram_v4_0/src"
+make -C d_mcs_microblaze_mcs_0_0/libsrc/bram_v4_0/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in d_mcs_microblaze_mcs_0_0/libsrc/cpu_v2_3/src"
+make -C d_mcs_microblaze_mcs_0_0/libsrc/cpu_v2_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in d_mcs_microblaze_mcs_0_0/libsrc/iomodule_v2_2/src"
+make -C d_mcs_microblaze_mcs_0_0/libsrc/iomodule_v2_2/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make include in d_mcs_microblaze_mcs_0_0/libsrc/standalone_v5_3/src"
+make -C d_mcs_microblaze_mcs_0_0/libsrc/standalone_v5_3/src -s include  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Running Make libs in d_mcs_microblaze_mcs_0_0/libsrc/bram_v4_0/src"
+make -C d_mcs_microblaze_mcs_0_0/libsrc/bram_v4_0/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling bram"
+"Running Make libs in d_mcs_microblaze_mcs_0_0/libsrc/cpu_v2_3/src"
+make -C d_mcs_microblaze_mcs_0_0/libsrc/cpu_v2_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling cpu"
+"Running Make libs in d_mcs_microblaze_mcs_0_0/libsrc/iomodule_v2_2/src"
+make -C d_mcs_microblaze_mcs_0_0/libsrc/iomodule_v2_2/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling iomodule"
+"Running Make libs in d_mcs_microblaze_mcs_0_0/libsrc/standalone_v5_3/src"
+make -C d_mcs_microblaze_mcs_0_0/libsrc/standalone_v5_3/src -s libs  "SHELL=CMD" "COMPILER=mb-gcc" "ARCHIVER=mb-ar" "COMPILER_FLAGS= -O2 -c -mcpu=v9.5 -mlittle-endian -mno-xl-reorder -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g"
+"Compiling standalone";
+'Finished building libraries'
+11:04:11 **** Build of configuration Debug for project gpio_rw ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/include -mno-xl-reorder -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:21:9: warning: unused variable 'i' [-Wunused-variable]
+     int i;
+         ^
+../src/main.c:19:14: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     XStatus  status;
+              ^
+'Finished building: ../src/main.c'
+' '
+'Building target: gpio_rw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "gpio_rw.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: gpio_rw.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size gpio_rw.elf  |tee "gpio_rw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10640	    372	   3124	  14136	   3738	gpio_rw.elf
+'Finished building: gpio_rw.elf.size'
+' '
+11:05:55 **** Auto Build of configuration Debug for project gpio_rw ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/include -mno-xl-reorder -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:21:9: warning: unused variable 'i' [-Wunused-variable]
+     int i;
+         ^
+../src/main.c:19:14: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     XStatus  status;
+              ^
+'Finished building: ../src/main.c'
+' '
+'Building target: gpio_rw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "gpio_rw.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: gpio_rw.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size gpio_rw.elf  |tee "gpio_rw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10640	    372	   3124	  14136	   3738	gpio_rw.elf
+'Finished building: gpio_rw.elf.size'
+' '
+11:06:10 **** Auto Build of configuration Debug for project gpio_rw ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/include -mno-xl-reorder -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:21:9: warning: unused variable 'i' [-Wunused-variable]
+     int i;
+         ^
+../src/main.c:19:14: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+     XStatus  status;
+              ^
+'Finished building: ../src/main.c'
+' '
+'Building target: gpio_rw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "gpio_rw.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: gpio_rw.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size gpio_rw.elf  |tee "gpio_rw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10656	    372	   3124	  14152	   3748	gpio_rw.elf
+'Finished building: gpio_rw.elf.size'
+' '
+11:08:13 **** Auto Build of configuration Debug for project gpio_rw ****
+make all 
+'Building file: ../src/main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/include -mno-xl-reorder -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -MMD -MP -MF"src/main.d" -MT"src/main.d" -o "src/main.o" "../src/main.c"
+'Finished building: ../src/main.c'
+' '
+'Building target: gpio_rw.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../gpio_rw_bsp/d_mcs_microblaze_mcs_0_0/lib -mlittle-endian -mcpu=v9.5 -mxl-soft-mul -Wl,--no-relax -o "gpio_rw.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: gpio_rw.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size gpio_rw.elf  |tee "gpio_rw.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10692	    372	   3128	  14192	   3770	gpio_rw.elf
+'Finished building: gpio_rw.elf.size'
+' '
+11:08:16 **** Incremental Build of configuration Debug for project gpio_rw ****
+make all 
+make: Nothing to be done for `all'.
+11:08:22 **** Incremental Build of configuration Debug for project gpio_rw ****
+make all 
+make: Nothing to be done for `all'.
