@@ -1,0 +1,44 @@
+/*
+ * main.c
+ *
+ *  Created on: Jun 23, 2017
+ *      Author: John
+ */
+
+
+#include <stdio.h>
+#include "xparameters.h"
+#include "xil_cache.h"
+#include "xgpio.h"
+#include "gpio_header.h"
+int main()
+{
+   Xil_ICacheEnable();
+   Xil_DCacheEnable();
+
+   {
+	   int Status;
+	   XGpio GpioInput;
+	   XGpio GpioOutput;
+	   Status = XGpio_Initialize(&GpioInput, XPAR_AXI_GPIO_0_DEVICE_ID);
+	   XGpio_SetDataDirection(&GpioInput, 1, 0xFFFFFFFF);
+
+	   Status = XGpio_Initialize(&GpioOutput, XPAR_AXI_GPIO_0_DEVICE_ID);
+  	   XGpio_SetDataDirection(&GpioOutput, 2, 0x0);
+
+   	   u32 gpi_1;
+   	   while(1)
+   	   {
+   		   gpi_1 = XGpio_DiscreteRead(&GpioInput, 1);
+   		   if(gpi_1 == 0)
+   		   {
+   			   gpi_1 = 100;
+   		   }
+   		   XGpio_DiscreteWrite(&GpioOutput, 2, gpi_1 + gpi_1);
+   	   }
+   }
+
+   Xil_DCacheDisable();
+   Xil_ICacheDisable();
+   return 0;
+}
