@@ -1,0 +1,4 @@
+THIRPARTY=false
+HW_PROJECT_REFERENCE=d_mcs_microblaze_mcs_0_0_hw_platform_0
+PROCESSOR=d_mcs_microblaze_mcs_0_0
+MSS_FILE=system.mss

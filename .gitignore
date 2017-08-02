@@ -80,3 +80,4 @@ __pycache__
 !*.elf
 !*.bmm
 !*.xmp
+.metadata
