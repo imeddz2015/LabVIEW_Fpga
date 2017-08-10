@@ -12,7 +12,7 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="FPGA Target" Type="FPGA Target">
 			<Property Name="AutoRun" Type="Bool">false</Property>
-			<Property Name="configString.guid" Type="Str">{0A46872B-4988-4754-9133-53665AE7CD23}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/IO_BUS_read_data;0;WriteMethodType=U32{0B689BE2-F112-4C6E-9D71-4F6AA7FDD7CA}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/INTC_IRQ;0;ReadMethodType=bool{19D9AD92-220E-4493-9856-4AD6AC55A2C4}140c79e2e375851e61ec77bcc96334592581b0f7eba41cfba8ba00b9c81325c6ccab35219253068f3b9c13d479fd3d61&lt;Array&gt;
+			<Property Name="configString.guid" Type="Str">{0A46872B-4988-4754-9133-53665AE7CD23}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/IO_BUS_read_data;0;WriteMethodType=U32{0B689BE2-F112-4C6E-9D71-4F6AA7FDD7CA}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/INTC_IRQ;0;ReadMethodType=bool{19D9AD92-220E-4493-9856-4AD6AC55A2C4}1a34646cb2e41660457d18704c9e6c558a8a69f792cd76a4662d36b8ccaa7cd3ccab35219253068f3b9c13d479fd3d61&lt;Array&gt;
 &lt;Name&gt;Generics&lt;/Name&gt;
 &lt;Dimsize&gt;0&lt;/Dimsize&gt;
 &lt;Cluster&gt;
@@ -110,7 +110,7 @@
       &lt;WordLength&gt;4&lt;/WordLength&gt;
    &lt;/FXP&gt;
 &lt;/Type&gt;{C96D2FC2-28C8-4F53-BAA9-CA786E4F109E}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio1_rtl_tri_o;0;ReadMethodType=U32{CE3FBDC3-A4B5-4FE2-9A6A-9CB88B595F1F}Multiplier=5.000000;Divisor=2.000000{E0394D7D-C522-4323-900D-A0FD27DB7414}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/IO_BUS_ready;0;WriteMethodType=bool{E496E9C0-E236-4DF0-9A5A-1F29B0EEA8A8}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_addr_strobe;0;ReadMethodType=bool{EE3B786B-3B9E-432A-9E5A-CBCF997AF5F9}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio3_rtl_tri_o;0;ReadMethodType=U32PXIe-6592R/Clk40Derived5x2B00MHz/falsefalse12d422121687815e627be18421f4b6dcFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
-			<Property Name="configString.name" Type="Str">100MHzMultiplier=5.000000;Divisor=2.00000040 MHz Onboard ClockResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;d_mcs_i140c79e2e375851e61ec77bcc96334592581b0f7eba41cfba8ba00b9c81325c6ccab35219253068f3b9c13d479fd3d61&lt;Array&gt;
+			<Property Name="configString.name" Type="Str">100MHzMultiplier=5.000000;Divisor=2.00000040 MHz Onboard ClockResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;d_mcs_i1a34646cb2e41660457d18704c9e6c558a8a69f792cd76a4662d36b8ccaa7cd3ccab35219253068f3b9c13d479fd3d61&lt;Array&gt;
 &lt;Name&gt;Generics&lt;/Name&gt;
 &lt;Dimsize&gt;0&lt;/Dimsize&gt;
 &lt;Cluster&gt;
@@ -330,7 +330,7 @@ gpio1_rtl_tri_iArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForO
       <CLIPDeclaration name="d_mcs_wrapper_top">
          <DeclarationPaths>
             <Absolute>Z:\work\git\LabVIEW_Fpga\05_MicroBlaze_Mcs\02_MicroBlaze_Mcs_IO_Bus\d_mcs_wrapper_top.xml</Absolute>
-            <MD5>2581b0f7eba41cfba8ba00b9c81325c6</MD5>
+            <MD5>1a34646cb2e41660457d18704c9e6c55</MD5>
             <RelativeToLabVIEW>Z:\work\git\LabVIEW_Fpga\05_MicroBlaze_Mcs\02_MicroBlaze_Mcs_IO_Bus\d_mcs_wrapper_top.xml</RelativeToLabVIEW>
             <RelativeToNiPubDocs>Z:\work\git\LabVIEW_Fpga\05_MicroBlaze_Mcs\02_MicroBlaze_Mcs_IO_Bus\d_mcs_wrapper_top.xml</RelativeToNiPubDocs>
             <RelativeToNiSharedDir>Z:\work\git\LabVIEW_Fpga\05_MicroBlaze_Mcs\02_MicroBlaze_Mcs_IO_Bus\d_mcs_wrapper_top.xml</RelativeToNiSharedDir>
@@ -347,8 +347,8 @@ gpio1_rtl_tri_iArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForO
                </SimulationFileList>
                <TopLevel></TopLevel>
             </Path>
-            <Path name="MicroBlaze_Mcs_IO_Bus\checkpoint_23.dcp">
-               <MD5>140c79e2e375851e61ec77bcc9633459</MD5>
+            <Path name="MicroBlaze_Mcs_IO_Bus\checkpoint_27.dcp">
+               <MD5>8a8a69f792cd76a4662d36b8ccaa7cd3</MD5>
                <SimulationFileList>
                   <SimulationModelType>Exclude from simulation model</SimulationModelType>
                </SimulationFileList>
@@ -361,8 +361,8 @@ gpio1_rtl_tri_iArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForO
                   </SimulationFileList>
                   <TopLevel></TopLevel>
                </Path>
-               <Path name="MicroBlaze_Mcs_IO_Bus\checkpoint_23.dcp">
-                  <MD5>140c79e2e375851e61ec77bcc9633459</MD5>
+               <Path name="MicroBlaze_Mcs_IO_Bus\checkpoint_27.dcp">
+                  <MD5>8a8a69f792cd76a4662d36b8ccaa7cd3</MD5>
                   <SimulationFileList>
                      <SimulationModelType>Exclude from simulation model</SimulationModelType>
                   </SimulationFileList>
@@ -1161,7 +1161,7 @@ set_property IOSTANDARD LVCMOS25 [get_ports {Si570Clkn}]
 				<Property Name="NI.LV.CLIP.SocketSelection" Type="Str"></Property>
 				<Property Name="NI.LV.CLIP.SocketSpecificCompileSignature" Type="Str"></Property>
 				<Property Name="NI.LV.CLIP.Version" Type="UInt">4</Property>
-				<Property Name="NI.LV.FPGA.CompileConfigString" Type="Str">140c79e2e375851e61ec77bcc96334592581b0f7eba41cfba8ba00b9c81325c6ccab35219253068f3b9c13d479fd3d61&lt;Array&gt;
+				<Property Name="NI.LV.FPGA.CompileConfigString" Type="Str">1a34646cb2e41660457d18704c9e6c558a8a69f792cd76a4662d36b8ccaa7cd3ccab35219253068f3b9c13d479fd3d61&lt;Array&gt;
 &lt;Name&gt;Generics&lt;/Name&gt;
 &lt;Dimsize&gt;0&lt;/Dimsize&gt;
 &lt;Cluster&gt;
@@ -1453,7 +1453,7 @@ set_property IOSTANDARD LVCMOS25 [get_ports {Si570Clkn}]
 			</Item>
 			<Item Name="Fpga-6592-Top-Level.vi" Type="VI" URL="../Fpga-6592/Fpga-6592-Top-Level.vi">
 				<Property Name="BuildSpec" Type="Str">{6C006F40-7A2A-4CCB-BB74-6F3567F1EF31}</Property>
-				<Property Name="configString.guid" Type="Str">{0A46872B-4988-4754-9133-53665AE7CD23}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/IO_BUS_read_data;0;WriteMethodType=U32{0B689BE2-F112-4C6E-9D71-4F6AA7FDD7CA}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/INTC_IRQ;0;ReadMethodType=bool{19D9AD92-220E-4493-9856-4AD6AC55A2C4}140c79e2e375851e61ec77bcc96334592581b0f7eba41cfba8ba00b9c81325c6ccab35219253068f3b9c13d479fd3d61&lt;Array&gt;
+				<Property Name="configString.guid" Type="Str">{0A46872B-4988-4754-9133-53665AE7CD23}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/IO_BUS_read_data;0;WriteMethodType=U32{0B689BE2-F112-4C6E-9D71-4F6AA7FDD7CA}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/INTC_IRQ;0;ReadMethodType=bool{19D9AD92-220E-4493-9856-4AD6AC55A2C4}1a34646cb2e41660457d18704c9e6c558a8a69f792cd76a4662d36b8ccaa7cd3ccab35219253068f3b9c13d479fd3d61&lt;Array&gt;
 &lt;Name&gt;Generics&lt;/Name&gt;
 &lt;Dimsize&gt;0&lt;/Dimsize&gt;
 &lt;Cluster&gt;
@@ -1551,7 +1551,7 @@ set_property IOSTANDARD LVCMOS25 [get_ports {Si570Clkn}]
       &lt;WordLength&gt;4&lt;/WordLength&gt;
    &lt;/FXP&gt;
 &lt;/Type&gt;{C96D2FC2-28C8-4F53-BAA9-CA786E4F109E}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio1_rtl_tri_o;0;ReadMethodType=U32{CE3FBDC3-A4B5-4FE2-9A6A-9CB88B595F1F}Multiplier=5.000000;Divisor=2.000000{E0394D7D-C522-4323-900D-A0FD27DB7414}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/IO_BUS_ready;0;WriteMethodType=bool{E496E9C0-E236-4DF0-9A5A-1F29B0EEA8A8}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_addr_strobe;0;ReadMethodType=bool{EE3B786B-3B9E-432A-9E5A-CBCF997AF5F9}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio3_rtl_tri_o;0;ReadMethodType=U32PXIe-6592R/Clk40Derived5x2B00MHz/falsefalse12d422121687815e627be18421f4b6dcFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
-				<Property Name="configString.name" Type="Str">100MHzMultiplier=5.000000;Divisor=2.00000040 MHz Onboard ClockResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;d_mcs_i140c79e2e375851e61ec77bcc96334592581b0f7eba41cfba8ba00b9c81325c6ccab35219253068f3b9c13d479fd3d61&lt;Array&gt;
+				<Property Name="configString.name" Type="Str">100MHzMultiplier=5.000000;Divisor=2.00000040 MHz Onboard ClockResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;d_mcs_i1a34646cb2e41660457d18704c9e6c558a8a69f792cd76a4662d36b8ccaa7cd3ccab35219253068f3b9c13d479fd3d61&lt;Array&gt;
 &lt;Name&gt;Generics&lt;/Name&gt;
 &lt;Dimsize&gt;0&lt;/Dimsize&gt;
 &lt;Cluster&gt;
@@ -1749,6 +1749,7 @@ gpio1_rtl_tri_iArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForO
 			</Item>
 		</Item>
 		<Item Name="Host-Top-Level.vi" Type="VI" URL="../Host-Top-Level.vi"/>
+		<Item Name="State.ctl" Type="VI" URL="../State.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>

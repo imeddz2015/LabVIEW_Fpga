@@ -62,3 +62,11 @@
 22:15:44 INFO  : XSDB server has started successfully.
 15:10:19 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
 15:10:21 INFO  : XSDB server has started successfully.
+12:58:37 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+12:58:39 INFO  : XSDB server has started successfully.
+16:04:25 INFO  : Inferring section assignments and sizes from elf file: Z:\work\git\LabVIEW_Fpga\05_MicroBlaze_Mcs\02_MicroBlaze_Mcs_IO_Bus\MicroBlaze_Mcs_IO_Bus\MicroBlaze_Mcs_IO_Bus.sdk\iobus_intc_test\Debug\iobus_intc_test.elf
+16:05:04 INFO  : Successfully generated Z:\work\git\LabVIEW_Fpga\05_MicroBlaze_Mcs\02_MicroBlaze_Mcs_IO_Bus\MicroBlaze_Mcs_IO_Bus\MicroBlaze_Mcs_IO_Bus.sdk\iobus_intc_test\src\lscript.ld.
+16:05:04 INFO  : Applying linker script to all configurations of project iobus_intc_test.
+16:05:04 INFO  : Setting rebuild state to true for all configurations of project iobus_intc_test.
+10:45:33 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+10:45:35 INFO  : XSDB server has started successfully.
