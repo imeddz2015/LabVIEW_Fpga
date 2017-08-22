@@ -70,3 +70,5 @@
 16:05:04 INFO  : Setting rebuild state to true for all configurations of project iobus_intc_test.
 10:45:33 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
 10:45:35 INFO  : XSDB server has started successfully.
+10:09:54 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+10:09:56 INFO  : XSDB server has started successfully.

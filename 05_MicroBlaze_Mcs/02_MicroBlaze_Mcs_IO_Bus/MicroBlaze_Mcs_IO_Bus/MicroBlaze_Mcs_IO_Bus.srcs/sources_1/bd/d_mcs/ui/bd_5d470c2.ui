@@ -15,10 +15,10 @@ preplace netloc microblaze_mcs_0_INTC_IRQ 1 1 1 NJ
 preplace netloc microblaze_mcs_0_GPIO1 1 1 1 NJ
 preplace netloc microblaze_mcs_0_GPIO2 1 1 1 NJ
 preplace netloc microblaze_mcs_0_GPIO3 1 1 1 NJ
-preplace netloc INTC_Interrupt_1 1 0 1 N
+preplace netloc INTC_Interrupt_1 1 0 1 NJ
 preplace netloc clock_rtl_1 1 0 1 NJ
 preplace netloc reset_rtl_1 1 0 1 NJ
-levelinfo -pg 1 -10 150 310 -top 0 -bot 190
+levelinfo -pg 1 0 150 300 -top 0 -bot 190
 ",
 }
 {

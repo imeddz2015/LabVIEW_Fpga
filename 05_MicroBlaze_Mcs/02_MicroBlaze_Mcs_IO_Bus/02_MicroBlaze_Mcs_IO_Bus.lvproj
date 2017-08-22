@@ -12,7 +12,14 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="FPGA Target" Type="FPGA Target">
 			<Property Name="AutoRun" Type="Bool">false</Property>
-			<Property Name="configString.guid" Type="Str">{0A46872B-4988-4754-9133-53665AE7CD23}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/IO_BUS_read_data;0;WriteMethodType=U32{0B689BE2-F112-4C6E-9D71-4F6AA7FDD7CA}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/INTC_IRQ;0;ReadMethodType=bool{19D9AD92-220E-4493-9856-4AD6AC55A2C4}1a34646cb2e41660457d18704c9e6c558a8a69f792cd76a4662d36b8ccaa7cd3ccab35219253068f3b9c13d479fd3d61&lt;Array&gt;
+			<Property Name="configString.guid" Type="Str">{0546F231-D493-4536-AD8B-C900D87DD8AF}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio1_rtl_tri_o;0;ReadMethodType=U32{0AA37DE4-4109-405F-819B-3EDAF0C93303}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_byte_enable;0;ReadMethodType=
+&lt;Type&gt;
+   &lt;FXP&gt;
+      &lt;IntegerWordLength&gt;4&lt;/IntegerWordLength&gt;
+      &lt;Unsigned&gt;true&lt;/Unsigned&gt;
+      &lt;WordLength&gt;4&lt;/WordLength&gt;
+   &lt;/FXP&gt;
+&lt;/Type&gt;{1E69EE09-0E39-4C90-A073-0CEF25DC50ED}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_address;0;ReadMethodType=U32{343DC252-A036-49F9-A887-1D300FFAC5E3}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/gpio1_rtl_tri_i;0;WriteMethodType=U32{385A16B4-9872-4A8C-A507-EB376ABA7134}"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;TH-IOBUS_WRITE;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{3EF0E3FF-3D76-4377-92FC-C7CE5DA915AC}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/INTC_IRQ;0;ReadMethodType=bool{4686AEAC-A074-4FB5-B974-8C979F8A33D5}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_write_data;0;ReadMethodType=U32{4ECC42C9-8F2B-4B6D-A67E-378CA2140654}b6853e24b45eacb3b638910363b94cb0ccab35219253068f3b9c13d479fd3d61deb16dbe11e6531fbf190e47dfb9f3c3&lt;Array&gt;
 &lt;Name&gt;Generics&lt;/Name&gt;
 &lt;Dimsize&gt;0&lt;/Dimsize&gt;
 &lt;Cluster&gt;
@@ -95,22 +102,181 @@
 &lt;/Cluster&gt;
 &lt;/Cluster&gt;
 &lt;/Array&gt;
-{2E190A98-D497-42D2-AF24-AF05A83F7273}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_address;0;ReadMethodType=U32{35DC5503-D0FF-4A5C-B6E9-1B6F099B5C5C}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/gpio1_rtl_tri_i;0;WriteMethodType=U32{385A16B4-9872-4A8C-A507-EB376ABA7134}"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;TH-IOBUS_WRITE;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{81DB6A48-EE1B-4FAA-BC0D-8486714D63F7}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio2_rtl_tri_o;0;ReadMethodType=U32{8AD48943-3A3B-4900-A5F5-F63B834ED23A}ResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;{90DBA9B2-DFEE-4720-AB50-2AEBDCCA74EE}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_read_strobe;0;ReadMethodType=bool{9EE14017-921A-4A5B-89ED-B3CA8D97EC31}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_write_data;0;ReadMethodType=U32{AC97B7D2-F7C6-4AA9-9D5B-DAFCD82675DC}"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;HT-IOBUS_READ;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{BC506D9A-85E6-44B1-BFCD-D1478BAA1D7A}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/INTC_Interrupt;0;WriteMethodType=
+{5CBB1C92-6AD6-4C75-BA1B-C07B2C97AF54}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_read_strobe;0;ReadMethodType=bool{6C41E0B1-7E49-4EAD-96C1-B974257C78E9}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_addr_strobe;0;ReadMethodType=bool{7ACCF452-24FC-455F-BD30-CDFF5B8C4EA3}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_write_strobe;0;ReadMethodType=bool{822B3599-46FE-4126-B209-70C62EE79D26}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio2_rtl_tri_o;0;ReadMethodType=U32{8AD48943-3A3B-4900-A5F5-F63B834ED23A}ResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;{8CDEC997-9AAF-477D-94E2-526B997260C6}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/INTC_Interrupt;0;WriteMethodType=
 &lt;Type&gt;
    &lt;FXP&gt;
       &lt;IntegerWordLength&gt;4&lt;/IntegerWordLength&gt;
       &lt;Unsigned&gt;true&lt;/Unsigned&gt;
       &lt;WordLength&gt;4&lt;/WordLength&gt;
    &lt;/FXP&gt;
-&lt;/Type&gt;{C2888F10-5E2D-49C3-B880-0FF718BB53F1}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_write_strobe;0;ReadMethodType=bool{C2CC187C-4703-4597-8814-DFB92F3A4787}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_byte_enable;0;ReadMethodType=
-&lt;Type&gt;
-   &lt;FXP&gt;
-      &lt;IntegerWordLength&gt;4&lt;/IntegerWordLength&gt;
-      &lt;Unsigned&gt;true&lt;/Unsigned&gt;
-      &lt;WordLength&gt;4&lt;/WordLength&gt;
-   &lt;/FXP&gt;
-&lt;/Type&gt;{C96D2FC2-28C8-4F53-BAA9-CA786E4F109E}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio1_rtl_tri_o;0;ReadMethodType=U32{CE3FBDC3-A4B5-4FE2-9A6A-9CB88B595F1F}Multiplier=5.000000;Divisor=2.000000{E0394D7D-C522-4323-900D-A0FD27DB7414}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/IO_BUS_ready;0;WriteMethodType=bool{E496E9C0-E236-4DF0-9A5A-1F29B0EEA8A8}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_addr_strobe;0;ReadMethodType=bool{EE3B786B-3B9E-432A-9E5A-CBCF997AF5F9}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio3_rtl_tri_o;0;ReadMethodType=U32PXIe-6592R/Clk40Derived5x2B00MHz/falsefalse12d422121687815e627be18421f4b6dcFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
-			<Property Name="configString.name" Type="Str">100MHzMultiplier=5.000000;Divisor=2.00000040 MHz Onboard ClockResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;d_mcs_i1a34646cb2e41660457d18704c9e6c558a8a69f792cd76a4662d36b8ccaa7cd3ccab35219253068f3b9c13d479fd3d61&lt;Array&gt;
+&lt;/Type&gt;{A970BA3B-2717-49AB-A691-A5678108BFC5}bc9572608b7455266ac3ff3723f70d49ccab35219253068f3b9c13d479fd3d61dfef50d07400d858545cb678b090fa96&lt;Array&gt;
+&lt;Name&gt;Generics&lt;/Name&gt;
+&lt;Dimsize&gt;0&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Generic&lt;/Name&gt;
+&lt;NumElts&gt;5&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Type&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Default value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Description&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+&lt;Array&gt;
+&lt;Name&gt;Clock Connections&lt;/Name&gt;
+&lt;Dimsize&gt;1&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock Connection&lt;/Name&gt;
+&lt;NumElts&gt;2&lt;/NumElts&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock&lt;/Name&gt;
+&lt;NumElts&gt;6&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;LabVIEW name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;VHDL name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Max Freq&lt;/Name&gt;
+&lt;Val&gt;200000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Min Freq&lt;/Name&gt;
+&lt;Val&gt;1000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;EW&gt;
+&lt;Name&gt;Direction&lt;/Name&gt;
+&lt;Choice&gt;ToCLIP&lt;/Choice&gt;
+&lt;Choice&gt;FromCLIP&lt;/Choice&gt;
+&lt;Choice&gt;Bidirectional&lt;/Choice&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/EW&gt;
+&lt;String&gt;
+&lt;Name&gt;ClockToLinkTo&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;FPGA Clock&lt;/Name&gt;
+&lt;NumElts&gt;3&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;100MHz&lt;/Val&gt;
+&lt;/String&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Use Top Clock&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Clock From CLIP&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;/Cluster&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+{AC97B7D2-F7C6-4AA9-9D5B-DAFCD82675DC}"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;HT-IOBUS_READ;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{CE3FBDC3-A4B5-4FE2-9A6A-9CB88B595F1F}Multiplier=5.000000;Divisor=2.000000{CE74584E-78B0-411C-871E-3AD2F54DA35A}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/IO_BUS_ready;0;WriteMethodType=bool{D1B7332E-A344-427A-A445-32039F5125BA}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio3_rtl_tri_o;0;ReadMethodType=U32{DE98E3D3-D610-4865-8C97-FDC8969C59BC}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/IO_BUS_read_data;0;WriteMethodType=U32PXIe-6592R/Clk40Derived5x2B00MHz/falsefalse12d422121687815e627be18421f4b6dcFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
+			<Property Name="configString.name" Type="Str">100MHzMultiplier=5.000000;Divisor=2.00000040 MHz Onboard ClockResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;d_mcs_ib6853e24b45eacb3b638910363b94cb0ccab35219253068f3b9c13d479fd3d61deb16dbe11e6531fbf190e47dfb9f3c3&lt;Array&gt;
+&lt;Name&gt;Generics&lt;/Name&gt;
+&lt;Dimsize&gt;0&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Generic&lt;/Name&gt;
+&lt;NumElts&gt;5&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Type&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Default value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Description&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+&lt;Array&gt;
+&lt;Name&gt;Clock Connections&lt;/Name&gt;
+&lt;Dimsize&gt;1&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock Connection&lt;/Name&gt;
+&lt;NumElts&gt;2&lt;/NumElts&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock&lt;/Name&gt;
+&lt;NumElts&gt;6&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;LabVIEW name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;VHDL name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Max Freq&lt;/Name&gt;
+&lt;Val&gt;200000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Min Freq&lt;/Name&gt;
+&lt;Val&gt;1000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;EW&gt;
+&lt;Name&gt;Direction&lt;/Name&gt;
+&lt;Choice&gt;ToCLIP&lt;/Choice&gt;
+&lt;Choice&gt;FromCLIP&lt;/Choice&gt;
+&lt;Choice&gt;Bidirectional&lt;/Choice&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/EW&gt;
+&lt;String&gt;
+&lt;Name&gt;ClockToLinkTo&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;FPGA Clock&lt;/Name&gt;
+&lt;NumElts&gt;3&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;100MHz&lt;/Val&gt;
+&lt;/String&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Use Top Clock&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Clock From CLIP&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;/Cluster&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+DRAM Bank 0bc9572608b7455266ac3ff3723f70d49ccab35219253068f3b9c13d479fd3d61dfef50d07400d858545cb678b090fa96&lt;Array&gt;
 &lt;Name&gt;Generics&lt;/Name&gt;
 &lt;Dimsize&gt;0&lt;/Dimsize&gt;
 &lt;Cluster&gt;
@@ -330,7 +496,7 @@ gpio1_rtl_tri_iArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForO
       <CLIPDeclaration name="d_mcs_wrapper_top">
          <DeclarationPaths>
             <Absolute>Z:\work\git\LabVIEW_Fpga\05_MicroBlaze_Mcs\02_MicroBlaze_Mcs_IO_Bus\d_mcs_wrapper_top.xml</Absolute>
-            <MD5>1a34646cb2e41660457d18704c9e6c55</MD5>
+            <MD5>dfef50d07400d858545cb678b090fa96</MD5>
             <RelativeToLabVIEW>Z:\work\git\LabVIEW_Fpga\05_MicroBlaze_Mcs\02_MicroBlaze_Mcs_IO_Bus\d_mcs_wrapper_top.xml</RelativeToLabVIEW>
             <RelativeToNiPubDocs>Z:\work\git\LabVIEW_Fpga\05_MicroBlaze_Mcs\02_MicroBlaze_Mcs_IO_Bus\d_mcs_wrapper_top.xml</RelativeToNiPubDocs>
             <RelativeToNiSharedDir>Z:\work\git\LabVIEW_Fpga\05_MicroBlaze_Mcs\02_MicroBlaze_Mcs_IO_Bus\d_mcs_wrapper_top.xml</RelativeToNiSharedDir>
@@ -347,8 +513,8 @@ gpio1_rtl_tri_iArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForO
                </SimulationFileList>
                <TopLevel></TopLevel>
             </Path>
-            <Path name="MicroBlaze_Mcs_IO_Bus\checkpoint_27.dcp">
-               <MD5>8a8a69f792cd76a4662d36b8ccaa7cd3</MD5>
+            <Path name="MicroBlaze_Mcs_IO_Bus\checkpoint_37.dcp">
+               <MD5>bc9572608b7455266ac3ff3723f70d49</MD5>
                <SimulationFileList>
                   <SimulationModelType>Exclude from simulation model</SimulationModelType>
                </SimulationFileList>
@@ -361,8 +527,8 @@ gpio1_rtl_tri_iArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForO
                   </SimulationFileList>
                   <TopLevel></TopLevel>
                </Path>
-               <Path name="MicroBlaze_Mcs_IO_Bus\checkpoint_27.dcp">
-                  <MD5>8a8a69f792cd76a4662d36b8ccaa7cd3</MD5>
+               <Path name="MicroBlaze_Mcs_IO_Bus\checkpoint_37.dcp">
+                  <MD5>bc9572608b7455266ac3ff3723f70d49</MD5>
                   <SimulationFileList>
                      <SimulationModelType>Exclude from simulation model</SimulationModelType>
                   </SimulationFileList>
@@ -600,6 +766,7 @@ gpio1_rtl_tri_iArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForO
    </CLIPDeclarationCategory>
 </CLIPDeclarationSet></Property>
 			<Property Name="NI.LV.FPGA.CompileConfigString" Type="Str">PXIe-6592R/Clk40Derived5x2B00MHz/falsefalse12d422121687815e627be18421f4b6dcFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA</Property>
+			<Property Name="NI.LV.FPGA.DramBanksReservedForMemories" Type="Str">DramBank0</Property>
 			<Property Name="NI.LV.FPGA.RIO.659XR.Constraints.ConstraintsContainer.ArrayLength" Type="UInt">2</Property>
 			<Property Name="NI.LV.FPGA.RIO.659XR.Constraints.ConstraintsContainer[0].ConstraintString" Type="Str"># 0 Disabled
 set_property PACKAGE_PIN K14 [get_ports {aMgtTxp[0]}]
@@ -1141,319 +1308,14 @@ set_property IOSTANDARD LVCMOS25 [get_ports {Si570Clkn}]
 					<Property Name="NI.LV.FPGA.Version" Type="Int">5</Property>
 				</Item>
 			</Item>
-			<Item Name="d_mcs_i" Type="FPGA Component Level IP">
-				<Property Name="FPGA.PersistentID" Type="Str">{19D9AD92-220E-4493-9856-4AD6AC55A2C4}</Property>
-				<Property Name="NI.LV.CLIP.ClockConnections" Type="Xml">
-<CLIPConnections>
-   <CLIPSignal name="clock_rtl">
-      <ClockFromCLIP>false</ClockFromCLIP>
-      <Direction>ToCLIP</Direction>
-      <HDLName>clock_rtl</HDLName>
-      <LinkToFPGAClock>100MHz</LinkToFPGAClock>
-      <MaxFreq>200000000.0000</MaxFreq>
-      <MinFreq>1000000.000000</MinFreq>
-      <UseTopClock>false</UseTopClock>
-   </CLIPSignal>
-</CLIPConnections></Property>
-				<Property Name="NI.LV.CLIP.DeclarationCategory" Type="Str">User Defined</Property>
-				<Property Name="NI.LV.CLIP.DeclarationName" Type="Str">d_mcs_wrapper_top</Property>
-				<Property Name="NI.LV.CLIP.SocketedCLIP" Type="Bool">false</Property>
-				<Property Name="NI.LV.CLIP.SocketSelection" Type="Str"></Property>
-				<Property Name="NI.LV.CLIP.SocketSpecificCompileSignature" Type="Str"></Property>
-				<Property Name="NI.LV.CLIP.Version" Type="UInt">4</Property>
-				<Property Name="NI.LV.FPGA.CompileConfigString" Type="Str">1a34646cb2e41660457d18704c9e6c558a8a69f792cd76a4662d36b8ccaa7cd3ccab35219253068f3b9c13d479fd3d61&lt;Array&gt;
-&lt;Name&gt;Generics&lt;/Name&gt;
-&lt;Dimsize&gt;0&lt;/Dimsize&gt;
-&lt;Cluster&gt;
-&lt;Name&gt;CLIP Generic&lt;/Name&gt;
-&lt;NumElts&gt;5&lt;/NumElts&gt;
-&lt;String&gt;
-&lt;Name&gt;Name&lt;/Name&gt;
-&lt;Val&gt;&lt;/Val&gt;
-&lt;/String&gt;
-&lt;String&gt;
-&lt;Name&gt;Type&lt;/Name&gt;
-&lt;Val&gt;&lt;/Val&gt;
-&lt;/String&gt;
-&lt;String&gt;
-&lt;Name&gt;Default value&lt;/Name&gt;
-&lt;Val&gt;&lt;/Val&gt;
-&lt;/String&gt;
-&lt;String&gt;
-&lt;Name&gt;Value&lt;/Name&gt;
-&lt;Val&gt;&lt;/Val&gt;
-&lt;/String&gt;
-&lt;String&gt;
-&lt;Name&gt;Description&lt;/Name&gt;
-&lt;Val&gt;&lt;/Val&gt;
-&lt;/String&gt;
-&lt;/Cluster&gt;
-&lt;/Array&gt;
-&lt;Array&gt;
-&lt;Name&gt;Clock Connections&lt;/Name&gt;
-&lt;Dimsize&gt;1&lt;/Dimsize&gt;
-&lt;Cluster&gt;
-&lt;Name&gt;CLIP Clock Connection&lt;/Name&gt;
-&lt;NumElts&gt;2&lt;/NumElts&gt;
-&lt;Cluster&gt;
-&lt;Name&gt;CLIP Clock&lt;/Name&gt;
-&lt;NumElts&gt;6&lt;/NumElts&gt;
-&lt;String&gt;
-&lt;Name&gt;LabVIEW name&lt;/Name&gt;
-&lt;Val&gt;clock_rtl&lt;/Val&gt;
-&lt;/String&gt;
-&lt;String&gt;
-&lt;Name&gt;VHDL name&lt;/Name&gt;
-&lt;Val&gt;clock_rtl&lt;/Val&gt;
-&lt;/String&gt;
-&lt;DBL&gt;
-&lt;Name&gt;Max Freq&lt;/Name&gt;
-&lt;Val&gt;200000000.00000000000000&lt;/Val&gt;
-&lt;/DBL&gt;
-&lt;DBL&gt;
-&lt;Name&gt;Min Freq&lt;/Name&gt;
-&lt;Val&gt;1000000.00000000000000&lt;/Val&gt;
-&lt;/DBL&gt;
-&lt;EW&gt;
-&lt;Name&gt;Direction&lt;/Name&gt;
-&lt;Choice&gt;ToCLIP&lt;/Choice&gt;
-&lt;Choice&gt;FromCLIP&lt;/Choice&gt;
-&lt;Choice&gt;Bidirectional&lt;/Choice&gt;
-&lt;Val&gt;0&lt;/Val&gt;
-&lt;/EW&gt;
-&lt;String&gt;
-&lt;Name&gt;ClockToLinkTo&lt;/Name&gt;
-&lt;Val&gt;&lt;/Val&gt;
-&lt;/String&gt;
-&lt;/Cluster&gt;
-&lt;Cluster&gt;
-&lt;Name&gt;FPGA Clock&lt;/Name&gt;
-&lt;NumElts&gt;3&lt;/NumElts&gt;
-&lt;String&gt;
-&lt;Name&gt;Name&lt;/Name&gt;
-&lt;Val&gt;100MHz&lt;/Val&gt;
-&lt;/String&gt;
-&lt;Boolean&gt;
-&lt;Name&gt;Use Top Clock&lt;/Name&gt;
-&lt;Val&gt;0&lt;/Val&gt;
-&lt;/Boolean&gt;
-&lt;Boolean&gt;
-&lt;Name&gt;Clock From CLIP&lt;/Name&gt;
-&lt;Val&gt;0&lt;/Val&gt;
-&lt;/Boolean&gt;
-&lt;/Cluster&gt;
-&lt;/Cluster&gt;
-&lt;/Array&gt;
-</Property>
-				<Property Name="NI.LV.FPGA.Valid" Type="Bool">true</Property>
-				<Property Name="NI.SortType" Type="Int">3</Property>
-				<Item Name="IO_BUS_addr_strobe" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/d_mcs_i/SignalList/IO_BUS_addr_strobe</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{E496E9C0-E236-4DF0-9A5A-1F29B0EEA8A8}</Property>
-					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
-				</Item>
-				<Item Name="IO_BUS_address" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/d_mcs_i/SignalList/IO_BUS_address</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{2E190A98-D497-42D2-AF24-AF05A83F7273}</Property>
-					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
-				</Item>
-				<Item Name="IO_BUS_byte_enable" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/d_mcs_i/SignalList/IO_BUS_byte_enable</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{C2CC187C-4703-4597-8814-DFB92F3A4787}</Property>
-					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
-				</Item>
-				<Item Name="IO_BUS_read_data" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/d_mcs_i/SignalList/IO_BUS_read_data</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{0A46872B-4988-4754-9133-53665AE7CD23}</Property>
-					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
-				</Item>
-				<Item Name="IO_BUS_read_strobe" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/d_mcs_i/SignalList/IO_BUS_read_strobe</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{90DBA9B2-DFEE-4720-AB50-2AEBDCCA74EE}</Property>
-					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
-				</Item>
-				<Item Name="IO_BUS_ready" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/d_mcs_i/SignalList/IO_BUS_ready</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{E0394D7D-C522-4323-900D-A0FD27DB7414}</Property>
-					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
-				</Item>
-				<Item Name="IO_BUS_write_data" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/d_mcs_i/SignalList/IO_BUS_write_data</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{9EE14017-921A-4A5B-89ED-B3CA8D97EC31}</Property>
-					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
-				</Item>
-				<Item Name="IO_BUS_write_strobe" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/d_mcs_i/SignalList/IO_BUS_write_strobe</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{C2888F10-5E2D-49C3-B880-0FF718BB53F1}</Property>
-					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
-				</Item>
-				<Item Name="INTC_IRQ" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/d_mcs_i/SignalList/INTC_IRQ</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{0B689BE2-F112-4C6E-9D71-4F6AA7FDD7CA}</Property>
-					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
-				</Item>
-				<Item Name="INTC_Interrupt" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/d_mcs_i/SignalList/INTC_Interrupt</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{BC506D9A-85E6-44B1-BFCD-D1478BAA1D7A}</Property>
-					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
-				</Item>
-				<Item Name="gpio1_rtl_tri_i" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="ArbitrationForOutputData">
-   <Value>NeverArbitrate</Value>
-   </Attribute>
-   <Attribute name="NumberOfSyncRegistersForOutputData">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/d_mcs_i/SignalList/gpio1_rtl_tri_i</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{35DC5503-D0FF-4A5C-B6E9-1B6F099B5C5C}</Property>
-					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
-				</Item>
-				<Item Name="gpio1_rtl_tri_o" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/d_mcs_i/SignalList/gpio1_rtl_tri_o</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{C96D2FC2-28C8-4F53-BAA9-CA786E4F109E}</Property>
-					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
-				</Item>
-				<Item Name="gpio2_rtl_tri_o" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/d_mcs_i/SignalList/gpio2_rtl_tri_o</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{81DB6A48-EE1B-4FAA-BC0D-8486714D63F7}</Property>
-					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
-				</Item>
-				<Item Name="gpio3_rtl_tri_o" Type="Elemental IO">
-					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
-   <Attribute name="NumberOfSyncRegistersForReadInProject">
-   <Value>0</Value>
-   </Attribute>
-   <Attribute name="resource">
-   <Value>/d_mcs_i/SignalList/gpio3_rtl_tri_o</Value>
-   </Attribute>
-</AttributeSet>
-</Property>
-					<Property Name="FPGA.PersistentID" Type="Str">{EE3B786B-3B9E-432A-9E5A-CBCF997AF5F9}</Property>
-					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
-				</Item>
-			</Item>
 			<Item Name="DRAM Bank 0" Type="FPGA Component Level IP">
+				<Property Name="FPGA.PersistentID" Type="Str">{A970BA3B-2717-49AB-A691-A5678108BFC5}</Property>
 				<Property Name="NI.LV.CLIP.DeclarationCategory" Type="Str"></Property>
 				<Property Name="NI.LV.CLIP.SocketedCLIP" Type="Bool">true</Property>
 				<Property Name="NI.LV.CLIP.SocketSelection" Type="Str">659XR-DRAMTypeA-Bank0</Property>
 				<Property Name="NI.LV.CLIP.SocketSpecificCompileSignature" Type="Str"></Property>
 				<Property Name="NI.LV.CLIP.Version" Type="UInt">4</Property>
-				<Property Name="NI.LV.FPGA.Valid" Type="Bool">true</Property>
-				<Property Name="NI.SortType" Type="Int">3</Property>
-			</Item>
-			<Item Name="Fpga-6592-Top-Level.vi" Type="VI" URL="../Fpga-6592/Fpga-6592-Top-Level.vi">
-				<Property Name="BuildSpec" Type="Str">{6C006F40-7A2A-4CCB-BB74-6F3567F1EF31}</Property>
-				<Property Name="configString.guid" Type="Str">{0A46872B-4988-4754-9133-53665AE7CD23}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/IO_BUS_read_data;0;WriteMethodType=U32{0B689BE2-F112-4C6E-9D71-4F6AA7FDD7CA}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/INTC_IRQ;0;ReadMethodType=bool{19D9AD92-220E-4493-9856-4AD6AC55A2C4}1a34646cb2e41660457d18704c9e6c558a8a69f792cd76a4662d36b8ccaa7cd3ccab35219253068f3b9c13d479fd3d61&lt;Array&gt;
+				<Property Name="NI.LV.FPGA.CompileConfigString" Type="Str">bc9572608b7455266ac3ff3723f70d49ccab35219253068f3b9c13d479fd3d61dfef50d07400d858545cb678b090fa96&lt;Array&gt;
 &lt;Name&gt;Generics&lt;/Name&gt;
 &lt;Dimsize&gt;0&lt;/Dimsize&gt;
 &lt;Cluster&gt;
@@ -1536,22 +1398,277 @@ set_property IOSTANDARD LVCMOS25 [get_ports {Si570Clkn}]
 &lt;/Cluster&gt;
 &lt;/Cluster&gt;
 &lt;/Array&gt;
-{2E190A98-D497-42D2-AF24-AF05A83F7273}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_address;0;ReadMethodType=U32{35DC5503-D0FF-4A5C-B6E9-1B6F099B5C5C}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/gpio1_rtl_tri_i;0;WriteMethodType=U32{385A16B4-9872-4A8C-A507-EB376ABA7134}"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;TH-IOBUS_WRITE;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{81DB6A48-EE1B-4FAA-BC0D-8486714D63F7}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio2_rtl_tri_o;0;ReadMethodType=U32{8AD48943-3A3B-4900-A5F5-F63B834ED23A}ResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;{90DBA9B2-DFEE-4720-AB50-2AEBDCCA74EE}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_read_strobe;0;ReadMethodType=bool{9EE14017-921A-4A5B-89ED-B3CA8D97EC31}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_write_data;0;ReadMethodType=U32{AC97B7D2-F7C6-4AA9-9D5B-DAFCD82675DC}"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;HT-IOBUS_READ;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{BC506D9A-85E6-44B1-BFCD-D1478BAA1D7A}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/INTC_Interrupt;0;WriteMethodType=
+</Property>
+				<Property Name="NI.LV.FPGA.Valid" Type="Bool">true</Property>
+				<Property Name="NI.SortType" Type="Int">3</Property>
+			</Item>
+			<Item Name="Fpga-6592-Top-Level.vi" Type="VI" URL="../Fpga-6592/Fpga-6592-Top-Level.vi">
+				<Property Name="BuildSpec" Type="Str">{3EF2B592-F09B-4BB1-BA0D-D38ECB99A8EF}</Property>
+				<Property Name="configString.guid" Type="Str">{0546F231-D493-4536-AD8B-C900D87DD8AF}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio1_rtl_tri_o;0;ReadMethodType=U32{0AA37DE4-4109-405F-819B-3EDAF0C93303}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_byte_enable;0;ReadMethodType=
 &lt;Type&gt;
    &lt;FXP&gt;
       &lt;IntegerWordLength&gt;4&lt;/IntegerWordLength&gt;
       &lt;Unsigned&gt;true&lt;/Unsigned&gt;
       &lt;WordLength&gt;4&lt;/WordLength&gt;
    &lt;/FXP&gt;
-&lt;/Type&gt;{C2888F10-5E2D-49C3-B880-0FF718BB53F1}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_write_strobe;0;ReadMethodType=bool{C2CC187C-4703-4597-8814-DFB92F3A4787}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_byte_enable;0;ReadMethodType=
+&lt;/Type&gt;{1E69EE09-0E39-4C90-A073-0CEF25DC50ED}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_address;0;ReadMethodType=U32{343DC252-A036-49F9-A887-1D300FFAC5E3}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/gpio1_rtl_tri_i;0;WriteMethodType=U32{385A16B4-9872-4A8C-A507-EB376ABA7134}"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;TH-IOBUS_WRITE;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{3EF0E3FF-3D76-4377-92FC-C7CE5DA915AC}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/INTC_IRQ;0;ReadMethodType=bool{4686AEAC-A074-4FB5-B974-8C979F8A33D5}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_write_data;0;ReadMethodType=U32{4ECC42C9-8F2B-4B6D-A67E-378CA2140654}b6853e24b45eacb3b638910363b94cb0ccab35219253068f3b9c13d479fd3d61deb16dbe11e6531fbf190e47dfb9f3c3&lt;Array&gt;
+&lt;Name&gt;Generics&lt;/Name&gt;
+&lt;Dimsize&gt;0&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Generic&lt;/Name&gt;
+&lt;NumElts&gt;5&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Type&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Default value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Description&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+&lt;Array&gt;
+&lt;Name&gt;Clock Connections&lt;/Name&gt;
+&lt;Dimsize&gt;1&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock Connection&lt;/Name&gt;
+&lt;NumElts&gt;2&lt;/NumElts&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock&lt;/Name&gt;
+&lt;NumElts&gt;6&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;LabVIEW name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;VHDL name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Max Freq&lt;/Name&gt;
+&lt;Val&gt;200000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Min Freq&lt;/Name&gt;
+&lt;Val&gt;1000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;EW&gt;
+&lt;Name&gt;Direction&lt;/Name&gt;
+&lt;Choice&gt;ToCLIP&lt;/Choice&gt;
+&lt;Choice&gt;FromCLIP&lt;/Choice&gt;
+&lt;Choice&gt;Bidirectional&lt;/Choice&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/EW&gt;
+&lt;String&gt;
+&lt;Name&gt;ClockToLinkTo&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;FPGA Clock&lt;/Name&gt;
+&lt;NumElts&gt;3&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;100MHz&lt;/Val&gt;
+&lt;/String&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Use Top Clock&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Clock From CLIP&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;/Cluster&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+{5CBB1C92-6AD6-4C75-BA1B-C07B2C97AF54}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_read_strobe;0;ReadMethodType=bool{6C41E0B1-7E49-4EAD-96C1-B974257C78E9}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_addr_strobe;0;ReadMethodType=bool{7ACCF452-24FC-455F-BD30-CDFF5B8C4EA3}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_write_strobe;0;ReadMethodType=bool{822B3599-46FE-4126-B209-70C62EE79D26}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio2_rtl_tri_o;0;ReadMethodType=U32{8AD48943-3A3B-4900-A5F5-F63B834ED23A}ResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;{8CDEC997-9AAF-477D-94E2-526B997260C6}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/INTC_Interrupt;0;WriteMethodType=
 &lt;Type&gt;
    &lt;FXP&gt;
       &lt;IntegerWordLength&gt;4&lt;/IntegerWordLength&gt;
       &lt;Unsigned&gt;true&lt;/Unsigned&gt;
       &lt;WordLength&gt;4&lt;/WordLength&gt;
    &lt;/FXP&gt;
-&lt;/Type&gt;{C96D2FC2-28C8-4F53-BAA9-CA786E4F109E}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio1_rtl_tri_o;0;ReadMethodType=U32{CE3FBDC3-A4B5-4FE2-9A6A-9CB88B595F1F}Multiplier=5.000000;Divisor=2.000000{E0394D7D-C522-4323-900D-A0FD27DB7414}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/IO_BUS_ready;0;WriteMethodType=bool{E496E9C0-E236-4DF0-9A5A-1F29B0EEA8A8}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_addr_strobe;0;ReadMethodType=bool{EE3B786B-3B9E-432A-9E5A-CBCF997AF5F9}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio3_rtl_tri_o;0;ReadMethodType=U32PXIe-6592R/Clk40Derived5x2B00MHz/falsefalse12d422121687815e627be18421f4b6dcFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
-				<Property Name="configString.name" Type="Str">100MHzMultiplier=5.000000;Divisor=2.00000040 MHz Onboard ClockResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;d_mcs_i1a34646cb2e41660457d18704c9e6c558a8a69f792cd76a4662d36b8ccaa7cd3ccab35219253068f3b9c13d479fd3d61&lt;Array&gt;
+&lt;/Type&gt;{A970BA3B-2717-49AB-A691-A5678108BFC5}bc9572608b7455266ac3ff3723f70d49ccab35219253068f3b9c13d479fd3d61dfef50d07400d858545cb678b090fa96&lt;Array&gt;
+&lt;Name&gt;Generics&lt;/Name&gt;
+&lt;Dimsize&gt;0&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Generic&lt;/Name&gt;
+&lt;NumElts&gt;5&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Type&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Default value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Description&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+&lt;Array&gt;
+&lt;Name&gt;Clock Connections&lt;/Name&gt;
+&lt;Dimsize&gt;1&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock Connection&lt;/Name&gt;
+&lt;NumElts&gt;2&lt;/NumElts&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock&lt;/Name&gt;
+&lt;NumElts&gt;6&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;LabVIEW name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;VHDL name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Max Freq&lt;/Name&gt;
+&lt;Val&gt;200000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Min Freq&lt;/Name&gt;
+&lt;Val&gt;1000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;EW&gt;
+&lt;Name&gt;Direction&lt;/Name&gt;
+&lt;Choice&gt;ToCLIP&lt;/Choice&gt;
+&lt;Choice&gt;FromCLIP&lt;/Choice&gt;
+&lt;Choice&gt;Bidirectional&lt;/Choice&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/EW&gt;
+&lt;String&gt;
+&lt;Name&gt;ClockToLinkTo&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;FPGA Clock&lt;/Name&gt;
+&lt;NumElts&gt;3&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;100MHz&lt;/Val&gt;
+&lt;/String&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Use Top Clock&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Clock From CLIP&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;/Cluster&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+{AC97B7D2-F7C6-4AA9-9D5B-DAFCD82675DC}"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;HT-IOBUS_READ;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{CE3FBDC3-A4B5-4FE2-9A6A-9CB88B595F1F}Multiplier=5.000000;Divisor=2.000000{CE74584E-78B0-411C-871E-3AD2F54DA35A}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/IO_BUS_ready;0;WriteMethodType=bool{D1B7332E-A344-427A-A445-32039F5125BA}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio3_rtl_tri_o;0;ReadMethodType=U32{DE98E3D3-D610-4865-8C97-FDC8969C59BC}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/IO_BUS_read_data;0;WriteMethodType=U32PXIe-6592R/Clk40Derived5x2B00MHz/falsefalse12d422121687815e627be18421f4b6dcFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
+				<Property Name="configString.name" Type="Str">100MHzMultiplier=5.000000;Divisor=2.00000040 MHz Onboard ClockResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;d_mcs_ib6853e24b45eacb3b638910363b94cb0ccab35219253068f3b9c13d479fd3d61deb16dbe11e6531fbf190e47dfb9f3c3&lt;Array&gt;
+&lt;Name&gt;Generics&lt;/Name&gt;
+&lt;Dimsize&gt;0&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Generic&lt;/Name&gt;
+&lt;NumElts&gt;5&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Type&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Default value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Description&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+&lt;Array&gt;
+&lt;Name&gt;Clock Connections&lt;/Name&gt;
+&lt;Dimsize&gt;1&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock Connection&lt;/Name&gt;
+&lt;NumElts&gt;2&lt;/NumElts&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock&lt;/Name&gt;
+&lt;NumElts&gt;6&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;LabVIEW name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;VHDL name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Max Freq&lt;/Name&gt;
+&lt;Val&gt;200000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Min Freq&lt;/Name&gt;
+&lt;Val&gt;1000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;EW&gt;
+&lt;Name&gt;Direction&lt;/Name&gt;
+&lt;Choice&gt;ToCLIP&lt;/Choice&gt;
+&lt;Choice&gt;FromCLIP&lt;/Choice&gt;
+&lt;Choice&gt;Bidirectional&lt;/Choice&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/EW&gt;
+&lt;String&gt;
+&lt;Name&gt;ClockToLinkTo&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;FPGA Clock&lt;/Name&gt;
+&lt;NumElts&gt;3&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;100MHz&lt;/Val&gt;
+&lt;/String&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Use Top Clock&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Clock From CLIP&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;/Cluster&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+DRAM Bank 0bc9572608b7455266ac3ff3723f70d49ccab35219253068f3b9c13d479fd3d61dfef50d07400d858545cb678b090fa96&lt;Array&gt;
 &lt;Name&gt;Generics&lt;/Name&gt;
 &lt;Dimsize&gt;0&lt;/Dimsize&gt;
 &lt;Cluster&gt;
@@ -1706,13 +1823,1046 @@ gpio1_rtl_tri_iArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForO
 				<Property Name="Type" Type="UInt">2</Property>
 				<Property Name="Type Descriptor" Type="Str">1000800000000001000940070003553332000100000000000000000000</Property>
 			</Item>
-			<Item Name="Dependencies" Type="Dependencies"/>
+			<Item Name="d_mcs_i" Type="FPGA Component Level IP">
+				<Property Name="FPGA.PersistentID" Type="Str">{4ECC42C9-8F2B-4B6D-A67E-378CA2140654}</Property>
+				<Property Name="NI.LV.CLIP.ClockConnections" Type="Xml">
+<CLIPConnections>
+   <CLIPSignal name="clock_rtl">
+      <ClockFromCLIP>false</ClockFromCLIP>
+      <Direction>ToCLIP</Direction>
+      <HDLName>clock_rtl</HDLName>
+      <LinkToFPGAClock>100MHz</LinkToFPGAClock>
+      <MaxFreq>200000000.0000</MaxFreq>
+      <MinFreq>1000000.000000</MinFreq>
+      <UseTopClock>false</UseTopClock>
+   </CLIPSignal>
+</CLIPConnections></Property>
+				<Property Name="NI.LV.CLIP.DeclarationCategory" Type="Str">User Defined</Property>
+				<Property Name="NI.LV.CLIP.DeclarationName" Type="Str">d_mcs_wrapper_top</Property>
+				<Property Name="NI.LV.CLIP.SocketedCLIP" Type="Bool">false</Property>
+				<Property Name="NI.LV.CLIP.SocketSelection" Type="Str"></Property>
+				<Property Name="NI.LV.CLIP.SocketSpecificCompileSignature" Type="Str"></Property>
+				<Property Name="NI.LV.CLIP.Version" Type="UInt">4</Property>
+				<Property Name="NI.LV.FPGA.CompileConfigString" Type="Str">b6853e24b45eacb3b638910363b94cb0ccab35219253068f3b9c13d479fd3d61deb16dbe11e6531fbf190e47dfb9f3c3&lt;Array&gt;
+&lt;Name&gt;Generics&lt;/Name&gt;
+&lt;Dimsize&gt;0&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Generic&lt;/Name&gt;
+&lt;NumElts&gt;5&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Type&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Default value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Description&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+&lt;Array&gt;
+&lt;Name&gt;Clock Connections&lt;/Name&gt;
+&lt;Dimsize&gt;1&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock Connection&lt;/Name&gt;
+&lt;NumElts&gt;2&lt;/NumElts&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock&lt;/Name&gt;
+&lt;NumElts&gt;6&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;LabVIEW name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;VHDL name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Max Freq&lt;/Name&gt;
+&lt;Val&gt;200000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Min Freq&lt;/Name&gt;
+&lt;Val&gt;1000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;EW&gt;
+&lt;Name&gt;Direction&lt;/Name&gt;
+&lt;Choice&gt;ToCLIP&lt;/Choice&gt;
+&lt;Choice&gt;FromCLIP&lt;/Choice&gt;
+&lt;Choice&gt;Bidirectional&lt;/Choice&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/EW&gt;
+&lt;String&gt;
+&lt;Name&gt;ClockToLinkTo&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;FPGA Clock&lt;/Name&gt;
+&lt;NumElts&gt;3&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;100MHz&lt;/Val&gt;
+&lt;/String&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Use Top Clock&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Clock From CLIP&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;/Cluster&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+</Property>
+				<Property Name="NI.LV.FPGA.Valid" Type="Bool">true</Property>
+				<Property Name="NI.SortType" Type="Int">3</Property>
+				<Item Name="INTC_IRQ" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/d_mcs_i/SignalList/INTC_IRQ</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{3EF0E3FF-3D76-4377-92FC-C7CE5DA915AC}</Property>
+					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
+				</Item>
+				<Item Name="INTC_Interrupt" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/d_mcs_i/SignalList/INTC_Interrupt</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{8CDEC997-9AAF-477D-94E2-526B997260C6}</Property>
+					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
+				</Item>
+				<Item Name="IO_BUS_addr_strobe" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/d_mcs_i/SignalList/IO_BUS_addr_strobe</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{6C41E0B1-7E49-4EAD-96C1-B974257C78E9}</Property>
+					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
+				</Item>
+				<Item Name="IO_BUS_address" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/d_mcs_i/SignalList/IO_BUS_address</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{1E69EE09-0E39-4C90-A073-0CEF25DC50ED}</Property>
+					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
+				</Item>
+				<Item Name="IO_BUS_byte_enable" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/d_mcs_i/SignalList/IO_BUS_byte_enable</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{0AA37DE4-4109-405F-819B-3EDAF0C93303}</Property>
+					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
+				</Item>
+				<Item Name="IO_BUS_read_data" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/d_mcs_i/SignalList/IO_BUS_read_data</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{DE98E3D3-D610-4865-8C97-FDC8969C59BC}</Property>
+					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
+				</Item>
+				<Item Name="IO_BUS_read_strobe" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/d_mcs_i/SignalList/IO_BUS_read_strobe</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{5CBB1C92-6AD6-4C75-BA1B-C07B2C97AF54}</Property>
+					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
+				</Item>
+				<Item Name="IO_BUS_ready" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/d_mcs_i/SignalList/IO_BUS_ready</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{CE74584E-78B0-411C-871E-3AD2F54DA35A}</Property>
+					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
+				</Item>
+				<Item Name="IO_BUS_write_data" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/d_mcs_i/SignalList/IO_BUS_write_data</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{4686AEAC-A074-4FB5-B974-8C979F8A33D5}</Property>
+					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
+				</Item>
+				<Item Name="IO_BUS_write_strobe" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/d_mcs_i/SignalList/IO_BUS_write_strobe</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{7ACCF452-24FC-455F-BD30-CDFF5B8C4EA3}</Property>
+					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
+				</Item>
+				<Item Name="gpio1_rtl_tri_i" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="ArbitrationForOutputData">
+   <Value>NeverArbitrate</Value>
+   </Attribute>
+   <Attribute name="NumberOfSyncRegistersForOutputData">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/d_mcs_i/SignalList/gpio1_rtl_tri_i</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{343DC252-A036-49F9-A887-1D300FFAC5E3}</Property>
+					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
+				</Item>
+				<Item Name="gpio1_rtl_tri_o" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/d_mcs_i/SignalList/gpio1_rtl_tri_o</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{0546F231-D493-4536-AD8B-C900D87DD8AF}</Property>
+					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
+				</Item>
+				<Item Name="gpio2_rtl_tri_o" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/d_mcs_i/SignalList/gpio2_rtl_tri_o</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{822B3599-46FE-4126-B209-70C62EE79D26}</Property>
+					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
+				</Item>
+				<Item Name="gpio3_rtl_tri_o" Type="Elemental IO">
+					<Property Name="eioAttrBag" Type="Xml"><AttributeSet name="">
+   <Attribute name="NumberOfSyncRegistersForReadInProject">
+   <Value>0</Value>
+   </Attribute>
+   <Attribute name="resource">
+   <Value>/d_mcs_i/SignalList/gpio3_rtl_tri_o</Value>
+   </Attribute>
+</AttributeSet>
+</Property>
+					<Property Name="FPGA.PersistentID" Type="Str">{D1B7332E-A344-427A-A445-32039F5125BA}</Property>
+					<Property Name="NI.LV.EIO.Physical" Type="Bool">true</Property>
+				</Item>
+			</Item>
+			<Item Name="Fpga-Counter-U16.vi" Type="VI" URL="../Fpga-6592/Fpga-Counter-U16.vi">
+				<Property Name="configString.guid" Type="Str">{0546F231-D493-4536-AD8B-C900D87DD8AF}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio1_rtl_tri_o;0;ReadMethodType=U32{0AA37DE4-4109-405F-819B-3EDAF0C93303}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_byte_enable;0;ReadMethodType=
+&lt;Type&gt;
+   &lt;FXP&gt;
+      &lt;IntegerWordLength&gt;4&lt;/IntegerWordLength&gt;
+      &lt;Unsigned&gt;true&lt;/Unsigned&gt;
+      &lt;WordLength&gt;4&lt;/WordLength&gt;
+   &lt;/FXP&gt;
+&lt;/Type&gt;{1E69EE09-0E39-4C90-A073-0CEF25DC50ED}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_address;0;ReadMethodType=U32{343DC252-A036-49F9-A887-1D300FFAC5E3}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/gpio1_rtl_tri_i;0;WriteMethodType=U32{385A16B4-9872-4A8C-A507-EB376ABA7134}"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;TH-IOBUS_WRITE;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{3EF0E3FF-3D76-4377-92FC-C7CE5DA915AC}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/INTC_IRQ;0;ReadMethodType=bool{4686AEAC-A074-4FB5-B974-8C979F8A33D5}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_write_data;0;ReadMethodType=U32{4ECC42C9-8F2B-4B6D-A67E-378CA2140654}b6853e24b45eacb3b638910363b94cb0ccab35219253068f3b9c13d479fd3d61deb16dbe11e6531fbf190e47dfb9f3c3&lt;Array&gt;
+&lt;Name&gt;Generics&lt;/Name&gt;
+&lt;Dimsize&gt;0&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Generic&lt;/Name&gt;
+&lt;NumElts&gt;5&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Type&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Default value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Description&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+&lt;Array&gt;
+&lt;Name&gt;Clock Connections&lt;/Name&gt;
+&lt;Dimsize&gt;1&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock Connection&lt;/Name&gt;
+&lt;NumElts&gt;2&lt;/NumElts&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock&lt;/Name&gt;
+&lt;NumElts&gt;6&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;LabVIEW name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;VHDL name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Max Freq&lt;/Name&gt;
+&lt;Val&gt;200000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Min Freq&lt;/Name&gt;
+&lt;Val&gt;1000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;EW&gt;
+&lt;Name&gt;Direction&lt;/Name&gt;
+&lt;Choice&gt;ToCLIP&lt;/Choice&gt;
+&lt;Choice&gt;FromCLIP&lt;/Choice&gt;
+&lt;Choice&gt;Bidirectional&lt;/Choice&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/EW&gt;
+&lt;String&gt;
+&lt;Name&gt;ClockToLinkTo&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;FPGA Clock&lt;/Name&gt;
+&lt;NumElts&gt;3&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;100MHz&lt;/Val&gt;
+&lt;/String&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Use Top Clock&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Clock From CLIP&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;/Cluster&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+{5CBB1C92-6AD6-4C75-BA1B-C07B2C97AF54}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_read_strobe;0;ReadMethodType=bool{6C41E0B1-7E49-4EAD-96C1-B974257C78E9}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_addr_strobe;0;ReadMethodType=bool{7ACCF452-24FC-455F-BD30-CDFF5B8C4EA3}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_write_strobe;0;ReadMethodType=bool{822B3599-46FE-4126-B209-70C62EE79D26}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio2_rtl_tri_o;0;ReadMethodType=U32{8AD48943-3A3B-4900-A5F5-F63B834ED23A}ResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;{8CDEC997-9AAF-477D-94E2-526B997260C6}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/INTC_Interrupt;0;WriteMethodType=
+&lt;Type&gt;
+   &lt;FXP&gt;
+      &lt;IntegerWordLength&gt;4&lt;/IntegerWordLength&gt;
+      &lt;Unsigned&gt;true&lt;/Unsigned&gt;
+      &lt;WordLength&gt;4&lt;/WordLength&gt;
+   &lt;/FXP&gt;
+&lt;/Type&gt;{A970BA3B-2717-49AB-A691-A5678108BFC5}bc9572608b7455266ac3ff3723f70d49ccab35219253068f3b9c13d479fd3d61dfef50d07400d858545cb678b090fa96&lt;Array&gt;
+&lt;Name&gt;Generics&lt;/Name&gt;
+&lt;Dimsize&gt;0&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Generic&lt;/Name&gt;
+&lt;NumElts&gt;5&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Type&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Default value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Description&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+&lt;Array&gt;
+&lt;Name&gt;Clock Connections&lt;/Name&gt;
+&lt;Dimsize&gt;1&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock Connection&lt;/Name&gt;
+&lt;NumElts&gt;2&lt;/NumElts&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock&lt;/Name&gt;
+&lt;NumElts&gt;6&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;LabVIEW name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;VHDL name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Max Freq&lt;/Name&gt;
+&lt;Val&gt;200000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Min Freq&lt;/Name&gt;
+&lt;Val&gt;1000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;EW&gt;
+&lt;Name&gt;Direction&lt;/Name&gt;
+&lt;Choice&gt;ToCLIP&lt;/Choice&gt;
+&lt;Choice&gt;FromCLIP&lt;/Choice&gt;
+&lt;Choice&gt;Bidirectional&lt;/Choice&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/EW&gt;
+&lt;String&gt;
+&lt;Name&gt;ClockToLinkTo&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;FPGA Clock&lt;/Name&gt;
+&lt;NumElts&gt;3&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;100MHz&lt;/Val&gt;
+&lt;/String&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Use Top Clock&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Clock From CLIP&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;/Cluster&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+{AC97B7D2-F7C6-4AA9-9D5B-DAFCD82675DC}"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;HT-IOBUS_READ;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{CE3FBDC3-A4B5-4FE2-9A6A-9CB88B595F1F}Multiplier=5.000000;Divisor=2.000000{CE74584E-78B0-411C-871E-3AD2F54DA35A}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/IO_BUS_ready;0;WriteMethodType=bool{D1B7332E-A344-427A-A445-32039F5125BA}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio3_rtl_tri_o;0;ReadMethodType=U32{DE98E3D3-D610-4865-8C97-FDC8969C59BC}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/IO_BUS_read_data;0;WriteMethodType=U32PXIe-6592R/Clk40Derived5x2B00MHz/falsefalse12d422121687815e627be18421f4b6dcFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
+				<Property Name="configString.name" Type="Str">100MHzMultiplier=5.000000;Divisor=2.00000040 MHz Onboard ClockResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;d_mcs_ib6853e24b45eacb3b638910363b94cb0ccab35219253068f3b9c13d479fd3d61deb16dbe11e6531fbf190e47dfb9f3c3&lt;Array&gt;
+&lt;Name&gt;Generics&lt;/Name&gt;
+&lt;Dimsize&gt;0&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Generic&lt;/Name&gt;
+&lt;NumElts&gt;5&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Type&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Default value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Description&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+&lt;Array&gt;
+&lt;Name&gt;Clock Connections&lt;/Name&gt;
+&lt;Dimsize&gt;1&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock Connection&lt;/Name&gt;
+&lt;NumElts&gt;2&lt;/NumElts&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock&lt;/Name&gt;
+&lt;NumElts&gt;6&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;LabVIEW name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;VHDL name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Max Freq&lt;/Name&gt;
+&lt;Val&gt;200000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Min Freq&lt;/Name&gt;
+&lt;Val&gt;1000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;EW&gt;
+&lt;Name&gt;Direction&lt;/Name&gt;
+&lt;Choice&gt;ToCLIP&lt;/Choice&gt;
+&lt;Choice&gt;FromCLIP&lt;/Choice&gt;
+&lt;Choice&gt;Bidirectional&lt;/Choice&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/EW&gt;
+&lt;String&gt;
+&lt;Name&gt;ClockToLinkTo&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;FPGA Clock&lt;/Name&gt;
+&lt;NumElts&gt;3&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;100MHz&lt;/Val&gt;
+&lt;/String&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Use Top Clock&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Clock From CLIP&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;/Cluster&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+DRAM Bank 0bc9572608b7455266ac3ff3723f70d49ccab35219253068f3b9c13d479fd3d61dfef50d07400d858545cb678b090fa96&lt;Array&gt;
+&lt;Name&gt;Generics&lt;/Name&gt;
+&lt;Dimsize&gt;0&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Generic&lt;/Name&gt;
+&lt;NumElts&gt;5&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Type&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Default value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Description&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+&lt;Array&gt;
+&lt;Name&gt;Clock Connections&lt;/Name&gt;
+&lt;Dimsize&gt;1&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock Connection&lt;/Name&gt;
+&lt;NumElts&gt;2&lt;/NumElts&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock&lt;/Name&gt;
+&lt;NumElts&gt;6&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;LabVIEW name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;VHDL name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Max Freq&lt;/Name&gt;
+&lt;Val&gt;200000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Min Freq&lt;/Name&gt;
+&lt;Val&gt;1000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;EW&gt;
+&lt;Name&gt;Direction&lt;/Name&gt;
+&lt;Choice&gt;ToCLIP&lt;/Choice&gt;
+&lt;Choice&gt;FromCLIP&lt;/Choice&gt;
+&lt;Choice&gt;Bidirectional&lt;/Choice&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/EW&gt;
+&lt;String&gt;
+&lt;Name&gt;ClockToLinkTo&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;FPGA Clock&lt;/Name&gt;
+&lt;NumElts&gt;3&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;100MHz&lt;/Val&gt;
+&lt;/String&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Use Top Clock&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Clock From CLIP&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;/Cluster&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+gpio1_rtl_tri_iArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/gpio1_rtl_tri_i;0;WriteMethodType=U32gpio1_rtl_tri_oNumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio1_rtl_tri_o;0;ReadMethodType=U32gpio2_rtl_tri_oNumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio2_rtl_tri_o;0;ReadMethodType=U32gpio3_rtl_tri_oNumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio3_rtl_tri_o;0;ReadMethodType=U32HT-IOBUS_READ"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;HT-IOBUS_READ;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"INTC_InterruptArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/INTC_Interrupt;0;WriteMethodType=
+&lt;Type&gt;
+   &lt;FXP&gt;
+      &lt;IntegerWordLength&gt;4&lt;/IntegerWordLength&gt;
+      &lt;Unsigned&gt;true&lt;/Unsigned&gt;
+      &lt;WordLength&gt;4&lt;/WordLength&gt;
+   &lt;/FXP&gt;
+&lt;/Type&gt;INTC_IRQNumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/INTC_IRQ;0;ReadMethodType=boolIO_BUS_addr_strobeNumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_addr_strobe;0;ReadMethodType=boolIO_BUS_addressNumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_address;0;ReadMethodType=U32IO_BUS_byte_enableNumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_byte_enable;0;ReadMethodType=
+&lt;Type&gt;
+   &lt;FXP&gt;
+      &lt;IntegerWordLength&gt;4&lt;/IntegerWordLength&gt;
+      &lt;Unsigned&gt;true&lt;/Unsigned&gt;
+      &lt;WordLength&gt;4&lt;/WordLength&gt;
+   &lt;/FXP&gt;
+&lt;/Type&gt;IO_BUS_read_dataArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/IO_BUS_read_data;0;WriteMethodType=U32IO_BUS_read_strobeNumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_read_strobe;0;ReadMethodType=boolIO_BUS_readyArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/IO_BUS_ready;0;WriteMethodType=boolIO_BUS_write_dataNumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_write_data;0;ReadMethodType=U32IO_BUS_write_strobeNumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_write_strobe;0;ReadMethodType=boolPXIe-6592R/Clk40Derived5x2B00MHz/falsefalse12d422121687815e627be18421f4b6dcFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]TH-IOBUS_WRITE"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;TH-IOBUS_WRITE;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"</Property>
+			</Item>
+			<Item Name="Fpga-Last-NonZeroValue.vi" Type="VI" URL="../Fpga-6592/Fpga-Last-NonZeroValue.vi">
+				<Property Name="configString.guid" Type="Str">{0546F231-D493-4536-AD8B-C900D87DD8AF}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio1_rtl_tri_o;0;ReadMethodType=U32{0AA37DE4-4109-405F-819B-3EDAF0C93303}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_byte_enable;0;ReadMethodType=
+&lt;Type&gt;
+   &lt;FXP&gt;
+      &lt;IntegerWordLength&gt;4&lt;/IntegerWordLength&gt;
+      &lt;Unsigned&gt;true&lt;/Unsigned&gt;
+      &lt;WordLength&gt;4&lt;/WordLength&gt;
+   &lt;/FXP&gt;
+&lt;/Type&gt;{1E69EE09-0E39-4C90-A073-0CEF25DC50ED}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_address;0;ReadMethodType=U32{343DC252-A036-49F9-A887-1D300FFAC5E3}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/gpio1_rtl_tri_i;0;WriteMethodType=U32{385A16B4-9872-4A8C-A507-EB376ABA7134}"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;TH-IOBUS_WRITE;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{3EF0E3FF-3D76-4377-92FC-C7CE5DA915AC}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/INTC_IRQ;0;ReadMethodType=bool{4686AEAC-A074-4FB5-B974-8C979F8A33D5}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_write_data;0;ReadMethodType=U32{4ECC42C9-8F2B-4B6D-A67E-378CA2140654}b6853e24b45eacb3b638910363b94cb0ccab35219253068f3b9c13d479fd3d61deb16dbe11e6531fbf190e47dfb9f3c3&lt;Array&gt;
+&lt;Name&gt;Generics&lt;/Name&gt;
+&lt;Dimsize&gt;0&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Generic&lt;/Name&gt;
+&lt;NumElts&gt;5&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Type&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Default value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Description&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+&lt;Array&gt;
+&lt;Name&gt;Clock Connections&lt;/Name&gt;
+&lt;Dimsize&gt;1&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock Connection&lt;/Name&gt;
+&lt;NumElts&gt;2&lt;/NumElts&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock&lt;/Name&gt;
+&lt;NumElts&gt;6&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;LabVIEW name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;VHDL name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Max Freq&lt;/Name&gt;
+&lt;Val&gt;200000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Min Freq&lt;/Name&gt;
+&lt;Val&gt;1000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;EW&gt;
+&lt;Name&gt;Direction&lt;/Name&gt;
+&lt;Choice&gt;ToCLIP&lt;/Choice&gt;
+&lt;Choice&gt;FromCLIP&lt;/Choice&gt;
+&lt;Choice&gt;Bidirectional&lt;/Choice&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/EW&gt;
+&lt;String&gt;
+&lt;Name&gt;ClockToLinkTo&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;FPGA Clock&lt;/Name&gt;
+&lt;NumElts&gt;3&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;100MHz&lt;/Val&gt;
+&lt;/String&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Use Top Clock&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Clock From CLIP&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;/Cluster&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+{5CBB1C92-6AD6-4C75-BA1B-C07B2C97AF54}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_read_strobe;0;ReadMethodType=bool{6C41E0B1-7E49-4EAD-96C1-B974257C78E9}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_addr_strobe;0;ReadMethodType=bool{7ACCF452-24FC-455F-BD30-CDFF5B8C4EA3}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_write_strobe;0;ReadMethodType=bool{822B3599-46FE-4126-B209-70C62EE79D26}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio2_rtl_tri_o;0;ReadMethodType=U32{8AD48943-3A3B-4900-A5F5-F63B834ED23A}ResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;{8CDEC997-9AAF-477D-94E2-526B997260C6}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/INTC_Interrupt;0;WriteMethodType=
+&lt;Type&gt;
+   &lt;FXP&gt;
+      &lt;IntegerWordLength&gt;4&lt;/IntegerWordLength&gt;
+      &lt;Unsigned&gt;true&lt;/Unsigned&gt;
+      &lt;WordLength&gt;4&lt;/WordLength&gt;
+   &lt;/FXP&gt;
+&lt;/Type&gt;{A970BA3B-2717-49AB-A691-A5678108BFC5}bc9572608b7455266ac3ff3723f70d49ccab35219253068f3b9c13d479fd3d61dfef50d07400d858545cb678b090fa96&lt;Array&gt;
+&lt;Name&gt;Generics&lt;/Name&gt;
+&lt;Dimsize&gt;0&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Generic&lt;/Name&gt;
+&lt;NumElts&gt;5&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Type&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Default value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Description&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+&lt;Array&gt;
+&lt;Name&gt;Clock Connections&lt;/Name&gt;
+&lt;Dimsize&gt;1&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock Connection&lt;/Name&gt;
+&lt;NumElts&gt;2&lt;/NumElts&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock&lt;/Name&gt;
+&lt;NumElts&gt;6&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;LabVIEW name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;VHDL name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Max Freq&lt;/Name&gt;
+&lt;Val&gt;200000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Min Freq&lt;/Name&gt;
+&lt;Val&gt;1000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;EW&gt;
+&lt;Name&gt;Direction&lt;/Name&gt;
+&lt;Choice&gt;ToCLIP&lt;/Choice&gt;
+&lt;Choice&gt;FromCLIP&lt;/Choice&gt;
+&lt;Choice&gt;Bidirectional&lt;/Choice&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/EW&gt;
+&lt;String&gt;
+&lt;Name&gt;ClockToLinkTo&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;FPGA Clock&lt;/Name&gt;
+&lt;NumElts&gt;3&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;100MHz&lt;/Val&gt;
+&lt;/String&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Use Top Clock&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Clock From CLIP&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;/Cluster&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+{AC97B7D2-F7C6-4AA9-9D5B-DAFCD82675DC}"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;HT-IOBUS_READ;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"{CE3FBDC3-A4B5-4FE2-9A6A-9CB88B595F1F}Multiplier=5.000000;Divisor=2.000000{CE74584E-78B0-411C-871E-3AD2F54DA35A}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/IO_BUS_ready;0;WriteMethodType=bool{D1B7332E-A344-427A-A445-32039F5125BA}NumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio3_rtl_tri_o;0;ReadMethodType=U32{DE98E3D3-D610-4865-8C97-FDC8969C59BC}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/IO_BUS_read_data;0;WriteMethodType=U32PXIe-6592R/Clk40Derived5x2B00MHz/falsefalse12d422121687815e627be18421f4b6dcFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
+				<Property Name="configString.name" Type="Str">100MHzMultiplier=5.000000;Divisor=2.00000040 MHz Onboard ClockResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;d_mcs_ib6853e24b45eacb3b638910363b94cb0ccab35219253068f3b9c13d479fd3d61deb16dbe11e6531fbf190e47dfb9f3c3&lt;Array&gt;
+&lt;Name&gt;Generics&lt;/Name&gt;
+&lt;Dimsize&gt;0&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Generic&lt;/Name&gt;
+&lt;NumElts&gt;5&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Type&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Default value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Description&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+&lt;Array&gt;
+&lt;Name&gt;Clock Connections&lt;/Name&gt;
+&lt;Dimsize&gt;1&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock Connection&lt;/Name&gt;
+&lt;NumElts&gt;2&lt;/NumElts&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock&lt;/Name&gt;
+&lt;NumElts&gt;6&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;LabVIEW name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;VHDL name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Max Freq&lt;/Name&gt;
+&lt;Val&gt;200000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Min Freq&lt;/Name&gt;
+&lt;Val&gt;1000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;EW&gt;
+&lt;Name&gt;Direction&lt;/Name&gt;
+&lt;Choice&gt;ToCLIP&lt;/Choice&gt;
+&lt;Choice&gt;FromCLIP&lt;/Choice&gt;
+&lt;Choice&gt;Bidirectional&lt;/Choice&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/EW&gt;
+&lt;String&gt;
+&lt;Name&gt;ClockToLinkTo&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;FPGA Clock&lt;/Name&gt;
+&lt;NumElts&gt;3&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;100MHz&lt;/Val&gt;
+&lt;/String&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Use Top Clock&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Clock From CLIP&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;/Cluster&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+DRAM Bank 0bc9572608b7455266ac3ff3723f70d49ccab35219253068f3b9c13d479fd3d61dfef50d07400d858545cb678b090fa96&lt;Array&gt;
+&lt;Name&gt;Generics&lt;/Name&gt;
+&lt;Dimsize&gt;0&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Generic&lt;/Name&gt;
+&lt;NumElts&gt;5&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Type&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Default value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Value&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;Description&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+&lt;Array&gt;
+&lt;Name&gt;Clock Connections&lt;/Name&gt;
+&lt;Dimsize&gt;1&lt;/Dimsize&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock Connection&lt;/Name&gt;
+&lt;NumElts&gt;2&lt;/NumElts&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;CLIP Clock&lt;/Name&gt;
+&lt;NumElts&gt;6&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;LabVIEW name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;String&gt;
+&lt;Name&gt;VHDL name&lt;/Name&gt;
+&lt;Val&gt;clock_rtl&lt;/Val&gt;
+&lt;/String&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Max Freq&lt;/Name&gt;
+&lt;Val&gt;200000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Min Freq&lt;/Name&gt;
+&lt;Val&gt;1000000.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;EW&gt;
+&lt;Name&gt;Direction&lt;/Name&gt;
+&lt;Choice&gt;ToCLIP&lt;/Choice&gt;
+&lt;Choice&gt;FromCLIP&lt;/Choice&gt;
+&lt;Choice&gt;Bidirectional&lt;/Choice&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/EW&gt;
+&lt;String&gt;
+&lt;Name&gt;ClockToLinkTo&lt;/Name&gt;
+&lt;Val&gt;&lt;/Val&gt;
+&lt;/String&gt;
+&lt;/Cluster&gt;
+&lt;Cluster&gt;
+&lt;Name&gt;FPGA Clock&lt;/Name&gt;
+&lt;NumElts&gt;3&lt;/NumElts&gt;
+&lt;String&gt;
+&lt;Name&gt;Name&lt;/Name&gt;
+&lt;Val&gt;100MHz&lt;/Val&gt;
+&lt;/String&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Use Top Clock&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Clock From CLIP&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;/Cluster&gt;
+&lt;/Cluster&gt;
+&lt;/Array&gt;
+gpio1_rtl_tri_iArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/gpio1_rtl_tri_i;0;WriteMethodType=U32gpio1_rtl_tri_oNumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio1_rtl_tri_o;0;ReadMethodType=U32gpio2_rtl_tri_oNumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio2_rtl_tri_o;0;ReadMethodType=U32gpio3_rtl_tri_oNumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/gpio3_rtl_tri_o;0;ReadMethodType=U32HT-IOBUS_READ"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;HT-IOBUS_READ;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"INTC_InterruptArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/INTC_Interrupt;0;WriteMethodType=
+&lt;Type&gt;
+   &lt;FXP&gt;
+      &lt;IntegerWordLength&gt;4&lt;/IntegerWordLength&gt;
+      &lt;Unsigned&gt;true&lt;/Unsigned&gt;
+      &lt;WordLength&gt;4&lt;/WordLength&gt;
+   &lt;/FXP&gt;
+&lt;/Type&gt;INTC_IRQNumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/INTC_IRQ;0;ReadMethodType=boolIO_BUS_addr_strobeNumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_addr_strobe;0;ReadMethodType=boolIO_BUS_addressNumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_address;0;ReadMethodType=U32IO_BUS_byte_enableNumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_byte_enable;0;ReadMethodType=
+&lt;Type&gt;
+   &lt;FXP&gt;
+      &lt;IntegerWordLength&gt;4&lt;/IntegerWordLength&gt;
+      &lt;Unsigned&gt;true&lt;/Unsigned&gt;
+      &lt;WordLength&gt;4&lt;/WordLength&gt;
+   &lt;/FXP&gt;
+&lt;/Type&gt;IO_BUS_read_dataArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/IO_BUS_read_data;0;WriteMethodType=U32IO_BUS_read_strobeNumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_read_strobe;0;ReadMethodType=boolIO_BUS_readyArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_mcs_i/SignalList/IO_BUS_ready;0;WriteMethodType=boolIO_BUS_write_dataNumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_write_data;0;ReadMethodType=U32IO_BUS_write_strobeNumberOfSyncRegistersForReadInProject=0;resource=/d_mcs_i/SignalList/IO_BUS_write_strobe;0;ReadMethodType=boolPXIe-6592R/Clk40Derived5x2B00MHz/falsefalse12d422121687815e627be18421f4b6dcFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]TH-IOBUS_WRITE"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;TH-IOBUS_WRITE;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"</Property>
+			</Item>
+			<Item Name="Dependencies" Type="Dependencies">
+				<Item Name="vi.lib" Type="Folder">
+					<Item Name="lvSimController.dll" Type="Document" URL="/&lt;vilib&gt;/rvi/Simulation/lvSimController.dll"/>
+				</Item>
+			</Item>
 			<Item Name="Build Specifications" Type="Build">
 				<Item Name="Fpga-6592-Top-Level" Type="{F4C5E96F-7410-48A5-BB87-3559BC9B167F}">
 					<Property Name="AllowEnableRemoval" Type="Bool">false</Property>
 					<Property Name="BuildSpecDecription" Type="Str"></Property>
 					<Property Name="BuildSpecName" Type="Str">Fpga-6592-Top-Level</Property>
-					<Property Name="Comp.BitfileName" Type="Str">02MicroBlazeMcsI_FPGATarget_Fpga-6592-Top-Le_15Vc1VzPgWQ.lvbitx</Property>
+					<Property Name="Comp.BitfileName" Type="Str">02MicroBlazeMcsI_FPGATarget_Fpga-6592-Top-Le_1BKGQ3Zm+NY.lvbitx</Property>
 					<Property Name="Comp.CustomXilinxParameters" Type="Str"></Property>
 					<Property Name="Comp.MaxFanout" Type="Int">-1</Property>
 					<Property Name="Comp.RandomSeed" Type="Bool">false</Property>
@@ -1722,10 +2872,10 @@ gpio1_rtl_tri_iArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForO
 					<Property Name="Comp.Version.Minor" Type="Int">0</Property>
 					<Property Name="Comp.VersionAutoIncrement" Type="Bool">false</Property>
 					<Property Name="Comp.Vivado.EnableMultiThreading" Type="Bool">true</Property>
-					<Property Name="Comp.Vivado.OptDirective" Type="Str"></Property>
-					<Property Name="Comp.Vivado.PhysOptDirective" Type="Str"></Property>
-					<Property Name="Comp.Vivado.PlaceDirective" Type="Str"></Property>
-					<Property Name="Comp.Vivado.RouteDirective" Type="Str"></Property>
+					<Property Name="Comp.Vivado.OptDirective" Type="Str">Explore</Property>
+					<Property Name="Comp.Vivado.PhysOptDirective" Type="Str">Explore</Property>
+					<Property Name="Comp.Vivado.PlaceDirective" Type="Str">Explore</Property>
+					<Property Name="Comp.Vivado.RouteDirective" Type="Str">Explore</Property>
 					<Property Name="Comp.Vivado.RunPowerOpt" Type="Bool">false</Property>
 					<Property Name="Comp.Vivado.Strategy" Type="Str">Default</Property>
 					<Property Name="Comp.Xilinx.DesignStrategy" Type="Str">balanced</Property>
@@ -1738,7 +2888,7 @@ gpio1_rtl_tri_iArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForO
 					<Property Name="DestinationDirectory" Type="Path">FPGA Bitfiles</Property>
 					<Property Name="NI.LV.FPGA.LastCompiledBitfilePath" Type="Path">/Z/work/git/LabVIEW_Fpga/05_MicroBlaze_Mcs/02_MicroBlaze_Mcs_IO_Bus/FPGA Bitfiles/02MicroBlazeMcsI_FPGATarget_Fpga-6592-Top-Le_1BKGQ3Zm+NY.lvbitx</Property>
 					<Property Name="NI.LV.FPGA.LastCompiledBitfilePathRelativeToProject" Type="Path">FPGA Bitfiles/02MicroBlazeMcsI_FPGATarget_Fpga-6592-Top-Le_1BKGQ3Zm+NY.lvbitx</Property>
-					<Property Name="ProjectPath" Type="Path">/G/work/git/LabVIEW_Fpga/05_MicroBlaze_Mcs/02_MicroBlaze_Mcs_IO_Bus/02_MicroBlaze_Mcs_IO_Bus.lvproj</Property>
+					<Property Name="ProjectPath" Type="Path">/Z/work/git/LabVIEW_Fpga/05_MicroBlaze_Mcs/02_MicroBlaze_Mcs_IO_Bus/02_MicroBlaze_Mcs_IO_Bus.lvproj</Property>
 					<Property Name="RelativePath" Type="Bool">true</Property>
 					<Property Name="RunWhenLoaded" Type="Bool">false</Property>
 					<Property Name="SupportDownload" Type="Bool">true</Property>
@@ -1750,7 +2900,14 @@ gpio1_rtl_tri_iArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForO
 		</Item>
 		<Item Name="Host-Top-Level.vi" Type="VI" URL="../Host-Top-Level.vi"/>
 		<Item Name="State.ctl" Type="VI" URL="../State.ctl"/>
-		<Item Name="Dependencies" Type="Dependencies"/>
+		<Item Name="Dependencies" Type="Dependencies">
+			<Item Name="vi.lib" Type="Folder">
+				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
+			</Item>
+			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 </Project>
