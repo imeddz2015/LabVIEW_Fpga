@@ -1,0 +1,7 @@
+Running: xsim.dir/AXI4_dash_Stream_Data_FIFO_03FC83B05E054B4CAB413A77D00E0A49/xsimk_03FC83B05E054B4CAB413A77D00E0A49.dll -log xsiSetupLog
+Design successfully loaded
+Design Loading Memory Usage: 631008 KB (Peak: 631008 KB)
+Design Loading CPU Usage: 1208265 ms
+Simulation completed
+Simulation Memory Usage: 631008 KB (Peak: 631008 KB)
+Simulation CPU Usage: 1208265 ms

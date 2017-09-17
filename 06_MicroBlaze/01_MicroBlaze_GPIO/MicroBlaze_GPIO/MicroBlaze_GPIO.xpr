@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="10" Path="G:/work/git/LabVIEW_Fpga/06_MicroBlaze/01_MicroBlaze_GPIO/MicroBlaze_GPIO/MicroBlaze_GPIO.xpr">
+<Project Version="7" Minor="10" Path="Z:/work/git/LabVIEW_Fpga/06_MicroBlaze/01_MicroBlaze_GPIO/MicroBlaze_GPIO/MicroBlaze_GPIO.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="0057bb36f6954000a26b1b1ebe28defe"/>
