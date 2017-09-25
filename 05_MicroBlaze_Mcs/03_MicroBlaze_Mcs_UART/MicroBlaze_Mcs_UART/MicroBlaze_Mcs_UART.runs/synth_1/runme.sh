@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='G:/work/git/LabVIEW_Fpga/05_MicroBlaze_Mcs/03_MicroBlaze_Mcs_UART/MicroBlaze_Mcs_UART/MicroBlaze_Mcs_UART.runs/synth_1'
+HD_PWD='Z:/work/git/LabVIEW_Fpga/05_MicroBlaze_Mcs/03_MicroBlaze_Mcs_UART/MicroBlaze_Mcs_UART/MicroBlaze_Mcs_UART.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

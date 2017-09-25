@@ -1,1 +1,0 @@
-set_param synth.elaboration.rodinMoreOptions "rt::set_parameter max_loop_limit 1000000; rt::set_parameter xilinxDelayDecompMultThreshold 10000; rt::set_parameter disableCompressRtd true; rt::set_parameter reduceVariableBitSelect false; rt::set_parameter doRangeOptimizationDfg false;"

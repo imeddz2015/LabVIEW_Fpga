@@ -19,3 +19,5 @@
 17:31:43 INFO  : The new hardware specification file contains the same information as the current specification file. No changes were done to the workspace.
 20:57:26 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
 20:57:28 INFO  : XSDB server has started successfully.
+11:56:58 INFO  : Launching XSDB server: xsdb.bat C:/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+11:57:00 INFO  : XSDB server has started successfully.

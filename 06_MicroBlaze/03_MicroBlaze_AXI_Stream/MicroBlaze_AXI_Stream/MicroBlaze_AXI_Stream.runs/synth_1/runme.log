@@ -13,14 +13,14 @@ source d_microblaze_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/NIFPGA/programs/Vivado2015_4/data/ip'.
-add_files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 272.809 ; gain = 84.453
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 273.129 ; gain = 84.285
 Command: synth_design -top d_microblaze_wrapper -part xc7k410tffg900-2
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k410t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k410t'
-INFO: [Common 17-1223] The version limit for your license is '2015.12' and will expire in -621 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Common 17-1223] The version limit for your license is '2015.12' and will expire in -630 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 357.563 ; gain = 185.180
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 356.512 ; gain = 183.516
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'd_microblaze_wrapper' [Z:/work/git/LabVIEW_Fpga/06_MicroBlaze/03_MicroBlaze_AXI_Stream/MicroBlaze_AXI_Stream/MicroBlaze_AXI_Stream.srcs/sources_1/bd/d_microblaze/hdl/d_microblaze_wrapper.vhd:33]
 INFO: [Synth 8-3491] module 'd_microblaze' declared at 'Z:/work/git/LabVIEW_Fpga/06_MicroBlaze/03_MicroBlaze_AXI_Stream/MicroBlaze_AXI_Stream/MicroBlaze_AXI_Stream.srcs/sources_1/bd/d_microblaze/hdl/d_microblaze.vhd:1361' bound to instance 'd_microblaze_i' of component 'd_microblaze' [Z:/work/git/LabVIEW_Fpga/06_MicroBlaze/03_MicroBlaze_AXI_Stream/MicroBlaze_AXI_Stream/MicroBlaze_AXI_Stream.srcs/sources_1/bd/d_microblaze/hdl/d_microblaze_wrapper.vhd:52]
@@ -13047,7 +13047,7 @@ INFO: [Synth 8-256] done synthesizing module 'd_microblaze_rst_clk_wiz_1_100M_0'
 INFO: [Synth 8-256] done synthesizing module 'd_microblaze' (132#1) [Z:/work/git/LabVIEW_Fpga/06_MicroBlaze/03_MicroBlaze_AXI_Stream/MicroBlaze_AXI_Stream/MicroBlaze_AXI_Stream.srcs/sources_1/bd/d_microblaze/hdl/d_microblaze.vhd:1383]
 INFO: [Synth 8-256] done synthesizing module 'd_microblaze_wrapper' (133#1) [Z:/work/git/LabVIEW_Fpga/06_MicroBlaze/03_MicroBlaze_AXI_Stream/MicroBlaze_AXI_Stream/MicroBlaze_AXI_Stream.srcs/sources_1/bd/d_microblaze/hdl/d_microblaze_wrapper.vhd:33]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:03:12 ; elapsed = 00:06:10 . Memory (MB): peak = 646.422 ; gain = 474.039
+Finished RTL Elaboration : Time (s): cpu = 00:03:33 ; elapsed = 00:06:31 . Memory (MB): peak = 646.168 ; gain = 473.172
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -13158,10 +13158,10 @@ WARNING: [Synth 8-3295] tying undriven pin COMP_FIFO:axi_ar_prog_full_thresh[3] 
 WARNING: [Synth 8-3295] tying undriven pin COMP_FIFO:axi_ar_prog_full_thresh[2] to constant 0 [z:/work/git/LabVIEW_Fpga/06_MicroBlaze/03_MicroBlaze_AXI_Stream/MicroBlaze_AXI_Stream/MicroBlaze_AXI_Stream.srcs/sources_1/bd/d_microblaze/ipshared/xilinx.com/axi_fifo_mm_s_v4_1/hdl/src/vhdl/axis_fg.vhd:296]
 INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:13 ; elapsed = 00:10:18 . Memory (MB): peak = 646.422 ; gain = 474.039
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:03:34 ; elapsed = 00:10:40 . Memory (MB): peak = 646.168 ; gain = 473.172
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 942 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Device 21-403] Loading part xc7k410tffg900-2
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -13207,16 +13207,16 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 16 instances
   SRL16 => SRL16E: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.244 . Memory (MB): peak = 841.758 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.243 . Memory (MB): peak = 841.652 ; gain = 0.004
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:03:30 ; elapsed = 00:14:45 . Memory (MB): peak = 841.758 ; gain = 669.375
+Finished Constraint Validation : Time (s): cpu = 00:03:53 ; elapsed = 00:15:07 . Memory (MB): peak = 841.652 ; gain = 668.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k410tffg900-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:03:30 ; elapsed = 00:14:45 . Memory (MB): peak = 841.758 ; gain = 669.375
+Finished Loading Part and Timing Information : Time (s): cpu = 00:03:53 ; elapsed = 00:15:07 . Memory (MB): peak = 841.652 ; gain = 668.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -13241,7 +13241,7 @@ Applied set_property DONT_TOUCH = true for d_microblaze_i/microblaze_0_local_mem
 Applied set_property DONT_TOUCH = true for d_microblaze_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for d_microblaze_i/rst_clk_wiz_1_100M. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:03:30 ; elapsed = 00:14:45 . Memory (MB): peak = 841.758 ; gain = 669.375
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:03:53 ; elapsed = 00:15:07 . Memory (MB): peak = 841.652 ; gain = 668.656
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "s_axi_rresp_i" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
@@ -13296,7 +13296,7 @@ WARNING: [Synth 8-115] binding instance 'i_5' in module 'PC_Module_gti' to refer
 WARNING: [Synth 8-115] binding instance 'i_21' in module 'jump_logic' to reference 'keep__90' which has no pins
 WARNING: [Synth 8-115] binding instance 'i_22' in module 'jump_logic' to reference 'keep__92' which has no pins
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:40 ; elapsed = 00:14:55 . Memory (MB): peak = 841.758 ; gain = 669.375
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:04:02 ; elapsed = 00:15:18 . Memory (MB): peak = 841.652 ; gain = 668.656
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -13994,16 +13994,16 @@ BRAMs: 1590 (col length: RAMB18 140 RAMB36 70)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:03:40 ; elapsed = 00:14:56 . Memory (MB): peak = 841.758 ; gain = 669.375
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:04:03 ; elapsed = 00:15:19 . Memory (MB): peak = 841.652 ; gain = 668.656
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4471] merging register 'bus2ip_reset_reg' into 'AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst_reg' [z:/work/git/LabVIEW_Fpga/06_MicroBlaze/03_MicroBlaze_AXI_Stream/MicroBlaze_AXI_Stream/MicroBlaze_AXI_Stream.srcs/sources_1/bd/d_microblaze/ipshared/xilinx.com/axi_gpio_v2_0/hdl/src/vhdl/axi_gpio.vhd:608]
 INFO: [Synth 8-3936] Found unconnected internal register 'inst/gen_sasd.crossbar_sasd_0/reg_slice_r/m_payload_i_reg' and it is trimmed from '36' to '35' bits. [z:/work/git/LabVIEW_Fpga/06_MicroBlaze/03_MicroBlaze_AXI_Stream/MicroBlaze_AXI_Stream/MicroBlaze_AXI_Stream.srcs/sources_1/bd/d_microblaze/ipshared/xilinx.com/axi_register_slice_v2_1/hdl/verilog/axi_register_slice_v2_1_axic_register_slice.v:121]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:03:43 ; elapsed = 00:14:59 . Memory (MB): peak = 841.758 ; gain = 669.375
+Finished Cross Boundary Optimization : Time (s): cpu = 00:04:06 ; elapsed = 00:15:22 . Memory (MB): peak = 841.652 ; gain = 668.656
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:03:43 ; elapsed = 00:14:59 . Memory (MB): peak = 841.758 ; gain = 669.375
+Finished Parallel Reinference  : Time (s): cpu = 00:04:06 ; elapsed = 00:15:22 . Memory (MB): peak = 841.652 ; gain = 668.656
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -14097,9 +14097,9 @@ INFO: [Synth 8-3332] Sequential element (\U0/COMP_IPIC2AXI_S/grxd.COMP_rx_len_fi
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:03:48 ; elapsed = 00:15:04 . Memory (MB): peak = 841.758 ; gain = 669.375
+Finished Area Optimization : Time (s): cpu = 00:04:11 ; elapsed = 00:15:28 . Memory (MB): peak = 841.652 ; gain = 668.656
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:03:48 ; elapsed = 00:15:04 . Memory (MB): peak = 841.758 ; gain = 669.375
+Finished Parallel Area Optimization  : Time (s): cpu = 00:04:11 ; elapsed = 00:15:28 . Memory (MB): peak = 841.652 ; gain = 668.656
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -14114,10 +14114,10 @@ Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 invalid command "set_ip_msg_config -idlist DPOP-3" at line 2 of file z:/work/git/LabVIEW_Fpga/06_MicroBlaze/03_MicroBlaze_AXI_Stream/MicroBlaze_AXI_Stream/MicroBlaze_AXI_Stream.srcs/sources_1/bd/d_microblaze/ip/d_microblaze_microblaze_0_0/d_microblaze_microblaze_0_0.xdc
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:00 ; elapsed = 00:15:17 . Memory (MB): peak = 841.758 ; gain = 669.375
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:25 ; elapsed = 00:15:41 . Memory (MB): peak = 841.652 ; gain = 668.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:04:03 ; elapsed = 00:15:20 . Memory (MB): peak = 841.758 ; gain = 669.375
+Finished Timing Optimization : Time (s): cpu = 00:04:27 ; elapsed = 00:15:44 . Memory (MB): peak = 841.652 ; gain = 668.656
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -14178,16 +14178,16 @@ INFO: [Synth 8-3332] Sequential element (\gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GE
 INFO: [Synth 8-3332] Sequential element (\gpio_core_1/Dual.INPUT_DOUBLE_REGS4/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_CROSS_PLEVEL_IN2SCNDRY_bus_d6[9].CROSS2_PLEVEL_IN2SCNDRY_s_level_out_bus_d6 ) is unused and will be removed from module axi_gpio.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:04:06 ; elapsed = 00:15:24 . Memory (MB): peak = 841.758 ; gain = 669.375
+Finished Technology Mapping : Time (s): cpu = 00:04:30 ; elapsed = 00:15:48 . Memory (MB): peak = 841.652 ; gain = 668.656
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:04:06 ; elapsed = 00:15:24 . Memory (MB): peak = 841.758 ; gain = 669.375
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:04:30 ; elapsed = 00:15:48 . Memory (MB): peak = 841.652 ; gain = 668.656
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:04:06 ; elapsed = 00:15:24 . Memory (MB): peak = 841.758 ; gain = 669.375
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:04:30 ; elapsed = 00:15:48 . Memory (MB): peak = 841.652 ; gain = 668.656
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -14204,7 +14204,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:04:06 ; elapsed = 00:15:25 . Memory (MB): peak = 841.758 ; gain = 669.375
+Finished IO Insertion : Time (s): cpu = 00:04:31 ; elapsed = 00:15:49 . Memory (MB): peak = 841.652 ; gain = 668.656
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -14217,7 +14217,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:04:07 ; elapsed = 00:15:25 . Memory (MB): peak = 841.758 ; gain = 669.375
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:31 ; elapsed = 00:15:49 . Memory (MB): peak = 841.652 ; gain = 668.656
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -14230,25 +14230,25 @@ Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-115] binding instance 'i_0' in module 'fifo_generator_v13_0_1_synth__parameterized1' to reference 'reset_blk_ramfifo__parameterized2' which has no pins
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:07 ; elapsed = 00:15:26 . Memory (MB): peak = 841.758 ; gain = 669.375
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:32 ; elapsed = 00:15:50 . Memory (MB): peak = 841.652 ; gain = 668.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:04:08 ; elapsed = 00:15:26 . Memory (MB): peak = 841.758 ; gain = 669.375
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:33 ; elapsed = 00:15:50 . Memory (MB): peak = 841.652 ; gain = 668.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:04:08 ; elapsed = 00:15:26 . Memory (MB): peak = 841.758 ; gain = 669.375
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:33 ; elapsed = 00:15:51 . Memory (MB): peak = 841.652 ; gain = 668.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:04:08 ; elapsed = 00:15:26 . Memory (MB): peak = 841.758 ; gain = 669.375
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:33 ; elapsed = 00:15:51 . Memory (MB): peak = 841.652 ; gain = 668.656
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -15040,11 +15040,11 @@ Report Instance Areas:
 |721   |                  \prim_noinit.ram                                                |blk_mem_gen_prim_wrapper__parameterized9      |     1|
 +------+----------------------------------------------------------------------------------+----------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:04:08 ; elapsed = 00:15:28 . Memory (MB): peak = 841.758 ; gain = 669.375
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:33 ; elapsed = 00:15:51 . Memory (MB): peak = 841.652 ; gain = 668.656
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:42 ; elapsed = 00:15:03 . Memory (MB): peak = 841.758 ; gain = 373.613
-Synthesis Optimization Complete : Time (s): cpu = 00:04:08 ; elapsed = 00:15:28 . Memory (MB): peak = 841.758 ; gain = 669.375
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:45 ; elapsed = 00:15:26 . Memory (MB): peak = 841.652 ; gain = 373.039
+Synthesis Optimization Complete : Time (s): cpu = 00:04:33 ; elapsed = 00:15:51 . Memory (MB): peak = 841.652 ; gain = 668.656
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 829 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -15066,7 +15066,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 1204 Infos, 171 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:04:08 ; elapsed = 00:15:25 . Memory (MB): peak = 841.758 ; gain = 568.949
-write_checkpoint: Time (s): cpu = 00:00:03 ; elapsed = 00:02:12 . Memory (MB): peak = 841.758 ; gain = 0.000
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.172 . Memory (MB): peak = 841.758 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Sep 12 21:20:55 2017...
+synth_design: Time (s): cpu = 00:04:32 ; elapsed = 00:15:48 . Memory (MB): peak = 841.652 ; gain = 568.523
+write_checkpoint: Time (s): cpu = 00:00:03 ; elapsed = 00:02:12 . Memory (MB): peak = 841.652 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.164 . Memory (MB): peak = 841.652 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 21 19:30:37 2017...

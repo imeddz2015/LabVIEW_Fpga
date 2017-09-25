@@ -52,10 +52,9 @@ int main()
 	}
 
 	// Main Loop
-	int i;
 	u32 ReceiveLength;
-	u32 RxWord;
 	char buffer[MAX_FRAME_SIZE];
+	u32 words[100];
 
 	XGpio_DiscreteWrite(&GpioOutput, 2, 0x200);
 	while(1)
@@ -63,7 +62,6 @@ int main()
 		XGpio_DiscreteWrite(&GpioOutput, 2, 0x201);
 		if( XLlFifo_RxOccupancy(&FifoInstance) )
 		{
-//			ReceiveLength = (XLlFifo_RxGetLen(&FifoInstance))/WORD_SIZE;
 			ReceiveLength = (XLlFifo_iRxGetLen(&FifoInstance))/WORD_SIZE;
 			XGpio_DiscreteWrite(&GpioOutput, 2, 0x202);
 			XGpio_DiscreteWrite(&GpioOutput, 2, ReceiveLength);
@@ -73,16 +71,52 @@ int main()
 				XGpio_DiscreteWrite(&GpioOutput, 2, 0x204);
 
 				// Receive entire buffer amount
-				XLlFifo_Read(&FifoInstance, buffer, ReceiveLength);
+				XLlFifo_Read(&FifoInstance, buffer, (ReceiveLength*WORD_SIZE));
 				XGpio_DiscreteWrite(&GpioOutput, 2, 0x210 + ReceiveLength);
-				XGpio_DiscreteWrite(&GpioOutput, 2, buffer[0]);
-				XGpio_DiscreteWrite(&GpioOutput, 2, buffer[1]);
-				XGpio_DiscreteWrite(&GpioOutput, 2, buffer[2]);
-				XGpio_DiscreteWrite(&GpioOutput, 2, buffer[3]);
+
+				int i;
+				u32 word = 0;
+
+
+				u32 sumOfValues = 0;
+				for(i=0; i<ReceiveLength; i++) {
+					int index = (i*4);
+					word =  (buffer[index+3] << 24) |
+							(buffer[index+2] << 16) |
+							(buffer[index+1] <<  8) |
+							(buffer[index+0])
+							;
+
+					XGpio_DiscreteWrite(&GpioOutput, 2, i);
+					XGpio_DiscreteWrite(&GpioOutput, 2, word);
+
+					words[i] = word;
+					sumOfValues += word;
+				}
+
+				XGpio_DiscreteWrite(&GpioOutput, 2, ReceiveLength);
+				XGpio_DiscreteWrite(&GpioOutput, 2, 0xFF01);
+				XGpio_DiscreteWrite(&GpioOutput, 2, sumOfValues);
+				XGpio_DiscreteWrite(&GpioOutput, 2, 0xFF02);
+
+				// Now echo the data back out
+				XGpio_DiscreteWrite(&GpioOutput, 2, 0xFE01);
+				if (XLlFifo_iTxVacancy(&FifoInstance)) {
+					XGpio_DiscreteWrite(&GpioOutput, 2, 0xFE02);
+					for(i=0; i<ReceiveLength; i++) {
+						XGpio_DiscreteWrite(&GpioOutput, 2, i);
+						XGpio_DiscreteWrite(&GpioOutput, 2, words[i]);
+						XLlFifo_TxPutWord(&FifoInstance, words[i]);
+					}
+					XGpio_DiscreteWrite(&GpioOutput, 2, 0xFE03);
+
+					XLlFifo_iTxSetLen(&FifoInstance, (4 * ReceiveLength));
+					XGpio_DiscreteWrite(&GpioOutput, 2, 0xFE04);
+				}
 			}
 			XGpio_DiscreteWrite(&GpioOutput, 2, 0x220);
 		}
-		//XGpio_DiscreteWrite(&GpioOutput, 2, 0x230);
+		XGpio_DiscreteWrite(&GpioOutput, 2, 0x230);
 	}
 
 	return 0;

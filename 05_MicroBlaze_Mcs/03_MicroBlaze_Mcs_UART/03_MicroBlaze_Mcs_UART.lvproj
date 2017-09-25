@@ -12,7 +12,7 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="FPGA Target" Type="FPGA Target">
 			<Property Name="AutoRun" Type="Bool">false</Property>
-			<Property Name="configString.guid" Type="Str">{0670162C-9441-4ADE-8DE3-38602866DB5B}ResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;{1A494478-F4CA-40F7-9276-41024D5A7B68}NumberOfSyncRegistersForReadInProject=Auto;resource=/d_mcs_i/SignalList/uart_rtl_txd;0;ReadMethodType=bool{34C4B30A-45D0-4D98-87FE-E7A0CB6C901C}"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;HT-UART_TX;DataType=1000800000000001000940050002553800000100000000000000;DisableOnOverflowUnderflow=FALSE"{3FE6314B-9518-4BD6-82BA-85E535C9792F}Multiplier=5.000000;Divisor=2.000000{47A94F9A-1AFA-4951-8462-16EF2250BA57}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/d_mcs_i/SignalList/uart_rtl_rxd;0;WriteMethodType=bool{A4461C6D-A689-4FB4-8B21-657A2B059CE2}"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;TH-UART_TX;DataType=1000800000000001000940050002553800000100000000000000;DisableOnOverflowUnderflow=FALSE"{E56C94C9-3FDD-4EC5-8F61-DF5C00521ECE}Multiplier=40.000000;Divisor=341.000000{F960E256-3304-4E35-A843-CEF131BA1C5E}1daf6285591f794b0ff06453534832fe2ad3022ab9dafd1a0f9affe715b91e283fb2de47a3f7f7996f67c5ca2a580e66&lt;Array&gt;
+			<Property Name="configString.guid" Type="Str">{0670162C-9441-4ADE-8DE3-38602866DB5B}ResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;{1A494478-F4CA-40F7-9276-41024D5A7B68}NumberOfSyncRegistersForReadInProject=Auto;resource=/d_mcs_i/SignalList/uart_rtl_txd;0;ReadMethodType=bool{34C4B30A-45D0-4D98-87FE-E7A0CB6C901C}"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;HT-UART_TX;DataType=1000800000000001000940050002553800000100000000000000;DisableOnOverflowUnderflow=FALSE"{3FE6314B-9518-4BD6-82BA-85E535C9792F}Multiplier=5.000000;Divisor=2.000000{47A94F9A-1AFA-4951-8462-16EF2250BA57}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/d_mcs_i/SignalList/uart_rtl_rxd;0;WriteMethodType=bool{53D008A3-4A8A-4616-9081-3CE4627A3FF9}"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;TH-UART_TX;DataType=1000800000000001000940050002553800000100000000000000;DisableOnOverflowUnderflow=FALSE"{E56C94C9-3FDD-4EC5-8F61-DF5C00521ECE}Multiplier=40.000000;Divisor=341.000000{F960E256-3304-4E35-A843-CEF131BA1C5E}1daf6285591f794b0ff06453534832fe2ad3022ab9dafd1a0f9affe715b91e283fb2de47a3f7f7996f67c5ca2a580e66&lt;Array&gt;
 &lt;Name&gt;Generics&lt;/Name&gt;
 &lt;Dimsize&gt;0&lt;/Dimsize&gt;
 &lt;Cluster&gt;
@@ -183,113 +183,113 @@ HT-UART_TX"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Mul
 			<Property Name="ForceCompileConfigUpdate" Type="Bool">true</Property>
 			<Property Name="NI.LV.FPGA.659XR.ActiveSerialIo.Valid" Type="Bool">true</Property>
 			<Property Name="NI.LV.FPGA.659XR.ActiveSerialIo.Version" Type="Int">1</Property>
-			<Property Name="NI.LV.FPGA.659XR.ClockingAndRoutingTab" Type="Str">&lt;Cluster&gt;
-&lt;Name&gt;Clocking and Routing Tab State&lt;/Name&gt;
-&lt;NumElts&gt;13&lt;/NumElts&gt;
-&lt;EW&gt;
-&lt;Name&gt;Input Clock&lt;/Name&gt;
-&lt;Choice&gt;PXIe_Clk100&lt;/Choice&gt;
-&lt;Choice&gt;PFI 0/CLK IN&lt;/Choice&gt;
-&lt;Choice&gt;PXIe_DStarA&lt;/Choice&gt;
-&lt;Choice&gt;10 MHz Onboard Clock&lt;/Choice&gt;
-&lt;Val&gt;0&lt;/Val&gt;
-&lt;/EW&gt;
-&lt;DBL&gt;
-&lt;Name&gt;Input Clock Frequency&lt;/Name&gt;
-&lt;Val&gt;100.00000000000000&lt;/Val&gt;
-&lt;/DBL&gt;
-&lt;Boolean&gt;
-&lt;Name&gt;SMB0 Clock Out&lt;/Name&gt;
-&lt;Val&gt;0&lt;/Val&gt;
-&lt;/Boolean&gt;
-&lt;Boolean&gt;
-&lt;Name&gt;SMB1 Clock Out&lt;/Name&gt;
-&lt;Val&gt;0&lt;/Val&gt;
-&lt;/Boolean&gt;
-&lt;Boolean&gt;
-&lt;Name&gt;SMB2 Clock Out&lt;/Name&gt;
-&lt;Val&gt;0&lt;/Val&gt;
-&lt;/Boolean&gt;
-&lt;Boolean&gt;
-&lt;Name&gt;SMB3 Clock Out&lt;/Name&gt;
-&lt;Val&gt;0&lt;/Val&gt;
-&lt;/Boolean&gt;
-&lt;DBL&gt;
-&lt;Name&gt;SMB Shared Clock Out Frequency&lt;/Name&gt;
-&lt;Val&gt;100.00000000000000&lt;/Val&gt;
-&lt;/DBL&gt;
-&lt;Boolean&gt;
-&lt;Name&gt;MgtRefClk0&lt;/Name&gt;
-&lt;Val&gt;0&lt;/Val&gt;
-&lt;/Boolean&gt;
-&lt;DBL&gt;
-&lt;Name&gt;MgtRefClk0 Clock Frequency&lt;/Name&gt;
-&lt;Val&gt;100.00000000000000&lt;/Val&gt;
-&lt;/DBL&gt;
-&lt;Boolean&gt;
-&lt;Name&gt;MgtRefClk1&lt;/Name&gt;
-&lt;Val&gt;0&lt;/Val&gt;
-&lt;/Boolean&gt;
-&lt;DBL&gt;
-&lt;Name&gt;MgtRefClk1 Clock Frequency&lt;/Name&gt;
-&lt;Val&gt;100.00000000000000&lt;/Val&gt;
-&lt;/DBL&gt;
-&lt;Boolean&gt;
-&lt;Name&gt;MgtRefClk2&lt;/Name&gt;
-&lt;Val&gt;0&lt;/Val&gt;
-&lt;/Boolean&gt;
-&lt;Boolean&gt;
-&lt;Name&gt;Enable CPRI Output Clock Configuration&lt;/Name&gt;
-&lt;Val&gt;0&lt;/Val&gt;
-&lt;/Boolean&gt;
-&lt;/Cluster&gt;
+			<Property Name="NI.LV.FPGA.659XR.ClockingAndRoutingTab" Type="Str">&lt;Cluster&gt;
+&lt;Name&gt;Clocking and Routing Tab State&lt;/Name&gt;
+&lt;NumElts&gt;13&lt;/NumElts&gt;
+&lt;EW&gt;
+&lt;Name&gt;Input Clock&lt;/Name&gt;
+&lt;Choice&gt;PXIe_Clk100&lt;/Choice&gt;
+&lt;Choice&gt;PFI 0/CLK IN&lt;/Choice&gt;
+&lt;Choice&gt;PXIe_DStarA&lt;/Choice&gt;
+&lt;Choice&gt;10 MHz Onboard Clock&lt;/Choice&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/EW&gt;
+&lt;DBL&gt;
+&lt;Name&gt;Input Clock Frequency&lt;/Name&gt;
+&lt;Val&gt;100.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;SMB0 Clock Out&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;SMB1 Clock Out&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;SMB2 Clock Out&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;SMB3 Clock Out&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;DBL&gt;
+&lt;Name&gt;SMB Shared Clock Out Frequency&lt;/Name&gt;
+&lt;Val&gt;100.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;MgtRefClk0&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;DBL&gt;
+&lt;Name&gt;MgtRefClk0 Clock Frequency&lt;/Name&gt;
+&lt;Val&gt;100.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;MgtRefClk1&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;DBL&gt;
+&lt;Name&gt;MgtRefClk1 Clock Frequency&lt;/Name&gt;
+&lt;Val&gt;100.00000000000000&lt;/Val&gt;
+&lt;/DBL&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;MgtRefClk2&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Enable CPRI Output Clock Configuration&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;/Cluster&gt;
 </Property>
 			<Property Name="NI.LV.FPGA.659XR.ClockingPageHasBeenOpenedAtLeastOnce" Type="Bool">false</Property>
-			<Property Name="NI.LV.FPGA.659XR.IOConfigurationTab" Type="Str">&lt;Cluster&gt;
-&lt;Name&gt;IO Configuration Tab State&lt;/Name&gt;
-&lt;NumElts&gt;9&lt;/NumElts&gt;
-&lt;EW&gt;
-&lt;Name&gt;Voltage Family&lt;/Name&gt;
-&lt;Choice&gt;1.2 V&lt;/Choice&gt;
-&lt;Choice&gt;1.5 V&lt;/Choice&gt;
-&lt;Choice&gt;1.8 V&lt;/Choice&gt;
-&lt;Choice&gt;2.5 V&lt;/Choice&gt;
-&lt;Choice&gt;3.3 V&lt;/Choice&gt;
-&lt;Val&gt;4&lt;/Val&gt;
-&lt;/EW&gt;
-&lt;Boolean&gt;
-&lt;Name&gt;Port 0 RX&lt;/Name&gt;
-&lt;Val&gt;0&lt;/Val&gt;
-&lt;/Boolean&gt;
-&lt;Boolean&gt;
-&lt;Name&gt;Port 1 RX&lt;/Name&gt;
-&lt;Val&gt;0&lt;/Val&gt;
-&lt;/Boolean&gt;
-&lt;Boolean&gt;
-&lt;Name&gt;Port 2 RX&lt;/Name&gt;
-&lt;Val&gt;0&lt;/Val&gt;
-&lt;/Boolean&gt;
-&lt;Boolean&gt;
-&lt;Name&gt;Port 3 RX&lt;/Name&gt;
-&lt;Val&gt;0&lt;/Val&gt;
-&lt;/Boolean&gt;
-&lt;Boolean&gt;
-&lt;Name&gt;Port 0 TX&lt;/Name&gt;
-&lt;Val&gt;0&lt;/Val&gt;
-&lt;/Boolean&gt;
-&lt;Boolean&gt;
-&lt;Name&gt;Port 1 TX&lt;/Name&gt;
-&lt;Val&gt;0&lt;/Val&gt;
-&lt;/Boolean&gt;
-&lt;Boolean&gt;
-&lt;Name&gt;Port 2 TX&lt;/Name&gt;
-&lt;Val&gt;0&lt;/Val&gt;
-&lt;/Boolean&gt;
-&lt;Boolean&gt;
-&lt;Name&gt;Port 3 TX&lt;/Name&gt;
-&lt;Val&gt;0&lt;/Val&gt;
-&lt;/Boolean&gt;
-&lt;/Cluster&gt;
+			<Property Name="NI.LV.FPGA.659XR.IOConfigurationTab" Type="Str">&lt;Cluster&gt;
+&lt;Name&gt;IO Configuration Tab State&lt;/Name&gt;
+&lt;NumElts&gt;9&lt;/NumElts&gt;
+&lt;EW&gt;
+&lt;Name&gt;Voltage Family&lt;/Name&gt;
+&lt;Choice&gt;1.2 V&lt;/Choice&gt;
+&lt;Choice&gt;1.5 V&lt;/Choice&gt;
+&lt;Choice&gt;1.8 V&lt;/Choice&gt;
+&lt;Choice&gt;2.5 V&lt;/Choice&gt;
+&lt;Choice&gt;3.3 V&lt;/Choice&gt;
+&lt;Val&gt;4&lt;/Val&gt;
+&lt;/EW&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Port 0 RX&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Port 1 RX&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Port 2 RX&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Port 3 RX&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Port 0 TX&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Port 1 TX&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Port 2 TX&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;Boolean&gt;
+&lt;Name&gt;Port 3 TX&lt;/Name&gt;
+&lt;Val&gt;0&lt;/Val&gt;
+&lt;/Boolean&gt;
+&lt;/Cluster&gt;
 </Property>
 			<Property Name="NI.LV.FPGA.CLIPDeclarations[0].Category" Type="Str">User Defined</Property>
 			<Property Name="NI.LV.FPGA.CLIPDeclarations[0].InvalidPath" Type="Str"></Property>
@@ -300,11 +300,11 @@ HT-UART_TX"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Mul
    <CLIPDeclarationCategory name="User Defined">
       <CLIPDeclaration name="d_mcs_wrapper_top">
          <DeclarationPaths>
-            <Absolute>G:\work\git\LabVIEW_Fpga\05_MicroBlaze_Mcs\03_MicroBlaze_Mcs_UART\d_mcs_wrapper_top.xml</Absolute>
+            <Absolute>Z:\work\git\LabVIEW_Fpga\05_MicroBlaze_Mcs\03_MicroBlaze_Mcs_UART\d_mcs_wrapper_top.xml</Absolute>
             <MD5>3fb2de47a3f7f7996f67c5ca2a580e66</MD5>
-            <RelativeToLabVIEW>G:\work\git\LabVIEW_Fpga\05_MicroBlaze_Mcs\03_MicroBlaze_Mcs_UART\d_mcs_wrapper_top.xml</RelativeToLabVIEW>
-            <RelativeToNiPubDocs>G:\work\git\LabVIEW_Fpga\05_MicroBlaze_Mcs\03_MicroBlaze_Mcs_UART\d_mcs_wrapper_top.xml</RelativeToNiPubDocs>
-            <RelativeToNiSharedDir>G:\work\git\LabVIEW_Fpga\05_MicroBlaze_Mcs\03_MicroBlaze_Mcs_UART\d_mcs_wrapper_top.xml</RelativeToNiSharedDir>
+            <RelativeToLabVIEW>Z:\work\git\LabVIEW_Fpga\05_MicroBlaze_Mcs\03_MicroBlaze_Mcs_UART\d_mcs_wrapper_top.xml</RelativeToLabVIEW>
+            <RelativeToNiPubDocs>Z:\work\git\LabVIEW_Fpga\05_MicroBlaze_Mcs\03_MicroBlaze_Mcs_UART\d_mcs_wrapper_top.xml</RelativeToNiPubDocs>
+            <RelativeToNiSharedDir>Z:\work\git\LabVIEW_Fpga\05_MicroBlaze_Mcs\03_MicroBlaze_Mcs_UART\d_mcs_wrapper_top.xml</RelativeToNiSharedDir>
             <RelativeToProject>d_mcs_wrapper_top.xml</RelativeToProject>
             <Valid>true</Valid>
          </DeclarationPaths>
@@ -418,65 +418,65 @@ HT-UART_TX"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Mul
 </CLIPDeclarationSet></Property>
 			<Property Name="NI.LV.FPGA.CompileConfigString" Type="Str">PXIe-6592R/Clk40Derived5x2B00MHz/falsefalse6705707382fd2b7ff9aed4185160bbc3FPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA</Property>
 			<Property Name="NI.LV.FPGA.RIO.659XR.Constraints.ConstraintsContainer.ArrayLength" Type="UInt">2</Property>
-			<Property Name="NI.LV.FPGA.RIO.659XR.Constraints.ConstraintsContainer[0].ConstraintString" Type="Str"># 0 Disabled
+			<Property Name="NI.LV.FPGA.RIO.659XR.Constraints.ConstraintsContainer[0].ConstraintString" Type="Str"># 0 Disabled
 set_property PACKAGE_PIN K14 [get_ports {aMgtTxp[0]}]
 set_property PACKAGE_PIN J14 [get_ports {aMgtTxn[0]}]
 set_property IOSTANDARD LVCMOS25 [get_ports {aMgtTxp[0]}]
-set_property IOSTANDARD LVCMOS25 [get_ports {aMgtTxn[0]}]
-# 1 Disabled
+set_property IOSTANDARD LVCMOS25 [get_ports {aMgtTxn[0]}]
+# 1 Disabled
 set_property PACKAGE_PIN H15 [get_ports {aMgtTxp[1]}]
 set_property PACKAGE_PIN G15 [get_ports {aMgtTxn[1]}]
 set_property IOSTANDARD LVCMOS25 [get_ports {aMgtTxp[1]}]
-set_property IOSTANDARD LVCMOS25 [get_ports {aMgtTxn[1]}]
-# 2 Disabled
+set_property IOSTANDARD LVCMOS25 [get_ports {aMgtTxn[1]}]
+# 2 Disabled
 set_property PACKAGE_PIN J11 [get_ports {aMgtTxp[2]}]
 set_property PACKAGE_PIN J12 [get_ports {aMgtTxn[2]}]
 set_property IOSTANDARD LVCMOS25 [get_ports {aMgtTxp[2]}]
-set_property IOSTANDARD LVCMOS25 [get_ports {aMgtTxn[2]}]
-# 3 Disabled
+set_property IOSTANDARD LVCMOS25 [get_ports {aMgtTxn[2]}]
+# 3 Disabled
 set_property PACKAGE_PIN H14 [get_ports {aMgtTxp[3]}]
 set_property PACKAGE_PIN G14 [get_ports {aMgtTxn[3]}]
 set_property IOSTANDARD LVCMOS25 [get_ports {aMgtTxp[3]}]
-set_property IOSTANDARD LVCMOS25 [get_ports {aMgtTxn[3]}]
-# 0 Disabled
+set_property IOSTANDARD LVCMOS25 [get_ports {aMgtTxn[3]}]
+# 0 Disabled
 set_property PACKAGE_PIN L16 [get_ports {aMgtRxp[0]}]
 set_property PACKAGE_PIN K16 [get_ports {aMgtRxn[0]}]
 set_property IOSTANDARD LVCMOS25 [get_ports {aMgtRxp[0]}]
-set_property IOSTANDARD LVCMOS25 [get_ports {aMgtRxn[0]}]
-# 1 Disabled
+set_property IOSTANDARD LVCMOS25 [get_ports {aMgtRxn[0]}]
+# 1 Disabled
 set_property PACKAGE_PIN L15 [get_ports {aMgtRxp[1]}]
 set_property PACKAGE_PIN K15 [get_ports {aMgtRxn[1]}]
 set_property IOSTANDARD LVCMOS25 [get_ports {aMgtRxp[1]}]
-set_property IOSTANDARD LVCMOS25 [get_ports {aMgtRxn[1]}]
-# 2 Disabled
+set_property IOSTANDARD LVCMOS25 [get_ports {aMgtRxn[1]}]
+# 2 Disabled
 set_property PACKAGE_PIN L12 [get_ports {aMgtRxp[2]}]
 set_property PACKAGE_PIN L13 [get_ports {aMgtRxn[2]}]
 set_property IOSTANDARD LVCMOS25 [get_ports {aMgtRxp[2]}]
-set_property IOSTANDARD LVCMOS25 [get_ports {aMgtRxn[2]}]
-# 3 Disabled
+set_property IOSTANDARD LVCMOS25 [get_ports {aMgtRxn[2]}]
+# 3 Disabled
 set_property PACKAGE_PIN K13 [get_ports {aMgtRxp[3]}]
 set_property PACKAGE_PIN J13 [get_ports {aMgtRxn[3]}]
 set_property IOSTANDARD LVCMOS25 [get_ports {aMgtRxp[3]}]
-set_property IOSTANDARD LVCMOS25 [get_ports {aMgtRxn[3]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {aMgtRxn[3]}]
 </Property>
 			<Property Name="NI.LV.FPGA.RIO.659XR.Constraints.ConstraintsContainer[0].Descriptor.Name" Type="Str">MGT Lane Location Constraints</Property>
 			<Property Name="NI.LV.FPGA.RIO.659XR.Constraints.ConstraintsContainer[0].Descriptor.Priority" Type="UInt">100</Property>
 			<Property Name="NI.LV.FPGA.RIO.659XR.Constraints.ConstraintsContainer[0].Descriptor.Window" Type="Str"></Property>
-			<Property Name="NI.LV.FPGA.RIO.659XR.Constraints.ConstraintsContainer[1].ConstraintString" Type="Str"># MgtRefClk0 Disabled
+			<Property Name="NI.LV.FPGA.RIO.659XR.Constraints.ConstraintsContainer[1].ConstraintString" Type="Str"># MgtRefClk0 Disabled
 set_property PACKAGE_PIN G13 [get_ports {MgtRefClk0p}]
 set_property PACKAGE_PIN F13 [get_ports {MgtRefClk0n}]
 set_property IOSTANDARD LVCMOS25 [get_ports {MgtRefClk0p}]
-set_property IOSTANDARD LVCMOS25 [get_ports {MgtRefClk0n}]
-# MgtRefClk1 Disabled
+set_property IOSTANDARD LVCMOS25 [get_ports {MgtRefClk0n}]
+# MgtRefClk1 Disabled
 set_property PACKAGE_PIN E13 [get_ports {MgtRefClk1p}]
 set_property PACKAGE_PIN C12 [get_ports {MgtRefClk1n}]
 set_property IOSTANDARD LVCMOS25 [get_ports {MgtRefClk1p}]
-set_property IOSTANDARD LVCMOS25 [get_ports {MgtRefClk1n}]
-# MgtRefClk2 Disabled
+set_property IOSTANDARD LVCMOS25 [get_ports {MgtRefClk1n}]
+# MgtRefClk2 Disabled
 set_property PACKAGE_PIN D13 [get_ports {Si570Clkp}]
 set_property PACKAGE_PIN F12 [get_ports {Si570Clkn}]
 set_property IOSTANDARD LVCMOS25 [get_ports {Si570Clkp}]
-set_property IOSTANDARD LVCMOS25 [get_ports {Si570Clkn}]
+set_property IOSTANDARD LVCMOS25 [get_ports {Si570Clkn}]
 </Property>
 			<Property Name="NI.LV.FPGA.RIO.659XR.Constraints.ConstraintsContainer[1].Descriptor.Name" Type="Str">Reference Clock Location Constraints</Property>
 			<Property Name="NI.LV.FPGA.RIO.659XR.Constraints.ConstraintsContainer[1].Descriptor.Priority" Type="UInt">200</Property>
@@ -1112,7 +1112,7 @@ set_property IOSTANDARD LVCMOS25 [get_ports {Si570Clkn}]
 				<Property Name="NI.SortType" Type="Int">3</Property>
 			</Item>
 			<Item Name="Fpga-6592-Top-Level.vi" Type="VI" URL="../Fpga-6592/Fpga-6592-Top-Level.vi">
-				<Property Name="configString.guid" Type="Str">{0670162C-9441-4ADE-8DE3-38602866DB5B}ResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;{1A494478-F4CA-40F7-9276-41024D5A7B68}NumberOfSyncRegistersForReadInProject=Auto;resource=/d_mcs_i/SignalList/uart_rtl_txd;0;ReadMethodType=bool{34C4B30A-45D0-4D98-87FE-E7A0CB6C901C}"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;HT-UART_TX;DataType=1000800000000001000940050002553800000100000000000000;DisableOnOverflowUnderflow=FALSE"{3FE6314B-9518-4BD6-82BA-85E535C9792F}Multiplier=5.000000;Divisor=2.000000{47A94F9A-1AFA-4951-8462-16EF2250BA57}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/d_mcs_i/SignalList/uart_rtl_rxd;0;WriteMethodType=bool{A4461C6D-A689-4FB4-8B21-657A2B059CE2}"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;TH-UART_TX;DataType=1000800000000001000940050002553800000100000000000000;DisableOnOverflowUnderflow=FALSE"{E56C94C9-3FDD-4EC5-8F61-DF5C00521ECE}Multiplier=40.000000;Divisor=341.000000{F960E256-3304-4E35-A843-CEF131BA1C5E}1daf6285591f794b0ff06453534832fe2ad3022ab9dafd1a0f9affe715b91e283fb2de47a3f7f7996f67c5ca2a580e66&lt;Array&gt;
+				<Property Name="configString.guid" Type="Str">{0670162C-9441-4ADE-8DE3-38602866DB5B}ResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;{1A494478-F4CA-40F7-9276-41024D5A7B68}NumberOfSyncRegistersForReadInProject=Auto;resource=/d_mcs_i/SignalList/uart_rtl_txd;0;ReadMethodType=bool{34C4B30A-45D0-4D98-87FE-E7A0CB6C901C}"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;HT-UART_TX;DataType=1000800000000001000940050002553800000100000000000000;DisableOnOverflowUnderflow=FALSE"{3FE6314B-9518-4BD6-82BA-85E535C9792F}Multiplier=5.000000;Divisor=2.000000{47A94F9A-1AFA-4951-8462-16EF2250BA57}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/d_mcs_i/SignalList/uart_rtl_rxd;0;WriteMethodType=bool{53D008A3-4A8A-4616-9081-3CE4627A3FF9}"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;TH-UART_TX;DataType=1000800000000001000940050002553800000100000000000000;DisableOnOverflowUnderflow=FALSE"{E56C94C9-3FDD-4EC5-8F61-DF5C00521ECE}Multiplier=40.000000;Divisor=341.000000{F960E256-3304-4E35-A843-CEF131BA1C5E}1daf6285591f794b0ff06453534832fe2ad3022ab9dafd1a0f9affe715b91e283fb2de47a3f7f7996f67c5ca2a580e66&lt;Array&gt;
 &lt;Name&gt;Generics&lt;/Name&gt;
 &lt;Dimsize&gt;0&lt;/Dimsize&gt;
 &lt;Cluster&gt;
@@ -1331,6 +1331,8 @@ HT-UART_TX"ControlLogic=0;NumberOfElements=1029;Type=1;ReadArbs=Arbitrate if Mul
 				<Property Name="NI.LV.CLIP.DeclarationCategory" Type="Str"></Property>
 				<Property Name="NI.LV.CLIP.SocketedCLIP" Type="Bool">true</Property>
 				<Property Name="NI.LV.CLIP.SocketSelection" Type="Str">PXIe-6592R IO Socket v1</Property>
+				<Property Name="NI.LV.CLIP.SocketSpecificCompileSignature" Type="Str"></Property>
+				<Property Name="NI.LV.CLIP.Version" Type="UInt">4</Property>
 				<Property Name="NI.LV.FPGA.Valid" Type="Bool">true</Property>
 				<Property Name="NI.SortType" Type="Int">3</Property>
 			</Item>

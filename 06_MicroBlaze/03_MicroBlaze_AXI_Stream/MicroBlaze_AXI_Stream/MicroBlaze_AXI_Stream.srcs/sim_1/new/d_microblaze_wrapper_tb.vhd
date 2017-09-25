@@ -132,15 +132,26 @@ begin
                 q_counter <= q_counter + '1';
 
                 AXI_STR_RXD_tdata <= "00000000000000000000000000001111";
---                if q_counter = "0100" then
-                    AXI_STR_RXD_tvalid <= '1';
-                    AXI_STR_RXD_tlast <= '1';
-                    b_packet_sent <= '1';
---                else
---                    AXI_STR_RXD_tvalid <= '1';
---                    AXI_STR_RXD_tlast <= '0';
---                    b_packet_sent <= '0';
---                end if;
+                AXI_STR_RXD_tvalid <= '1';
+                AXI_STR_RXD_tlast <= '0';
+
+                wait for clock_period;
+                AXI_STR_RXD_tdata <= "00000000000000000000000000001110";
+                AXI_STR_RXD_tvalid <= '1';
+                AXI_STR_RXD_tlast <= '0';
+                b_packet_sent <= '0';
+
+                wait for clock_period;
+                AXI_STR_RXD_tdata <= "00000000000000000000000000001100";
+                AXI_STR_RXD_tvalid <= '1';
+                AXI_STR_RXD_tlast <= '1';
+                b_packet_sent <= '1';
+
+--                wait for clock_period;
+--                AXI_STR_RXD_tdata <= "00000000000000000000000000001100";
+--                AXI_STR_RXD_tvalid <= '1';
+--                AXI_STR_RXD_tlast <= '1';
+--                b_packet_sent <= '1';
             else
                 AXI_STR_RXD_tvalid <= '0';
                 AXI_STR_RXD_tlast <= '0';
