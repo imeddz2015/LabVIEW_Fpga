@@ -7,6 +7,7 @@ vlib msim/lmb_v10_v3_0_7
 vlib msim/lmb_bram_if_cntlr_v4_0_7
 vlib msim/blk_mem_gen_v8_3_1
 vlib msim/axi_lite_ipif_v3_0_3
+vlib msim/axi_intc_v4_1_5
 vlib msim/mdm_v3_2_4
 vlib msim/lib_cdc_v1_0_2
 vlib msim/proc_sys_reset_v5_0_8
@@ -21,6 +22,8 @@ vlib msim/axi_infrastructure_v1_1_0
 vlib msim/axi_register_slice_v2_1_7
 vlib msim/axi_data_fifo_v2_1_6
 vlib msim/axi_crossbar_v2_1_8
+vlib msim/axi_bram_ctrl_v4_0_6
+vlib msim/axi_protocol_converter_v2_1_7
 
 vmap microblaze_v9_5_3 msim/microblaze_v9_5_3
 vmap xil_defaultlib msim/xil_defaultlib
@@ -28,6 +31,7 @@ vmap lmb_v10_v3_0_7 msim/lmb_v10_v3_0_7
 vmap lmb_bram_if_cntlr_v4_0_7 msim/lmb_bram_if_cntlr_v4_0_7
 vmap blk_mem_gen_v8_3_1 msim/blk_mem_gen_v8_3_1
 vmap axi_lite_ipif_v3_0_3 msim/axi_lite_ipif_v3_0_3
+vmap axi_intc_v4_1_5 msim/axi_intc_v4_1_5
 vmap mdm_v3_2_4 msim/mdm_v3_2_4
 vmap lib_cdc_v1_0_2 msim/lib_cdc_v1_0_2
 vmap proc_sys_reset_v5_0_8 msim/proc_sys_reset_v5_0_8
@@ -42,6 +46,8 @@ vmap axi_infrastructure_v1_1_0 msim/axi_infrastructure_v1_1_0
 vmap axi_register_slice_v2_1_7 msim/axi_register_slice_v2_1_7
 vmap axi_data_fifo_v2_1_6 msim/axi_data_fifo_v2_1_6
 vmap axi_crossbar_v2_1_8 msim/axi_crossbar_v2_1_8
+vmap axi_bram_ctrl_v4_0_6 msim/axi_bram_ctrl_v4_0_6
+vmap axi_protocol_converter_v2_1_7 msim/axi_protocol_converter_v2_1_7
 
 vcom -work microblaze_v9_5_3 -64 -93 \
 "../../../ipstatic/microblaze_v9_5/hdl/microblaze_v9_5_vh_rfs.vhd" \
@@ -86,6 +92,18 @@ vcom -work axi_lite_ipif_v3_0_3 -64 -93 \
 "../../../ipstatic/axi_lite_ipif_v3_0/hdl/src/vhdl/address_decoder.vhd" \
 "../../../ipstatic/axi_lite_ipif_v3_0/hdl/src/vhdl/slave_attachment.vhd" \
 "../../../ipstatic/axi_lite_ipif_v3_0/hdl/src/vhdl/axi_lite_ipif.vhd" \
+
+vcom -work axi_intc_v4_1_5 -64 -93 \
+"../../../ipstatic/axi_intc_v4_1/hdl/src/vhdl/double_synchronizer.vhd" \
+"../../../ipstatic/axi_intc_v4_1/hdl/src/vhdl/shared_ram_ivar.vhd" \
+"../../../ipstatic/axi_intc_v4_1/hdl/src/vhdl/pulse_synchronizer.vhd" \
+"../../../ipstatic/axi_intc_v4_1/hdl/src/vhdl/intc_core.vhd" \
+"../../../ipstatic/axi_intc_v4_1/hdl/src/vhdl/axi_intc.vhd" \
+
+vcom -work xil_defaultlib -64 -93 \
+"../../../bd/d_microblaze/ip/d_microblaze_microblaze_0_axi_intc_0/sim/d_microblaze_microblaze_0_axi_intc_0.vhd" \
+"../../../bd/d_microblaze/ipshared/xilinx.com/xlconcat_v2_1/xlconcat.vhd" \
+"../../../bd/d_microblaze/ip/d_microblaze_microblaze_0_xlconcat_0/sim/d_microblaze_microblaze_0_xlconcat_0.vhd" \
 
 vcom -work mdm_v3_2_4 -64 -93 \
 "../../../ipstatic/mdm_v3_2/hdl/vhdl/mdm_primitives.vhd" \
@@ -150,6 +168,8 @@ vcom -work axi_fifo_mm_s_v4_1_4 -64 -93 \
 
 vcom -work xil_defaultlib -64 -93 \
 "../../../bd/d_microblaze/ip/d_microblaze_axi_fifo_mm_s_0_0/sim/d_microblaze_axi_fifo_mm_s_0_0.vhd" \
+"../../../bd/d_microblaze/ip/d_microblaze_axi_fifo_mm_s_1_0/sim/d_microblaze_axi_fifo_mm_s_1_0.vhd" \
+"../../../bd/d_microblaze/ip/d_microblaze_blk_mem_gen_0_0/sim/d_microblaze_blk_mem_gen_0_0.vhd" \
 
 vlog -work generic_baseblocks_v2_1_0 -64 -incr "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" \
 "../../../ipstatic/generic_baseblocks_v2_1/hdl/verilog/generic_baseblocks_v2_1_carry_and.v" \
@@ -204,9 +224,62 @@ vlog -work axi_crossbar_v2_1_8 -64 -incr "+incdir+../../../ipstatic/axi_infrastr
 vlog -work xil_defaultlib -64 -incr "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" \
 "../../../bd/d_microblaze/ip/d_microblaze_xbar_0/sim/d_microblaze_xbar_0.v" \
 
+vcom -work axi_bram_ctrl_v4_0_6 -64 -93 \
+"../../../ipstatic/axi_bram_ctrl_v4_0/hdl/vhdl/srl_fifo.vhd" \
+"../../../ipstatic/axi_bram_ctrl_v4_0/hdl/vhdl/axi_bram_ctrl_funcs.vhd" \
+"../../../ipstatic/axi_bram_ctrl_v4_0/hdl/vhdl/coregen_comp_defs.vhd" \
+"../../../ipstatic/axi_bram_ctrl_v4_0/hdl/vhdl/axi_lite_if.vhd" \
+"../../../ipstatic/axi_bram_ctrl_v4_0/hdl/vhdl/checkbit_handler_64.vhd" \
+"../../../ipstatic/axi_bram_ctrl_v4_0/hdl/vhdl/checkbit_handler.vhd" \
+"../../../ipstatic/axi_bram_ctrl_v4_0/hdl/vhdl/correct_one_bit_64.vhd" \
+"../../../ipstatic/axi_bram_ctrl_v4_0/hdl/vhdl/correct_one_bit.vhd" \
+"../../../ipstatic/axi_bram_ctrl_v4_0/hdl/vhdl/xor18.vhd" \
+"../../../ipstatic/axi_bram_ctrl_v4_0/hdl/vhdl/parity.vhd" \
+"../../../ipstatic/axi_bram_ctrl_v4_0/hdl/vhdl/ecc_gen.vhd" \
+"../../../ipstatic/axi_bram_ctrl_v4_0/hdl/vhdl/lite_ecc_reg.vhd" \
+"../../../ipstatic/axi_bram_ctrl_v4_0/hdl/vhdl/axi_lite.vhd" \
+"../../../ipstatic/axi_bram_ctrl_v4_0/hdl/vhdl/sng_port_arb.vhd" \
+"../../../ipstatic/axi_bram_ctrl_v4_0/hdl/vhdl/ua_narrow.vhd" \
+"../../../ipstatic/axi_bram_ctrl_v4_0/hdl/vhdl/wrap_brst.vhd" \
+"../../../ipstatic/axi_bram_ctrl_v4_0/hdl/vhdl/rd_chnl.vhd" \
+"../../../ipstatic/axi_bram_ctrl_v4_0/hdl/vhdl/wr_chnl.vhd" \
+"../../../ipstatic/axi_bram_ctrl_v4_0/hdl/vhdl/full_axi.vhd" \
+"../../../ipstatic/axi_bram_ctrl_v4_0/hdl/vhdl/axi_bram_ctrl_top.vhd" \
+"../../../ipstatic/axi_bram_ctrl_v4_0/hdl/vhdl/axi_bram_ctrl.vhd" \
+
 vcom -work xil_defaultlib -64 -93 \
-"../../../bd/d_microblaze/ip/d_microblaze_axi_fifo_mm_s_1_0/sim/d_microblaze_axi_fifo_mm_s_1_0.vhd" \
+"../../../bd/d_microblaze/ip/d_microblaze_axi_bram_ctrl_0_0/sim/d_microblaze_axi_bram_ctrl_0_0.vhd" \
 "../../../bd/d_microblaze/hdl/d_microblaze.vhd" \
+"../../../bd/d_microblaze/ip/d_microblaze_axi_gpio_1_0/sim/d_microblaze_axi_gpio_1_0.vhd" \
+
+vlog -work axi_protocol_converter_v2_1_7 -64 -incr "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" \
+"../../../ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_a_axi3_conv.v" \
+"../../../ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi3_conv.v" \
+"../../../ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axilite_conv.v" \
+"../../../ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_r_axi3_conv.v" \
+"../../../ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_w_axi3_conv.v" \
+"../../../ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b_downsizer.v" \
+"../../../ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_decerr_slave.v" \
+"../../../ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_simple_fifo.v" \
+"../../../ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wrap_cmd.v" \
+"../../../ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_incr_cmd.v" \
+"../../../ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_wr_cmd_fsm.v" \
+"../../../ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_rd_cmd_fsm.v" \
+"../../../ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_cmd_translator.v" \
+"../../../ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_b_channel.v" \
+"../../../ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_r_channel.v" \
+"../../../ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_aw_channel.v" \
+"../../../ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s_ar_channel.v" \
+"../../../ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_b2s.v" \
+"../../../ipstatic/axi_protocol_converter_v2_1/hdl/verilog/axi_protocol_converter_v2_1_axi_protocol_converter.v" \
+
+vlog -work xil_defaultlib -64 -incr "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" "+incdir+../../../ipstatic/axi_infrastructure_v1_1/hdl/verilog" \
+"../../../bd/d_microblaze/ip/d_microblaze_auto_pc_0/sim/d_microblaze_auto_pc_0.v" \
+"../../../bd/d_microblaze/ip/d_microblaze_auto_pc_1/sim/d_microblaze_auto_pc_1.v" \
+"../../../bd/d_microblaze/ip/d_microblaze_auto_pc_2/sim/d_microblaze_auto_pc_2.v" \
+"../../../bd/d_microblaze/ip/d_microblaze_auto_pc_3/sim/d_microblaze_auto_pc_3.v" \
+"../../../bd/d_microblaze/ip/d_microblaze_auto_pc_4/sim/d_microblaze_auto_pc_4.v" \
+"../../../bd/d_microblaze/ip/d_microblaze_auto_pc_5/sim/d_microblaze_auto_pc_5.v" \
 
 vlog -work xil_defaultlib "glbl.v"
 

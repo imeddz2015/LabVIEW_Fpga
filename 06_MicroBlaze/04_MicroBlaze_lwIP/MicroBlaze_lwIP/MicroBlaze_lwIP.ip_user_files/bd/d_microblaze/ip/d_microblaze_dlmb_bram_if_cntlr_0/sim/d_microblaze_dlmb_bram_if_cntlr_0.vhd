@@ -213,7 +213,7 @@ BEGIN
   U0 : lmb_bram_if_cntlr
     GENERIC MAP (
       C_FAMILY => "kintex7",
-      C_HIGHADDR => X"0000FFFF",
+      C_HIGHADDR => X"0001FFFF",
       C_BASEADDR => X"00000000",
       C_NUM_LMB => 1,
       C_MASK => X"40000000",

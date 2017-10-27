@@ -24,14 +24,26 @@ static XGpio gpo_2;
 
 static XIntc InterruptController; /* Instance of the Interrupt Controller */
 
-void DeviceDriverHandler(void *CallbackRef)
+
+void handler_0(void *CallbackRef)
 {
-	XGpio_DiscreteWrite(&gpo_2, 2, 1099);
+	static counter_0 = 0;
+
+	XGpio_DiscreteWrite(&gpo_2, 2, 0x4000 + counter_0++);
+	XIntc_Acknowledge(&InterruptController, 0);
+}
+
+void handler_1(void *CallbackRef)
+{
+	static counter_1 = 0;
+
+	XGpio_DiscreteWrite(&gpo_2, 2, 0x5000 + counter_1++);
+	XIntc_Acknowledge(&InterruptController, 1);
 }
 
 int Intc_Setup(u16 DeviceId)
 {
-	int base = 3000;
+	int base = 0x2000;
 	int Status;
 
 	/*
@@ -41,12 +53,16 @@ int Intc_Setup(u16 DeviceId)
 	if (Status != XST_SUCCESS) {
 		return XST_FAILURE;
 	}
+	// 0 to XPAR_INTC_MAX_NUM_INTR_INPUTS - 1
 
 	XGpio_DiscreteWrite(&gpo_2, 2, base + 2);
 	// 16, 17 - the application freezes right here
-	Status = XIntc_Connect(&InterruptController, XPAR_INTC_0_DEVICE_ID,
-					   (XInterruptHandler)DeviceDriverHandler,
+	Status = XIntc_Connect(&InterruptController, 0,
+					   (XInterruptHandler)handler_0,
 					   (void *)0);
+	Status = XIntc_Connect(&InterruptController, 1,
+						   (XInterruptHandler)handler_1,
+						   (void *)0);
 	if (Status != XST_SUCCESS) {
 		return XST_FAILURE;
 	}
@@ -63,14 +79,13 @@ int Intc_Setup(u16 DeviceId)
 		return XST_FAILURE;
 	}
 
-
 	/*
 	 * Enable the interrupt for the device and then cause (simulate) an
 	 * interrupt so the handlers will be called.
 	 */
 	XGpio_DiscreteWrite(&gpo_2, 2, base + 4);
-	XIntc_Enable(&InterruptController, DeviceId);
-
+	XIntc_Enable(&InterruptController, 0);
+	XIntc_Enable(&InterruptController, 1);
 
 	/*
 	 * Initialize the exception table.
@@ -94,9 +109,7 @@ int Intc_Setup(u16 DeviceId)
 
 	XGpio_DiscreteWrite(&gpo_2, 2, base + 8);
 	return XST_SUCCESS;
-
 }
-
 
 int main()
 {
@@ -110,13 +123,14 @@ int main()
 	XGpio_Initialize(&gpo_2, XPAR_AXI_GPIO_0_DEVICE_ID);
 	XGpio_SetDataDirection(&gpi_1, 2, 0x0);
 
-	XGpio_DiscreteWrite(&gpo_2, 2, 1001);
+	XGpio_DiscreteWrite(&gpo_2, 2, 0x100);
 
+	init_int(XPAR_INTC_SINGLE_DEVICE_ID);
 	int Status;
 	Status = Intc_Setup(XPAR_INTC_SINGLE_DEVICE_ID);
 
 	// Write the status to a GPO
-	XGpio_DiscreteWrite(&gpo_2, 2, 100 + Status);
+	XGpio_DiscreteWrite(&gpo_2, 2, 0x101);
 
 	// Read/Write GPI/GPO
 	u32 inU32;

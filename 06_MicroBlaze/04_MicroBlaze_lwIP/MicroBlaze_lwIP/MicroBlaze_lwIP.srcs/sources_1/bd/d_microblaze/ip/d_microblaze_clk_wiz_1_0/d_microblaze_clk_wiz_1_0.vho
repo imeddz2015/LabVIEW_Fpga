@@ -69,10 +69,7 @@ port
  (-- Clock in ports
   clk_in1           : in     std_logic;
   -- Clock out ports
-  clk_out1          : out    std_logic;
-  -- Status and control signals
-  resetn             : in     std_logic;
-  locked            : out    std_logic
+  clk_out1          : out    std_logic
  );
 end component;
 
@@ -86,9 +83,6 @@ your_instance_name : d_microblaze_clk_wiz_1_0
    -- Clock in ports
    clk_in1 => clk_in1,
   -- Clock out ports  
-   clk_out1 => clk_out1,
-  -- Status and control signals                
-   resetn => resetn,
-   locked => locked            
+   clk_out1 => clk_out1              
  );
 -- INST_TAG_END ------ End INSTANTIATION Template ------------

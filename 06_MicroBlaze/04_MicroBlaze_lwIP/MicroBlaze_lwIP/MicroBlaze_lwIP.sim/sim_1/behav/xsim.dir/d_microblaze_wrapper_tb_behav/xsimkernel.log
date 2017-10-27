@@ -1,0 +1,7 @@
+Running: xsim.dir/d_microblaze_wrapper_tb_behav/xsimk.exe -simmode gui -wdb d_microblaze_wrapper_tb_behav.wdb -simrunnum 0 -socket 51186
+Design successfully loaded
+Design Loading Memory Usage: 170172 KB (Peak: 170172 KB)
+Design Loading CPU Usage: 249 ms
+Simulation completed
+Simulation Memory Usage: 175480 KB (Peak: 175480 KB)
+Simulation CPU Usage: 4218 ms
