@@ -50,6 +50,7 @@
           <DataType>
             <Boolean/>
   </DataType>
+          <RequiredClockDomain>uart_clock</RequiredClockDomain>
           <UseInLabVIEWSingleCycleTimedLoop>Required</UseInLabVIEWSingleCycleTimedLoop></Signal>
         <Signal Name="uart_rtl_txd">
           <HDLName>uart_rtl_txd</HDLName>
@@ -60,7 +61,25 @@
           <DataType>
             <Boolean/>
   </DataType>
+          <RequiredClockDomain>uart_clock</RequiredClockDomain>
           <UseInLabVIEWSingleCycleTimedLoop>Required</UseInLabVIEWSingleCycleTimedLoop></Signal>
+        <Signal Name="uart_clock">
+          <HDLName>uart_clock</HDLName>
+          <HDLType>STD_LOGIC</HDLType>
+          <Direction>ToCLIP</Direction>
+          <SignalType>clock</SignalType>
+          <Description/>
+          <DataType>
+            <Boolean/>
+  </DataType>
+  
+          <CyclesRequiredBeforeAsynchronousResetClears>0</CyclesRequiredBeforeAsynchronousResetClears>
+          <FreqInHertz>
+            <Max>200.000000M</Max>
+            <Min>1.000000M</Min>
+</FreqInHertz>
+
+</Signal>
       </SignalList>
     </Interface>
     <Interface Name="Fabric">
@@ -82,14 +101,14 @@
   <ImplementationList>
     <Path Name="d_mcs_wrapper_top.vhd">
       <TopLevel/>
-      <MD5>1daf6285591f794b0ff06453534832fe</MD5>
+      <MD5>0b68f5b94740c0738f35dc4c396e9531</MD5>
       <SimulationFileList>
         <SimulationModelType>Same as synthesis</SimulationModelType>
     </SimulationFileList> 
 </Path>
-    <Path Name="MicroBlaze_Mcs_UART\checkpoint_1.dcp">
+    <Path Name="MicroBlaze_Mcs_UART\checkpoint_5.dcp">
   
-      <MD5>2ad3022ab9dafd1a0f9affe715b91e28</MD5>
+      <MD5>78cdcec9a04d27beb7a85a0fc67a5e52</MD5>
       <SimulationFileList>
         <SimulationModelType>Exclude from simulation model</SimulationModelType>
     </SimulationFileList> 

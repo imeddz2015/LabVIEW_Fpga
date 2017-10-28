@@ -16,8 +16,9 @@ entity d_mcs_wrapper_top is
   port (
     clock_rtl : in STD_LOGIC;
     reset_rtl : in STD_LOGIC;
-	uart_rtl_rxd : in STD_LOGIC;
-    uart_rtl_txd : out STD_LOGIC
+    uart_rtl_rxd : in STD_LOGIC;
+    uart_rtl_txd : out STD_LOGIC;
+    uart_clock : in STD_LOGIC
   );
 end d_mcs_wrapper_top;
 
@@ -26,16 +27,18 @@ architecture STRUCTURE of d_mcs_wrapper_top is
   port (
     clock_rtl : in STD_LOGIC;
     reset_rtl : in STD_LOGIC;
-	uart_rtl_rxd : in STD_LOGIC;
-    uart_rtl_txd : out STD_LOGIC
+    uart_rtl_rxd : in STD_LOGIC;
+    uart_rtl_txd : out STD_LOGIC;
+    uart_clock : in STD_LOGIC
   );
   end component d_mcs_wrapper;
 begin
-d_mcs_i: component d_mcs_wrapper
+d_mcs_wrapper_i: component d_mcs_wrapper
 	port map (
 		clock_rtl => clock_rtl,
 		reset_rtl => reset_rtl,
 		uart_rtl_rxd => uart_rtl_rxd,
-		uart_rtl_txd => uart_rtl_txd
+		uart_rtl_txd => uart_rtl_txd,
+		uart_clock => uart_clock
     );
 end STRUCTURE;

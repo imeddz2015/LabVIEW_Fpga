@@ -15,11 +15,10 @@ use UNISIM.VCOMPONENTS.ALL;
 entity d_mcs_wrapper_top is
   port (
     clock_rtl : in STD_LOGIC;
-    gpio_rtl_tri_i : in STD_LOGIC_VECTOR (31 downto 0 );
-    gpio_rtl_tri_o : in STD_LOGIC_VECTOR (31 downto 0 );
     reset_rtl : in STD_LOGIC;
-    uart_rtl_rxd : in STD_LOGIC;
-    uart_rtl_txd : out STD_LOGIC
+    uart_rtl_rxd_ext : in STD_LOGIC;
+    uart_rtl_txd_ext : out STD_LOGIC;
+    uart_clock_ext : in STD_LOGIC
   );
 end d_mcs_wrapper_top;
 
@@ -27,21 +26,19 @@ architecture STRUCTURE of d_mcs_wrapper_top is
   component d_mcs_wrapper is
   port (
     clock_rtl : in STD_LOGIC;
-    gpio_rtl_tri_i : in STD_LOGIC_VECTOR (31 downto 0 );
-    gpio_rtl_tri_o : in STD_LOGIC_VECTOR (31 downto 0 );
     reset_rtl : in STD_LOGIC;
-    uart_rtl_rxd : in STD_LOGIC;
-    uart_rtl_txd : out STD_LOGIC
+    uart_rtl_rxd_top : in STD_LOGIC;
+    uart_rtl_txd_top : out STD_LOGIC;
+    uart_clock : in STD_LOGIC
   );
   end component d_mcs_wrapper;
 begin
-d_mcs_i: component d_mcs_wrapper
-    port map (
-        clock_rtl => clock_rtl,
-        gpio_rtl_tri_i => gpio_rtl_tri_i,
-        gpio_rtl_tri_o => gpio_rtl_tri_o,
-        reset_rtl => reset_rtl,
-        uart_rtl_rxd => uart_rtl_rxd,
-        uart_rtl_txd => uart_rtl_txd
+d_mcs_wrapper_i: component d_mcs_wrapper
+	port map (
+		clock_rtl => clock_rtl,
+		reset_rtl => reset_rtl,
+		uart_rtl_rxd_top => uart_rtl_rxd_ext,
+		uart_rtl_txd_top => uart_rtl_txd_ext,
+		uart_clock => uart_clock_ext
     );
 end STRUCTURE;

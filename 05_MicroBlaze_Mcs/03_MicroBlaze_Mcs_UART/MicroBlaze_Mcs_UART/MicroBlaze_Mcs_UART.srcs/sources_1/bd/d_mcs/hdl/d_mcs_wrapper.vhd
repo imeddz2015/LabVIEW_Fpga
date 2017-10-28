@@ -16,8 +16,8 @@ entity d_mcs_wrapper is
   port (
     clock_rtl : in STD_LOGIC;
     reset_rtl : in STD_LOGIC;
-    uart_rtl_rxd_top : in STD_LOGIC;
-    uart_rtl_txd_top : out STD_LOGIC;
+    uart_rtl_rxd : in STD_LOGIC;
+    uart_rtl_txd : out STD_LOGIC;
     uart_clock : in STD_LOGIC
   );
 end d_mcs_wrapper;
@@ -33,8 +33,8 @@ architecture STRUCTURE of d_mcs_wrapper is
   end component d_mcs;
 
 --    const uart_clock_period : time = 7812ns;
-    signal test_in_reg : STD_LOGIC;
-    signal test_out_reg : STD_LOGIC;
+--    signal test_in_reg : STD_LOGIC;
+--    signal test_out_reg : STD_LOGIC;
 
 begin
 
@@ -42,16 +42,16 @@ begin
         port map (
             clock_rtl => clock_rtl,
             reset_rtl => reset_rtl,
-            uart_rtl_rxd => test_in_reg,
-            uart_rtl_txd => test_out_reg
+            uart_rtl_rxd => uart_rtl_rxd,
+            uart_rtl_txd => uart_rtl_txd
         );
 
-    uart_process : process(uart_clock)
-    begin
-        if rising_edge(uart_clock) then
-            uart_rtl_txd_top <= test_out_reg;
-            test_in_reg <= uart_rtl_rxd_top;
---            test_out <= test_in;
-        end if;
-    end process uart_process; 
+--    uart_process : process(uart_clock)
+--    begin
+--        if rising_edge(uart_clock) then
+--            uart_rtl_txd_top <= test_out_reg;
+--            test_in_reg <= uart_rtl_rxd_top;
+----            test_out <= test_in;
+--        end if;
+--    end process uart_process; 
 end STRUCTURE;

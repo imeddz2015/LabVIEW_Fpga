@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.4_AR67478_AR66782_AR66772_AR66092_AR65813_ar68397_cr964221_2015_4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
-| Date         : Sun Sep 24 15:07:47 2017
+| Date         : Wed Sep 27 06:37:26 2017
 | Host         : Win7U64 running 64-bit Service Pack 1  (build 7601)
 | Command      : report_utilization -file d_mcs_wrapper_utilization_synth.rpt -pb d_mcs_wrapper_utilization_synth.pb
 | Design       : d_mcs_wrapper
@@ -35,8 +35,8 @@ Table of Contents
 |   LUT as Memory            |  179 |     0 |     90600 |  0.20 |
 |     LUT as Distributed RAM |  128 |     0 |           |       |
 |     LUT as Shift Register  |   51 |     0 |           |       |
-| Slice Registers            |  342 |     0 |    508400 |  0.07 |
-|   Register as Flip Flop    |  342 |     0 |    508400 |  0.07 |
+| Slice Registers            |  340 |     0 |    508400 |  0.07 |
+|   Register as Flip Flop    |  340 |     0 |    508400 |  0.07 |
 |   Register as Latch        |    0 |     0 |    508400 |  0.00 |
 | F7 Muxes                   |   32 |     0 |    127100 |  0.03 |
 | F8 Muxes                   |    0 |     0 |     63550 |  0.00 |
@@ -59,7 +59,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 28    |          Yes |         Set |            - |
-| 314   |          Yes |       Reset |            - |
+| 312   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -93,7 +93,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |    5 |     0 |       500 |  1.00 |
+| Bonded IOB                  |    4 |     0 |       500 |  0.80 |
 | Bonded IPADs                |    0 |     0 |        50 |  0.00 |
 | Bonded OPADs                |    0 |     0 |        32 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |        10 |  0.00 |
@@ -120,7 +120,7 @@ Table of Contents
 +------------+------+-------+-----------+-------+
 |  Site Type | Used | Fixed | Available | Util% |
 +------------+------+-------+-----------+-------+
-| BUFGCTRL   |    2 |     0 |        32 |  6.25 |
+| BUFGCTRL   |    1 |     0 |        32 |  3.13 |
 | BUFIO      |    0 |     0 |        40 |  0.00 |
 | MMCME2_ADV |    0 |     0 |        10 |  0.00 |
 | PLLE2_ADV  |    0 |     0 |        10 |  0.00 |
@@ -154,7 +154,7 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  314 |        Flop & Latch |
+| FDRE     |  312 |        Flop & Latch |
 | LUT6     |  209 |                 LUT |
 | LUT4     |  206 |                 LUT |
 | LUT5     |  145 |                 LUT |
@@ -167,9 +167,9 @@ Table of Contents
 | CARRY4   |   21 |          CarryLogic |
 | RAMB36E1 |   16 |        Block Memory |
 | LUT1     |    9 |                 LUT |
-| IBUF     |    4 |                  IO |
-| BUFG     |    2 |               Clock |
+| IBUF     |    3 |                  IO |
 | OBUF     |    1 |                  IO |
+| BUFG     |    1 |               Clock |
 +----------+------+---------------------+
 
 

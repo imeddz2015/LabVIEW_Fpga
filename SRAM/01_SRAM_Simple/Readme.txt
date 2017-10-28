@@ -1,1 +1,0 @@
-I left the screenshots in this project so that you can refer to them in case you want to know how this project was created.

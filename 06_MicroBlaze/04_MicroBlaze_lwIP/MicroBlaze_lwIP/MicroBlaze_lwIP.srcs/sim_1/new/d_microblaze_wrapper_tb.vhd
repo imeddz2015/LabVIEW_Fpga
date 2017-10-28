@@ -27,13 +27,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
--- Uncomment the following library declaration if instantiating
--- any Xilinx leaf cells in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
 entity d_microblaze_wrapper_tb is
---  Port ( );
 end d_microblaze_wrapper_tb;
 
 architecture Behavioral of d_microblaze_wrapper_tb is
