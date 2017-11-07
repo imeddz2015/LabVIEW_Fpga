@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<Runs Version="1" Minor="0">
-	<Run Id="synth_1" LaunchDir="G:/work/git/LabVIEW_Fpga/05_MicroBlaze_Mcs/02_MicroBlaze_Mcs_IO_Bus/MicroBlaze_Mcs_IO_Bus/MicroBlaze_Mcs_IO_Bus.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-</Runs>
-
