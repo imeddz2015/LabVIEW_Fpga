@@ -102,7 +102,7 @@
 &lt;/Cluster&gt;
 &lt;/Cluster&gt;
 &lt;/Array&gt;
-PXIe-6592R/Clk40/falsefalse12d422121687815e627be18421f4b6dcFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
+PXIe-6592R/Clk40/falsetrue12d422121687815e627be18421f4b6dcFPGA_EXECUTION_MODEDEV_COMPUTER_SIM_IOFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
 			<Property Name="configString.name" Type="Str">100MHzMultiplier=5.000000;Divisor=2.00000040 MHz Onboard ClockResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;d_microblaze_i2917f06f8536ebc50eeb7df5aa75d48c82110d927cb77952e7bff2582f067ba486b9a2d1e88664dec0734eebf0a88344&lt;Array&gt;
 &lt;Name&gt;Generics&lt;/Name&gt;
 &lt;Dimsize&gt;0&lt;/Dimsize&gt;
@@ -193,8 +193,9 @@ gpi_0_tri_iArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutpu
       &lt;Unsigned&gt;true&lt;/Unsigned&gt;
       &lt;WordLength&gt;2&lt;/WordLength&gt;
    &lt;/FXP&gt;
-&lt;/Type&gt;PXIe-6592R/Clk40/falsefalse12d422121687815e627be18421f4b6dcFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]reset_rtlArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_microblaze_i/SignalList/reset_rtl;0;WriteMethodType=bool</Property>
+&lt;/Type&gt;PXIe-6592R/Clk40/falsetrue12d422121687815e627be18421f4b6dcFPGA_EXECUTION_MODEDEV_COMPUTER_SIM_IOFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]reset_rtlArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_microblaze_i/SignalList/reset_rtl;0;WriteMethodType=bool</Property>
 			<Property Name="ForceCompileConfigUpdate" Type="Bool">true</Property>
+			<Property Name="Mode" Type="Int">1</Property>
 			<Property Name="NI.LV.FPGA.659XR.ActiveSerialIo.Valid" Type="Bool">true</Property>
 			<Property Name="NI.LV.FPGA.659XR.ActiveSerialIo.Version" Type="Int">1</Property>
 			<Property Name="NI.LV.FPGA.659XR.ClockingAndRoutingTab" Type="Str">&lt;Cluster&gt;
@@ -445,7 +446,7 @@ gpi_0_tri_iArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutpu
       </CLIPDeclaration>
    </CLIPDeclarationCategory>
 </CLIPDeclarationSet></Property>
-			<Property Name="NI.LV.FPGA.CompileConfigString" Type="Str">PXIe-6592R/Clk40/falsefalse12d422121687815e627be18421f4b6dcFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA</Property>
+			<Property Name="NI.LV.FPGA.CompileConfigString" Type="Str">PXIe-6592R/Clk40/falsetrue12d422121687815e627be18421f4b6dcFPGA_EXECUTION_MODEDEV_COMPUTER_SIM_IOFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA</Property>
 			<Property Name="NI.LV.FPGA.RIO.659XR.Constraints.ConstraintsContainer.ArrayLength" Type="UInt">2</Property>
 			<Property Name="NI.LV.FPGA.RIO.659XR.Constraints.ConstraintsContainer[0].ConstraintString" Type="Str"># 0 Disabled
 set_property PACKAGE_PIN K14 [get_ports {aMgtTxp[0]}]
@@ -952,6 +953,7 @@ set_property IOSTANDARD LVCMOS25 [get_ports {Si570Clkn}]
 			<Property Name="NI.LV.FPGA.RIO.659XR.POSC.RegisterSequenceContainer[6].RegisterSequence[0].WaitTime" Type="UInt">200000</Property>
 			<Property Name="NI.LV.FPGA.RIO.659XR.POSC.Version" Type="UInt">1</Property>
 			<Property Name="NI.LV.FPGA.Version" Type="Int">6</Property>
+			<Property Name="niFpga_TopLevelVIID" Type="Path">/Z/work/git/LabVIEW_Fpga/06_MicroBlaze/02_MicroBlaze_Interrupt/Fpga-6592/Fpga-6592-IP-Node.vi</Property>
 			<Property Name="Resource Name" Type="Str">RIO0</Property>
 			<Property Name="Target Class" Type="Str">PXIe-6592R</Property>
 			<Property Name="Top-Level Timing Source" Type="Str">40 MHz Onboard Clock</Property>
@@ -1253,7 +1255,7 @@ set_property IOSTANDARD LVCMOS25 [get_ports {Si570Clkn}]
 &lt;/Cluster&gt;
 &lt;/Cluster&gt;
 &lt;/Array&gt;
-PXIe-6592R/Clk40/falsefalse12d422121687815e627be18421f4b6dcFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
+PXIe-6592R/Clk40/falsetrue12d422121687815e627be18421f4b6dcFPGA_EXECUTION_MODEDEV_COMPUTER_SIM_IOFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
 				<Property Name="configString.name" Type="Str">100MHzMultiplier=5.000000;Divisor=2.00000040 MHz Onboard ClockResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;d_microblaze_i2917f06f8536ebc50eeb7df5aa75d48c82110d927cb77952e7bff2582f067ba486b9a2d1e88664dec0734eebf0a88344&lt;Array&gt;
 &lt;Name&gt;Generics&lt;/Name&gt;
 &lt;Dimsize&gt;0&lt;/Dimsize&gt;
@@ -1344,7 +1346,7 @@ gpi_0_tri_iArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutpu
       &lt;Unsigned&gt;true&lt;/Unsigned&gt;
       &lt;WordLength&gt;2&lt;/WordLength&gt;
    &lt;/FXP&gt;
-&lt;/Type&gt;PXIe-6592R/Clk40/falsefalse12d422121687815e627be18421f4b6dcFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]reset_rtlArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_microblaze_i/SignalList/reset_rtl;0;WriteMethodType=bool</Property>
+&lt;/Type&gt;PXIe-6592R/Clk40/falsetrue12d422121687815e627be18421f4b6dcFPGA_EXECUTION_MODEDEV_COMPUTER_SIM_IOFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]reset_rtlArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_microblaze_i/SignalList/reset_rtl;0;WriteMethodType=bool</Property>
 				<Property Name="NI.LV.FPGA.InterfaceBitfile" Type="Str">Z:\work\git\LabVIEW_Fpga\06_MicroBlaze\02_MicroBlaze_Interrupt\FPGA Bitfiles\02MicroBlazeInte_FPGATarget_Fpga-6592-Top-Le_PT23L+n628Q.lvbitx</Property>
 			</Item>
 			<Item Name="Fpga-6592-IP-Node.vi" Type="VI" URL="../Fpga-6592/Fpga-6592-IP-Node.vi">
@@ -1439,7 +1441,7 @@ gpi_0_tri_iArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutpu
 &lt;/Cluster&gt;
 &lt;/Cluster&gt;
 &lt;/Array&gt;
-PXIe-6592R/Clk40/falsefalse12d422121687815e627be18421f4b6dcFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
+PXIe-6592R/Clk40/falsetrue12d422121687815e627be18421f4b6dcFPGA_EXECUTION_MODEDEV_COMPUTER_SIM_IOFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
 				<Property Name="configString.name" Type="Str">100MHzMultiplier=5.000000;Divisor=2.00000040 MHz Onboard ClockResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;d_microblaze_i2917f06f8536ebc50eeb7df5aa75d48c82110d927cb77952e7bff2582f067ba486b9a2d1e88664dec0734eebf0a88344&lt;Array&gt;
 &lt;Name&gt;Generics&lt;/Name&gt;
 &lt;Dimsize&gt;0&lt;/Dimsize&gt;
@@ -1530,7 +1532,7 @@ gpi_0_tri_iArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutpu
       &lt;Unsigned&gt;true&lt;/Unsigned&gt;
       &lt;WordLength&gt;2&lt;/WordLength&gt;
    &lt;/FXP&gt;
-&lt;/Type&gt;PXIe-6592R/Clk40/falsefalse12d422121687815e627be18421f4b6dcFPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]reset_rtlArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_microblaze_i/SignalList/reset_rtl;0;WriteMethodType=bool</Property>
+&lt;/Type&gt;PXIe-6592R/Clk40/falsetrue12d422121687815e627be18421f4b6dcFPGA_EXECUTION_MODEDEV_COMPUTER_SIM_IOFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]reset_rtlArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_microblaze_i/SignalList/reset_rtl;0;WriteMethodType=bool</Property>
 				<Property Name="NI.LV.FPGA.InterfaceBitfile" Type="Str">Z:\work\git\LabVIEW_Fpga\06_MicroBlaze\02_MicroBlaze_Interrupt\FPGA Bitfiles\02MicroBlazeInte_FPGATarget_Fpga-6592-IP-Nod_xyVWA81LWC8.lvbitx</Property>
 			</Item>
 			<Item Name="IP Builder" Type="IP Builder Target">
