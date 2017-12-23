@@ -95,7 +95,7 @@
 &lt;/Cluster&gt;
 &lt;/Cluster&gt;
 &lt;/Array&gt;
-{4A812EEA-EFBF-4D70-B7BF-4DA49828005F}Multiplier=5.000000;Divisor=2.000000{647CED85-DEC1-47C3-929F-D9478DA43E9C}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_microblaze_i/SignalList/gpio_rtl_tri_i;0;WriteMethodType=U32{8811D602-B6DB-4EC7-AC33-8D32A8C00E32}ResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;{9EC06588-36A9-4DD3-8A05-980E478B2EB9}NumberOfSyncRegistersForReadInProject=0;resource=/d_microblaze_i/SignalList/gpio_rtl_0_tri_o;0;ReadMethodType=U32PXIe-6592R/Clk40/falsefalse6705707382fd2b7ff9aed4185160bbc3FPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA</Property>
+{4A812EEA-EFBF-4D70-B7BF-4DA49828005F}Multiplier=5.000000;Divisor=2.000000{647CED85-DEC1-47C3-929F-D9478DA43E9C}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_microblaze_i/SignalList/gpio_rtl_tri_i;0;WriteMethodType=U32{8811D602-B6DB-4EC7-AC33-8D32A8C00E32}ResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;{9EC06588-36A9-4DD3-8A05-980E478B2EB9}NumberOfSyncRegistersForReadInProject=0;resource=/d_microblaze_i/SignalList/gpio_rtl_0_tri_o;0;ReadMethodType=U32PXIe-6592R/Clk40/falsefalse6705707382fd2b7ff9aed4185160bbc3FPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
 			<Property Name="configString.name" Type="Str">100MHzMultiplier=5.000000;Divisor=2.00000040 MHz Onboard ClockResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;d_microblaze_i2b83242c667baee31a61b7c8506c8bf08de58166b7d632e6fcad33b77599f918e5389a3c60df29ae14638f6903cf036f&lt;Array&gt;
 &lt;Name&gt;Generics&lt;/Name&gt;
 &lt;Dimsize&gt;0&lt;/Dimsize&gt;
@@ -179,7 +179,7 @@
 &lt;/Cluster&gt;
 &lt;/Cluster&gt;
 &lt;/Array&gt;
-gpio_rtl_0_tri_oNumberOfSyncRegistersForReadInProject=0;resource=/d_microblaze_i/SignalList/gpio_rtl_0_tri_o;0;ReadMethodType=U32gpio_rtl_tri_iArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_microblaze_i/SignalList/gpio_rtl_tri_i;0;WriteMethodType=U32PXIe-6592R/Clk40/falsefalse6705707382fd2b7ff9aed4185160bbc3FPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA</Property>
+gpio_rtl_0_tri_oNumberOfSyncRegistersForReadInProject=0;resource=/d_microblaze_i/SignalList/gpio_rtl_0_tri_o;0;ReadMethodType=U32gpio_rtl_tri_iArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_microblaze_i/SignalList/gpio_rtl_tri_i;0;WriteMethodType=U32PXIe-6592R/Clk40/falsefalse6705707382fd2b7ff9aed4185160bbc3FPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
 			<Property Name="ForceCompileConfigUpdate" Type="Bool">true</Property>
 			<Property Name="NI.LV.FPGA.659XR.ActiveSerialIo.Valid" Type="Bool">true</Property>
 			<Property Name="NI.LV.FPGA.659XR.ActiveSerialIo.Version" Type="Int">1</Property>
@@ -300,11 +300,11 @@ gpio_rtl_0_tri_oNumberOfSyncRegistersForReadInProject=0;resource=/d_microblaze_i
    <CLIPDeclarationCategory name="User Defined">
       <CLIPDeclaration name="d_microblaze_wrapper_top">
          <DeclarationPaths>
-            <Absolute>G:\work\git\LabVIEW_Fpga\06_MicroBlaze\01_MicroBlaze_GPIO\d_microblaze_wrapper_top.xml</Absolute>
+            <Absolute>Z:\work\git\LabVIEW_Fpga\06_MicroBlaze\01_MicroBlaze_GPIO\d_microblaze_wrapper_top.xml</Absolute>
             <MD5>8de58166b7d632e6fcad33b77599f918</MD5>
-            <RelativeToLabVIEW>G:\work\git\LabVIEW_Fpga\06_MicroBlaze\01_MicroBlaze_GPIO\d_microblaze_wrapper_top.xml</RelativeToLabVIEW>
-            <RelativeToNiPubDocs>G:\work\git\LabVIEW_Fpga\06_MicroBlaze\01_MicroBlaze_GPIO\d_microblaze_wrapper_top.xml</RelativeToNiPubDocs>
-            <RelativeToNiSharedDir>G:\work\git\LabVIEW_Fpga\06_MicroBlaze\01_MicroBlaze_GPIO\d_microblaze_wrapper_top.xml</RelativeToNiSharedDir>
+            <RelativeToLabVIEW>Z:\work\git\LabVIEW_Fpga\06_MicroBlaze\01_MicroBlaze_GPIO\d_microblaze_wrapper_top.xml</RelativeToLabVIEW>
+            <RelativeToNiPubDocs>Z:\work\git\LabVIEW_Fpga\06_MicroBlaze\01_MicroBlaze_GPIO\d_microblaze_wrapper_top.xml</RelativeToNiPubDocs>
+            <RelativeToNiSharedDir>Z:\work\git\LabVIEW_Fpga\06_MicroBlaze\01_MicroBlaze_GPIO\d_microblaze_wrapper_top.xml</RelativeToNiSharedDir>
             <RelativeToProject>d_microblaze_wrapper_top.xml</RelativeToProject>
             <Valid>true</Valid>
          </DeclarationPaths>
@@ -1187,7 +1187,7 @@ set_property IOSTANDARD LVCMOS25 [get_ports {Si570Clkn}]
 &lt;/Cluster&gt;
 &lt;/Cluster&gt;
 &lt;/Array&gt;
-{4A812EEA-EFBF-4D70-B7BF-4DA49828005F}Multiplier=5.000000;Divisor=2.000000{647CED85-DEC1-47C3-929F-D9478DA43E9C}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_microblaze_i/SignalList/gpio_rtl_tri_i;0;WriteMethodType=U32{8811D602-B6DB-4EC7-AC33-8D32A8C00E32}ResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;{9EC06588-36A9-4DD3-8A05-980E478B2EB9}NumberOfSyncRegistersForReadInProject=0;resource=/d_microblaze_i/SignalList/gpio_rtl_0_tri_o;0;ReadMethodType=U32PXIe-6592R/Clk40/falsefalse6705707382fd2b7ff9aed4185160bbc3FPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA</Property>
+{4A812EEA-EFBF-4D70-B7BF-4DA49828005F}Multiplier=5.000000;Divisor=2.000000{647CED85-DEC1-47C3-929F-D9478DA43E9C}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_microblaze_i/SignalList/gpio_rtl_tri_i;0;WriteMethodType=U32{8811D602-B6DB-4EC7-AC33-8D32A8C00E32}ResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;{9EC06588-36A9-4DD3-8A05-980E478B2EB9}NumberOfSyncRegistersForReadInProject=0;resource=/d_microblaze_i/SignalList/gpio_rtl_0_tri_o;0;ReadMethodType=U32PXIe-6592R/Clk40/falsefalse6705707382fd2b7ff9aed4185160bbc3FPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
 				<Property Name="configString.name" Type="Str">100MHzMultiplier=5.000000;Divisor=2.00000040 MHz Onboard ClockResourceName=40 MHz Onboard Clock;TopSignalConnect=Clk40;ClockSignalName=Clk40;MinFreq=40000000.000000;MaxFreq=40000000.000000;VariableFreq=0;NomFreq=40000000.000000;PeakPeriodJitter=250.000000;MinDutyCycle=50.000000;MaxDutyCycle=50.000000;Accuracy=100.000000;RunTime=0;SpreadSpectrum=0;GenericDataHash=D41D8CD98F00B204E9800998ECF8427E;d_microblaze_i2b83242c667baee31a61b7c8506c8bf08de58166b7d632e6fcad33b77599f918e5389a3c60df29ae14638f6903cf036f&lt;Array&gt;
 &lt;Name&gt;Generics&lt;/Name&gt;
 &lt;Dimsize&gt;0&lt;/Dimsize&gt;
@@ -1271,8 +1271,8 @@ set_property IOSTANDARD LVCMOS25 [get_ports {Si570Clkn}]
 &lt;/Cluster&gt;
 &lt;/Cluster&gt;
 &lt;/Array&gt;
-gpio_rtl_0_tri_oNumberOfSyncRegistersForReadInProject=0;resource=/d_microblaze_i/SignalList/gpio_rtl_0_tri_o;0;ReadMethodType=U32gpio_rtl_tri_iArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_microblaze_i/SignalList/gpio_rtl_tri_i;0;WriteMethodType=U32PXIe-6592R/Clk40/falsefalse6705707382fd2b7ff9aed4185160bbc3FPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA</Property>
-				<Property Name="NI.LV.FPGA.InterfaceBitfile" Type="Str">G:\work\git\LabVIEW_Fpga\06_MicroBlaze\01_MicroBlaze_GPIO\FPGA Bitfiles\01MicroBlazeGPIO_FPGATarget_Fpga-6592-Top-Le_VyKy+7gwluE.lvbitx</Property>
+gpio_rtl_0_tri_oNumberOfSyncRegistersForReadInProject=0;resource=/d_microblaze_i/SignalList/gpio_rtl_0_tri_o;0;ReadMethodType=U32gpio_rtl_tri_iArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/d_microblaze_i/SignalList/gpio_rtl_tri_i;0;WriteMethodType=U32PXIe-6592R/Clk40/falsefalse6705707382fd2b7ff9aed4185160bbc3FPGA_EXECUTION_MODEFPGA_TARGETFPGA_TARGET_CLASSPXIE_6592RFPGA_TARGET_FAMILYKINTEX7TARGET_TYPEFPGA/[rSeriesConfig.Begin][rSeriesConfig.End]</Property>
+				<Property Name="NI.LV.FPGA.InterfaceBitfile" Type="Str">Z:\work\git\LabVIEW_Fpga\06_MicroBlaze\01_MicroBlaze_GPIO\FPGA Bitfiles\01MicroBlazeGPIO_FPGATarget_Fpga-6592-Top-Le_90COAStaGgQ.lvbitx</Property>
 			</Item>
 			<Item Name="IP Builder" Type="IP Builder Target">
 				<Item Name="Dependencies" Type="Dependencies"/>
@@ -1317,8 +1317,8 @@ gpio_rtl_0_tri_oNumberOfSyncRegistersForReadInProject=0;resource=/d_microblaze_i
 					<Property Name="Comp.Xilinx.UseRecommended" Type="Bool">true</Property>
 					<Property Name="DefaultBuildSpec" Type="Bool">true</Property>
 					<Property Name="DestinationDirectory" Type="Path">FPGA Bitfiles</Property>
-					<Property Name="NI.LV.FPGA.LastCompiledBitfilePath" Type="Path">/G/work/git/LabVIEW_Fpga/06_MicroBlaze/01_MicroBlaze_GPIO/FPGA Bitfiles/01MicroBlazeGPIO_FPGATarget_Fpga-6592-Top-Le_VyKy+7gwluE.lvbitx</Property>
-					<Property Name="NI.LV.FPGA.LastCompiledBitfilePathRelativeToProject" Type="Path">FPGA Bitfiles/01MicroBlazeGPIO_FPGATarget_Fpga-6592-Top-Le_VyKy+7gwluE.lvbitx</Property>
+					<Property Name="NI.LV.FPGA.LastCompiledBitfilePath" Type="Path">/Z/work/git/LabVIEW_Fpga/06_MicroBlaze/01_MicroBlaze_GPIO/FPGA Bitfiles/01MicroBlazeGPIO_FPGATarget_Fpga-6592-Top-Le_90COAStaGgQ.lvbitx</Property>
+					<Property Name="NI.LV.FPGA.LastCompiledBitfilePathRelativeToProject" Type="Path">FPGA Bitfiles/01MicroBlazeGPIO_FPGATarget_Fpga-6592-Top-Le_90COAStaGgQ.lvbitx</Property>
 					<Property Name="ProjectPath" Type="Path">/G/work/git/LabVIEW_Fpga/06_MicroBlaze/01_MicroBlaze_GPIO/01_MicroBlaze_GPIO.lvproj</Property>
 					<Property Name="RelativePath" Type="Bool">true</Property>
 					<Property Name="RunWhenLoaded" Type="Bool">false</Property>
