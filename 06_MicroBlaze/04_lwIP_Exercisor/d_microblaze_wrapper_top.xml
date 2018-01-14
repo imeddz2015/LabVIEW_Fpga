@@ -297,9 +297,9 @@
         <SimulationModelType>Same as synthesis</SimulationModelType>
     </SimulationFileList> 
 </Path>
-    <Path Name="checkpoint_4.dcp">
+    <Path Name="lwIP_Exercisor\checkpoint_5.dcp">
   
-      <MD5>581924281a6c8e18fdee6bee2044ffac</MD5>
+      <MD5>470dc8710f1e061591725698f890eefd</MD5>
       <SimulationFileList>
         <SimulationModelType>Exclude from simulation model</SimulationModelType>
     </SimulationFileList> 
