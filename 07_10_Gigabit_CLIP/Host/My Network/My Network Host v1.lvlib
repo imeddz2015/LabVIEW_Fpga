@@ -29,5 +29,4 @@
 			<Item Name="Packet RX Only.vi" Type="VI" URL="../Packet RX Only.vi"/>
 		</Item>
 	</Item>
-	<Item Name="MicroBlaze_lwIP-Top.vi" Type="VI" URL="../MicroBlaze_lwIP-Top.vi"/>
 </Library>
