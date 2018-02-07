@@ -11,7 +11,7 @@ One sub-project (**MAC-Tester.vi**) is for exercising the Network interface port
 * **Host** - refers to all code that runs on the CPU of the host system.  This is the regular "Windows Application" portion of the project.
 * **CLIP** - Component Level IP - Refers to the 4-port 10 Gigabit Ethernet Interface provided on the board.
 
-### 10 Gigabit Interface Tester
+### 10 Gigabit MAC Tester
 This vi communicates with the FPGA by using 2 FIFOs, one for sending raw Ethernet Frames that will be put on the wire via the CLIP, and one for receiving raw Ethernet Frames received from the wire by the CLIP.  Think of this as an FPGA accelerated Network card that has this top level vi as the endpoint.
 * Top Level Vi - [MAC-Tester.vi](https://github.com/JohnStratoudakis/LabVIEW_Fpga/blob/master/07_10_Gigabit_CLIP/Tests/MAC/MAC-Tester.vi)
 * Before running, make sure the **Fpga-Mac-Top** build specification has been built.
@@ -21,7 +21,7 @@ This vi communicates with the FPGA by using 2 FIFOs, one for sending raw Etherne
   * Fill out the parameters in the following controls for a UDP Packet Parameters:
   * Click Transmit and check the other endpoint for the packet data!
 
-### MicroBlaze Component Exerciser
+### MicroBlaze Tester
 This vi exercises the following components that have been added to the MicroBlaze soft-core processor:
 * GPIO #1
   * Dual-Channel
@@ -38,3 +38,8 @@ This vi exercises the following components that have been added to the MicroBlaz
   * 32-bit width
   * Transmit Control Disable
 * 2 Interrupt Channels
+
+# To Do
+- [ ] Clean up MicroBlaze Tester
+  - [ ] Convert FIFOs to use 64-bits instead of 32-bits
+  - [ ] Make a blog post with screenshots
