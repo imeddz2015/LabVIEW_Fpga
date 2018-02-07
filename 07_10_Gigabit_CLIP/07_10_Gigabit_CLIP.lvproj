@@ -4320,9 +4320,9 @@ set_property IOSTANDARD LVCMOS25 [get_ports {Si570Clkn}]
 					<Property Name="Type Descriptor" Type="Str">100080000000000100094008000355363400010000000000000000000000000000</Property>
 				</Item>
 			</Item>
-			<Item Name="Tests" Type="Folder">
+			<Item Name="MicroBlaze" Type="Folder">
 				<Item Name="Helpers" Type="Folder">
-					<Item Name="Fpga-Counter-U16.vi" Type="VI" URL="../FPGA/Tests/Helpers/Fpga-Counter-U16.vi">
+					<Item Name="Fpga-Counter-U16.vi" Type="VI" URL="../FPGA/MicroBlaze/Helpers/Fpga-Counter-U16.vi">
 						<Property Name="configString.guid" Type="Str">{01544313-7481-4843-A5A3-A398B6106F28}NumberOfSyncRegistersForReadInProject=Auto;resource=/Ethernet/SignalList/PFI3_In;0;ReadMethodType=bool{01961F74-13D7-4D94-94D5-F60A2F015ADB}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/d_microblaze_i/SignalList/AXI_STR_TXD_tready;0;WriteMethodType=bool{02866308-6C3E-483B-96F8-9EFDB31BEACF}446111593d7af4793df9f17c162101e3abfb4923fa6d02c52169b563849062b8fcb0c0392fd0f27ef8c2465457f61c8e&lt;Array&gt;
 &lt;Name&gt;Generics&lt;/Name&gt;
 &lt;Dimsize&gt;0&lt;/Dimsize&gt;
@@ -5336,7 +5336,7 @@ gpio_rtl_0_tri_oNumberOfSyncRegistersForReadInProject=Auto;resource=/d_microblaz
    &lt;/FXP&gt;
 &lt;/Type&gt;sManageWValidPort0ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/Ethernet/SignalList/sManageWValidPort0;0;WriteMethodType=boolsManageWValidPort1ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/Ethernet/SignalList/sManageWValidPort1;0;WriteMethodType=boolsPort0_Power_GoodNumberOfSyncRegistersForReadInProject=Auto;resource=/Ethernet/SignalList/sPort0_Power_Good;0;ReadMethodType=boolsPort1_Power_GoodNumberOfSyncRegistersForReadInProject=Auto;resource=/Ethernet/SignalList/sPort1_Power_Good;0;ReadMethodType=boolTH-Data_out"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;TH-Data_out;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"TH-Data_out2"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;TH-Data_out2;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"TH-RX_FIFO_DATA"ControlLogic=0;NumberOfElements=8191;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=8;Implementation=2;TH-RX_FIFO_DATA;DataType=1000800000000001000940050002553800000100000000000000;DisableOnOverflowUnderflow=FALSE"TH-RX_NEW_PKT"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;TH-RX_GOOD_PKT;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"</Property>
 					</Item>
-					<Item Name="Fpga-Last-NonZeroValue.vi" Type="VI" URL="../FPGA/Tests/Helpers/Fpga-Last-NonZeroValue.vi">
+					<Item Name="Fpga-Last-NonZeroValue.vi" Type="VI" URL="../FPGA/MicroBlaze/Helpers/Fpga-Last-NonZeroValue.vi">
 						<Property Name="configString.guid" Type="Str">{01544313-7481-4843-A5A3-A398B6106F28}NumberOfSyncRegistersForReadInProject=Auto;resource=/Ethernet/SignalList/PFI3_In;0;ReadMethodType=bool{01961F74-13D7-4D94-94D5-F60A2F015ADB}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/d_microblaze_i/SignalList/AXI_STR_TXD_tready;0;WriteMethodType=bool{02866308-6C3E-483B-96F8-9EFDB31BEACF}446111593d7af4793df9f17c162101e3abfb4923fa6d02c52169b563849062b8fcb0c0392fd0f27ef8c2465457f61c8e&lt;Array&gt;
 &lt;Name&gt;Generics&lt;/Name&gt;
 &lt;Dimsize&gt;0&lt;/Dimsize&gt;
@@ -6351,7 +6351,7 @@ gpio_rtl_0_tri_oNumberOfSyncRegistersForReadInProject=Auto;resource=/d_microblaz
 &lt;/Type&gt;sManageWValidPort0ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/Ethernet/SignalList/sManageWValidPort0;0;WriteMethodType=boolsManageWValidPort1ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=0;resource=/Ethernet/SignalList/sManageWValidPort1;0;WriteMethodType=boolsPort0_Power_GoodNumberOfSyncRegistersForReadInProject=Auto;resource=/Ethernet/SignalList/sPort0_Power_Good;0;ReadMethodType=boolsPort1_Power_GoodNumberOfSyncRegistersForReadInProject=Auto;resource=/Ethernet/SignalList/sPort1_Power_Good;0;ReadMethodType=boolTH-Data_out"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;TH-Data_out;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"TH-Data_out2"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;TH-Data_out2;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"TH-RX_FIFO_DATA"ControlLogic=0;NumberOfElements=8191;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=8;Implementation=2;TH-RX_FIFO_DATA;DataType=1000800000000001000940050002553800000100000000000000;DisableOnOverflowUnderflow=FALSE"TH-RX_NEW_PKT"ControlLogic=0;NumberOfElements=1023;Type=2;ReadArbs=Arbitrate if Multiple Requestors Only;ElementsPerRead=1;WriteArbs=Arbitrate if Multiple Requestors Only;ElementsPerWrite=1;Implementation=2;TH-RX_GOOD_PKT;DataType=1000800000000001000940070003553332000100000000000000000000;DisableOnOverflowUnderflow=FALSE"</Property>
 					</Item>
 				</Item>
-				<Item Name="Fpga-MicroBlaze-Top.vi" Type="VI" URL="../FPGA/Tests/Fpga-MicroBlaze-Top.vi">
+				<Item Name="Fpga-MicroBlaze-Top.vi" Type="VI" URL="../FPGA/MicroBlaze/Fpga-MicroBlaze-Top.vi">
 					<Property Name="configString.guid" Type="Str">{01544313-7481-4843-A5A3-A398B6106F28}NumberOfSyncRegistersForReadInProject=Auto;resource=/Ethernet/SignalList/PFI3_In;0;ReadMethodType=bool{01961F74-13D7-4D94-94D5-F60A2F015ADB}ArbitrationForOutputData=NeverArbitrate;NumberOfSyncRegistersForOutputData=1;resource=/d_microblaze_i/SignalList/AXI_STR_TXD_tready;0;WriteMethodType=bool{02866308-6C3E-483B-96F8-9EFDB31BEACF}446111593d7af4793df9f17c162101e3abfb4923fa6d02c52169b563849062b8fcb0c0392fd0f27ef8c2465457f61c8e&lt;Array&gt;
 &lt;Name&gt;Generics&lt;/Name&gt;
 &lt;Dimsize&gt;0&lt;/Dimsize&gt;
@@ -12660,11 +12660,10 @@ gpio_rtl_0_tri_oNumberOfSyncRegistersForReadInProject=Auto;resource=/d_microblaz
 					<Property Name="SupportDownload" Type="Bool">true</Property>
 					<Property Name="SupportResourceEstimation" Type="Bool">false</Property>
 					<Property Name="TargetName" Type="Str">FPGA Target</Property>
-					<Property Name="TopLevelVI" Type="Ref">/My Computer/FPGA Target/Tests/Fpga-MicroBlaze-Top.vi</Property>
+					<Property Name="TopLevelVI" Type="Ref">/My Computer/FPGA Target/MicroBlaze/Fpga-MicroBlaze-Top.vi</Property>
 				</Item>
 			</Item>
 		</Item>
-		<Item Name="Global 1.vi" Type="VI" URL="../Tests/MAC/Global 1.vi"/>
 		<Item Name="My Network Host v1.lvlib" Type="Library" URL="../Host/My Network/My Network Host v1.lvlib"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="instr.lib" Type="Folder">
