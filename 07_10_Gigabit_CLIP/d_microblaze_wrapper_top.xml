@@ -34,166 +34,6 @@
             <Boolean/>
   </DataType>
           <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
-        <Signal Name="AXI_STR_RXD_1_tdata">
-          <HDLName>AXI_STR_RXD_1_tdata</HDLName>
-          <HDLType>STD_LOGIC_VECTOR ( 31 downto 0 )</HDLType>
-          <Direction>ToCLIP</Direction>
-          <SignalType>data</SignalType>
-          <Description/>
-          <DataType>
-            <U32/>
-  </DataType>
-          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
-        <Signal Name="AXI_STR_RXD_1_tlast">
-          <HDLName>AXI_STR_RXD_1_tlast</HDLName>
-          <HDLType>STD_LOGIC</HDLType>
-          <Direction>ToCLIP</Direction>
-          <SignalType>data</SignalType>
-          <Description/>
-          <DataType>
-            <Boolean/>
-  </DataType>
-          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
-        <Signal Name="AXI_STR_RXD_1_tready">
-          <HDLName>AXI_STR_RXD_1_tready</HDLName>
-          <HDLType>STD_LOGIC</HDLType>
-          <Direction>FromCLIP</Direction>
-          <SignalType>data</SignalType>
-          <Description/>
-          <DataType>
-            <Boolean/>
-  </DataType>
-          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
-        <Signal Name="AXI_STR_RXD_1_tvalid">
-          <HDLName>AXI_STR_RXD_1_tvalid</HDLName>
-          <HDLType>STD_LOGIC</HDLType>
-          <Direction>ToCLIP</Direction>
-          <SignalType>data</SignalType>
-          <Description/>
-          <DataType>
-            <Boolean/>
-  </DataType>
-          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
-        <Signal Name="AXI_STR_RXD_tdata">
-          <HDLName>AXI_STR_RXD_tdata</HDLName>
-          <HDLType>STD_LOGIC_VECTOR ( 31 downto 0 )</HDLType>
-          <Direction>ToCLIP</Direction>
-          <SignalType>data</SignalType>
-          <Description/>
-          <DataType>
-            <U32/>
-  </DataType>
-          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
-        <Signal Name="AXI_STR_RXD_tlast">
-          <HDLName>AXI_STR_RXD_tlast</HDLName>
-          <HDLType>STD_LOGIC</HDLType>
-          <Direction>ToCLIP</Direction>
-          <SignalType>data</SignalType>
-          <Description/>
-          <DataType>
-            <Boolean/>
-  </DataType>
-          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
-        <Signal Name="AXI_STR_RXD_tready">
-          <HDLName>AXI_STR_RXD_tready</HDLName>
-          <HDLType>STD_LOGIC</HDLType>
-          <Direction>FromCLIP</Direction>
-          <SignalType>data</SignalType>
-          <Description/>
-          <DataType>
-            <Boolean/>
-  </DataType>
-          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
-        <Signal Name="AXI_STR_RXD_tvalid">
-          <HDLName>AXI_STR_RXD_tvalid</HDLName>
-          <HDLType>STD_LOGIC</HDLType>
-          <Direction>ToCLIP</Direction>
-          <SignalType>data</SignalType>
-          <Description/>
-          <DataType>
-            <Boolean/>
-  </DataType>
-          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
-        <Signal Name="AXI_STR_TXD_1_tdata">
-          <HDLName>AXI_STR_TXD_1_tdata</HDLName>
-          <HDLType>STD_LOGIC_VECTOR ( 31 downto 0 )</HDLType>
-          <Direction>FromCLIP</Direction>
-          <SignalType>data</SignalType>
-          <Description/>
-          <DataType>
-            <U32/>
-  </DataType>
-          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
-        <Signal Name="AXI_STR_TXD_1_tlast">
-          <HDLName>AXI_STR_TXD_1_tlast</HDLName>
-          <HDLType>STD_LOGIC</HDLType>
-          <Direction>FromCLIP</Direction>
-          <SignalType>data</SignalType>
-          <Description/>
-          <DataType>
-            <Boolean/>
-  </DataType>
-          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
-        <Signal Name="AXI_STR_TXD_1_tready">
-          <HDLName>AXI_STR_TXD_1_tready</HDLName>
-          <HDLType>STD_LOGIC</HDLType>
-          <Direction>ToCLIP</Direction>
-          <SignalType>data</SignalType>
-          <Description/>
-          <DataType>
-            <Boolean/>
-  </DataType>
-          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
-        <Signal Name="AXI_STR_TXD_1_tvalid">
-          <HDLName>AXI_STR_TXD_1_tvalid</HDLName>
-          <HDLType>STD_LOGIC</HDLType>
-          <Direction>FromCLIP</Direction>
-          <SignalType>data</SignalType>
-          <Description/>
-          <DataType>
-            <Boolean/>
-  </DataType>
-          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
-        <Signal Name="AXI_STR_TXD_tdata">
-          <HDLName>AXI_STR_TXD_tdata</HDLName>
-          <HDLType>STD_LOGIC_VECTOR ( 31 downto 0 )</HDLType>
-          <Direction>FromCLIP</Direction>
-          <SignalType>data</SignalType>
-          <Description/>
-          <DataType>
-            <U32/>
-  </DataType>
-          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
-        <Signal Name="AXI_STR_TXD_tlast">
-          <HDLName>AXI_STR_TXD_tlast</HDLName>
-          <HDLType>STD_LOGIC</HDLType>
-          <Direction>FromCLIP</Direction>
-          <SignalType>data</SignalType>
-          <Description/>
-          <DataType>
-            <Boolean/>
-  </DataType>
-          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
-        <Signal Name="AXI_STR_TXD_tready">
-          <HDLName>AXI_STR_TXD_tready</HDLName>
-          <HDLType>STD_LOGIC</HDLType>
-          <Direction>ToCLIP</Direction>
-          <SignalType>data</SignalType>
-          <Description/>
-          <DataType>
-            <Boolean/>
-  </DataType>
-          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
-        <Signal Name="AXI_STR_TXD_tvalid">
-          <HDLName>AXI_STR_TXD_tvalid</HDLName>
-          <HDLType>STD_LOGIC</HDLType>
-          <Direction>FromCLIP</Direction>
-          <SignalType>data</SignalType>
-          <Description/>
-          <DataType>
-            <Boolean/>
-  </DataType>
-          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
         <Signal Name="In0">
           <HDLName>In0</HDLName>
           <HDLType>STD_LOGIC_VECTOR ( 0 to 0 )</HDLType>
@@ -271,35 +111,246 @@
             <U32/>
   </DataType>
           <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
-      </SignalList>
-    </Interface>
-    <Interface Name="Fabric">
-      <InterfaceType>Fabric</InterfaceType>
-      <SignalList>
         <Signal Name="reset_rtl">
           <HDLName>reset_rtl</HDLName>
           <HDLType>STD_LOGIC</HDLType>
           <Direction>ToCLIP</Direction>
-          <SignalType>reset</SignalType>
+          <SignalType>data</SignalType>
           <Description/>
           <DataType>
             <Boolean/>
   </DataType>
-  </Signal>
-  </SignalList>
-</Interface>
+          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
+        <Signal Name="AXI_STR_TXD_tdata">
+          <HDLName>AXI_STR_TXD_tdata</HDLName>
+          <HDLType>STD_LOGIC_VECTOR ( 31 downto 0 )</HDLType>
+          <Direction>FromCLIP</Direction>
+          <SignalType>data</SignalType>
+          <Description/>
+          <DataType>
+            <U32/>
+  </DataType>
+          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
+        <Signal Name="AXI_STR_TXD_tkeep">
+          <HDLName>AXI_STR_TXD_tkeep</HDLName>
+          <HDLType>STD_LOGIC_VECTOR ( 3 downto 0 )</HDLType>
+          <Direction>FromCLIP</Direction>
+          <SignalType>data</SignalType>
+          <Description/>
+          <DataType>
+            <FXP>
+              <WordLength>4</WordLength>
+              <IntegerWordLength>4</IntegerWordLength>
+              <Unsigned/>
+</FXP>
+  </DataType>
+          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
+        <Signal Name="AXI_STR_TXD_tlast">
+          <HDLName>AXI_STR_TXD_tlast</HDLName>
+          <HDLType>STD_LOGIC</HDLType>
+          <Direction>FromCLIP</Direction>
+          <SignalType>data</SignalType>
+          <Description/>
+          <DataType>
+            <Boolean/>
+  </DataType>
+          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
+        <Signal Name="AXI_STR_TXD_tready">
+          <HDLName>AXI_STR_TXD_tready</HDLName>
+          <HDLType>STD_LOGIC</HDLType>
+          <Direction>ToCLIP</Direction>
+          <SignalType>data</SignalType>
+          <Description/>
+          <DataType>
+            <Boolean/>
+  </DataType>
+          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
+        <Signal Name="AXI_STR_TXD_tvalid">
+          <HDLName>AXI_STR_TXD_tvalid</HDLName>
+          <HDLType>STD_LOGIC</HDLType>
+          <Direction>FromCLIP</Direction>
+          <SignalType>data</SignalType>
+          <Description/>
+          <DataType>
+            <Boolean/>
+  </DataType>
+          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
+        <Signal Name="AXI_STR_RXD_tdata">
+          <HDLName>AXI_STR_RXD_tdata</HDLName>
+          <HDLType>STD_LOGIC_VECTOR ( 31 downto 0 )</HDLType>
+          <Direction>ToCLIP</Direction>
+          <SignalType>data</SignalType>
+          <Description/>
+          <DataType>
+            <U32/>
+  </DataType>
+          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
+        <Signal Name="AXI_STR_RXD_tkeep">
+          <HDLName>AXI_STR_RXD_tkeep</HDLName>
+          <HDLType>STD_LOGIC_VECTOR ( 3 downto 0 )</HDLType>
+          <Direction>ToCLIP</Direction>
+          <SignalType>data</SignalType>
+          <Description/>
+          <DataType>
+            <FXP>
+              <WordLength>4</WordLength>
+              <IntegerWordLength>4</IntegerWordLength>
+              <Unsigned/>
+</FXP>
+  </DataType>
+          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
+        <Signal Name="AXI_STR_RXD_tlast">
+          <HDLName>AXI_STR_RXD_tlast</HDLName>
+          <HDLType>STD_LOGIC</HDLType>
+          <Direction>ToCLIP</Direction>
+          <SignalType>data</SignalType>
+          <Description/>
+          <DataType>
+            <Boolean/>
+  </DataType>
+          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
+        <Signal Name="AXI_STR_RXD_tready">
+          <HDLName>AXI_STR_RXD_tready</HDLName>
+          <HDLType>STD_LOGIC</HDLType>
+          <Direction>FromCLIP</Direction>
+          <SignalType>data</SignalType>
+          <Description/>
+          <DataType>
+            <Boolean/>
+  </DataType>
+          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
+        <Signal Name="AXI_STR_RXD_tvalid">
+          <HDLName>AXI_STR_RXD_tvalid</HDLName>
+          <HDLType>STD_LOGIC</HDLType>
+          <Direction>ToCLIP</Direction>
+          <SignalType>data</SignalType>
+          <Description/>
+          <DataType>
+            <Boolean/>
+  </DataType>
+          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
+        <Signal Name="AXI_STR_TXD_1_tdata">
+          <HDLName>AXI_STR_TXD_1_tdata</HDLName>
+          <HDLType>STD_LOGIC_VECTOR ( 31 downto 0 )</HDLType>
+          <Direction>FromCLIP</Direction>
+          <SignalType>data</SignalType>
+          <Description/>
+          <DataType>
+            <U32/>
+  </DataType>
+          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
+        <Signal Name="AXI_STR_TXD_1_tkeep">
+          <HDLName>AXI_STR_TXD_1_tkeep</HDLName>
+          <HDLType>STD_LOGIC_VECTOR ( 3 downto 0 )</HDLType>
+          <Direction>FromCLIP</Direction>
+          <SignalType>data</SignalType>
+          <Description/>
+          <DataType>
+            <FXP>
+              <WordLength>4</WordLength>
+              <IntegerWordLength>4</IntegerWordLength>
+              <Unsigned/>
+</FXP>
+  </DataType>
+          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
+        <Signal Name="AXI_STR_TXD_1_tlast">
+          <HDLName>AXI_STR_TXD_1_tlast</HDLName>
+          <HDLType>STD_LOGIC</HDLType>
+          <Direction>FromCLIP</Direction>
+          <SignalType>data</SignalType>
+          <Description/>
+          <DataType>
+            <Boolean/>
+  </DataType>
+          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
+        <Signal Name="AXI_STR_TXD_1_tready">
+          <HDLName>AXI_STR_TXD_1_tready</HDLName>
+          <HDLType>STD_LOGIC</HDLType>
+          <Direction>ToCLIP</Direction>
+          <SignalType>data</SignalType>
+          <Description/>
+          <DataType>
+            <Boolean/>
+  </DataType>
+          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
+        <Signal Name="AXI_STR_TXD_1_tvalid">
+          <HDLName>AXI_STR_TXD_1_tvalid</HDLName>
+          <HDLType>STD_LOGIC</HDLType>
+          <Direction>FromCLIP</Direction>
+          <SignalType>data</SignalType>
+          <Description/>
+          <DataType>
+            <Boolean/>
+  </DataType>
+          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
+        <Signal Name="AXI_STR_RXD_1_tdata">
+          <HDLName>AXI_STR_RXD_1_tdata</HDLName>
+          <HDLType>STD_LOGIC_VECTOR ( 31 downto 0 )</HDLType>
+          <Direction>ToCLIP</Direction>
+          <SignalType>data</SignalType>
+          <Description/>
+          <DataType>
+            <U32/>
+  </DataType>
+          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
+        <Signal Name="AXI_STR_RXD_1_tkeep">
+          <HDLName>AXI_STR_RXD_1_tkeep</HDLName>
+          <HDLType>STD_LOGIC_VECTOR ( 3 downto 0 )</HDLType>
+          <Direction>ToCLIP</Direction>
+          <SignalType>data</SignalType>
+          <Description/>
+          <DataType>
+            <FXP>
+              <WordLength>4</WordLength>
+              <IntegerWordLength>4</IntegerWordLength>
+              <Unsigned/>
+</FXP>
+  </DataType>
+          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
+        <Signal Name="AXI_STR_RXD_1_tlast">
+          <HDLName>AXI_STR_RXD_1_tlast</HDLName>
+          <HDLType>STD_LOGIC</HDLType>
+          <Direction>ToCLIP</Direction>
+          <SignalType>data</SignalType>
+          <Description/>
+          <DataType>
+            <Boolean/>
+  </DataType>
+          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
+        <Signal Name="AXI_STR_RXD_1_tready">
+          <HDLName>AXI_STR_RXD_1_tready</HDLName>
+          <HDLType>STD_LOGIC</HDLType>
+          <Direction>FromCLIP</Direction>
+          <SignalType>data</SignalType>
+          <Description/>
+          <DataType>
+            <Boolean/>
+  </DataType>
+          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
+        <Signal Name="AXI_STR_RXD_1_tvalid">
+          <HDLName>AXI_STR_RXD_1_tvalid</HDLName>
+          <HDLType>STD_LOGIC</HDLType>
+          <Direction>ToCLIP</Direction>
+          <SignalType>data</SignalType>
+          <Description/>
+          <DataType>
+            <Boolean/>
+  </DataType>
+          <UseInLabVIEWSingleCycleTimedLoop>Allowed</UseInLabVIEWSingleCycleTimedLoop></Signal>
+      </SignalList>
+    </Interface>
   </InterfaceList>
   <ImplementationList>
     <Path Name="d_microblaze_wrapper_top.vhd">
       <TopLevel/>
-      <MD5>446111593d7af4793df9f17c162101e3</MD5>
+      <MD5>651e9ab2846890b884ae3795de992310</MD5>
       <SimulationFileList>
         <SimulationModelType>Same as synthesis</SimulationModelType>
     </SimulationFileList> 
 </Path>
-    <Path Name="mb_lwip\checkpoint_5.dcp">
+    <Path Name="mb_lwip\checkpoint_18.dcp">
   
-      <MD5>911f88a944bba70ca7ebe77344985fe7</MD5>
+      <MD5>97308f0e56fdc7b21b96f08838af37ad</MD5>
       <SimulationFileList>
         <SimulationModelType>Exclude from simulation model</SimulationModelType>
     </SimulationFileList> 
