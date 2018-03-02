@@ -41,5 +41,9 @@ This vi exercises the following components that have been added to the MicroBlaz
 
 # To Do
 - [ ] Clean up MicroBlaze Tester
-  - [ ] Convert FIFOs to use 64-bits instead of 32-bits
-  - [ ] Make a blog post with screenshots
+  - [X] Convert FIFOs to use 64-bits instead of 32-bits
+   - Conversion done in LabVIEW, maybe another day I will make the MicroBlaze work with 64-bit FIFOs
+  - [X] Make a blog post with screenshots
+   - http://fpganow.com/index.php/2018/03/02/30000-foot-view/
+  - [ ] Clean up Xilinx Project/Design
+   - [ ] Make it importable to a new computer with screenshots
